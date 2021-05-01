@@ -80,55 +80,6 @@ a {
   font-weight: 600;
 }
 
-/* Media Queries */
-@media screen and (max-width: 480px) {
-  body {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-
-  .navbar-ul li {
-    margin: 0rem 1rem;
-  }
-  .header-section {
-    padding: 1rem;
-  }
-  .header {
-    align-items: flex-start;
-    text-align: left;
-  }
-  .primary-header {
-    font-size: 3rem;
-    /* padding: 1rem 5rem; */
-  }
-
-  .secondary-header {
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 880px) {
-  body {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-  .navbar-ul li {
-    margin: 0rem 3rem;
-  }
-  .header-section {
-    padding: 1rem;
-  }
-  .primary-header {
-    font-size: 3rem;
-    /* padding: 1rem 5rem; */
-  }
-  .secondary-header {
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-}
-
 /* Code Container */
 
 .outer-code-container {
@@ -177,10 +128,64 @@ a {
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 1;
-  transition: color 300ms ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 .get-started:hover {
-  color: rgb(248, 248, 248);
-  background-color: black;
+  transform: scale(1.02);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+  body {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  .navbar-ul li {
+    margin: 0rem 1rem;
+  }
+  .header-section {
+    padding: 1rem;
+  }
+  .header {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .primary-header {
+    font-size: 3rem;
+    /* padding: 1rem 5rem; */
+  }
+
+  .secondary-header {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .get-started {
+    font-size: 1rem;
+    min-width: 220px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 880px) {
+  body {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .navbar-ul li {
+    margin: 0rem 3rem;
+  }
+  .header-section {
+    padding: 1rem;
+  }
+  .primary-header {
+    font-size: 3rem;
+    /* padding: 1rem 5rem; */
+  }
+  .secondary-header {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
 }
