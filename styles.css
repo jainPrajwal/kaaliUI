@@ -18,6 +18,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /* Navigation bar */
 .navbar {
   position: fixed;
@@ -79,61 +80,6 @@ a {
 .tertiary-header {
   font-size: 1.56rem;
   font-weight: 600;
-}
-
-/* Code Container */
-
-.outer-code-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.code-container {
-  position: relative;
-  background-color: #151718;
-  height: auto;
-  max-width: max-content;
-  display: flex;
-  flex-wrap: wrap;
-  overflow-x: auto;
-  padding: 1rem;
-  overflow-y: hidden;
-}
-
-/* .copy {
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  cursor: pointer;
-} */
-
-.copy-icon {
-  margin-bottom: 0.5rem;
-  display: flex;
-  justify-content: flex-end;
-  color: rgb(248, 248, 248);
-  margin-right: -10px;
-  margin-top: -10px;
-}
-
-.fa-clipboard.fas {
-  cursor: pointer;
-}
-.code-container > pre {
-  /* height: 240px; */
-  overflow: hidden;
-  display: inline-block;
-  /* width: 600px; */
-}
-
-.trying-out {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .get-started {

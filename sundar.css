@@ -47,11 +47,11 @@ a {
   margin-top: 20px;
   min-height: 100vh;
   padding: 1rem;
+  text-align: left;
   /* background-color: #36393f; */
 }
 
 .getting-started-header {
-  text-align: left;
 }
 
 .secondary-header {
@@ -84,9 +84,70 @@ hr {
   letter-spacing: 0.8px;
 }
 
-iframe {
+/* iframe {
   margin: 1rem 0rem;
+} */
+
+/* Code Container */
+
+/* .outer-code-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+} */
+
+.code-box {
+  padding: 1rem;
 }
+
+.code-container {
+  position: relative;
+  background-color: #151718;
+  height: auto;
+  max-width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  padding: 1rem;
+  overflow-y: hidden;
+  border-radius: 0.2rem;
+}
+
+/* .copy {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  cursor: pointer;
+} */
+
+.copy-icon {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(248, 248, 248);
+  margin-right: -5px;
+  margin-top: -10px;
+}
+
+.fa-clipboard.fas {
+  cursor: pointer;
+}
+.code-container > pre {
+  /* height: 240px; */
+  overflow: hidden;
+  display: inline-block;
+  /* width: 600px; */
+}
+
+/* .trying-out {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .token.tag {
   color: #55b5db;
 }
@@ -109,6 +170,9 @@ iframe {
     /* visibility: hidden; */
     display: none;
   }
+  .copy-icon {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 880px) {
@@ -119,5 +183,8 @@ iframe {
   .sidebar {
     /* visibility: hidden; */
     display: none;
+  }
+  .copy-icon {
+    margin-right: 10px;
   }
 }
