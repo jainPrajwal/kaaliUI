@@ -39,6 +39,14 @@
   background-color: #098a67;
 }
 
+.alert-info {
+  background-color: #1654ff;
+}
+
+.alert-warning {
+  background-color: #ffae00a4;
+}
+
 .btn-dismiss {
   font-size: 1.3rem;
   cursor: pointer;

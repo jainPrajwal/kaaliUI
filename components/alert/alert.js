@@ -60,5 +60,56 @@ content.addEventListener("mouseout", () => {
   tooltip.innerHTML = "Copy to Clipboard";
 });
 
-// -------------------------------------------------------------------------
-// Success Alert
+// ----------------------------------------------------------------
+// Info Alert
+
+document.querySelector("#btn-info-close").addEventListener("click", () => {
+  document.querySelector(".alert-info").classList.add("fade-out-top");
+});
+
+// Copy Content of info Alert
+document.querySelector("#clip-alert-info").addEventListener("click", () => {
+  console.log("called");
+  navigator.clipboard.writeText(
+    '<div class="alert-content alert-info">' +
+      "\n\t" +
+      " This is a info alert with dismissal button." +
+      "\n" +
+      "</div>"
+  );
+
+  let tooltip = document.querySelector("#info-tooltip");
+  console.log(tooltip, "ye apna tooltip");
+  tooltip.innerHTML = "Copied";
+});
+content.addEventListener("mouseout", () => {
+  let tooltip = document.querySelector("#info-tooltip");
+  tooltip.innerHTML = "Copy to Clipboard";
+});
+
+// ----------------------------------------------------------------
+// warning Alert
+
+document.querySelector("#btn-warning-close").addEventListener("click", () => {
+  document.querySelector(".alert-warning").classList.add("fade-out-top");
+});
+
+// Copy Content of warning Alert
+document.querySelector("#clip-alert-warning").addEventListener("click", () => {
+  console.log("called");
+  navigator.clipboard.writeText(
+    '<div class="alert-content alert-warning">' +
+      "\n\t" +
+      " This is a warning alert with dismissal button." +
+      "\n" +
+      "</div>"
+  );
+
+  let tooltip = document.querySelector("#warning-tooltip");
+  console.log(tooltip, "ye apna tooltip");
+  tooltip.innerHTML = "Copied";
+});
+content.addEventListener("mouseout", () => {
+  let tooltip = document.querySelector("#warning-tooltip");
+  tooltip.innerHTML = "Copy to Clipboard";
+});
