@@ -100,15 +100,13 @@ hr {
 
 .code-box {
   padding: 1rem;
+  position: relative;
 }
 
 .code-container {
-  position: relative;
   background-color: #151718;
   height: auto;
-  max-width: max-content;
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 740px;
   overflow-x: auto;
   padding: 1rem;
   overflow-y: hidden;
@@ -122,14 +120,15 @@ hr {
   cursor: pointer;
 } */
 
-.copy-icon {
+/* .copy-icon {
   margin-bottom: 0.5rem;
   display: flex;
   justify-content: flex-end;
   color: rgb(248, 248, 248);
   margin-right: -5px;
-  margin-top: -10px;
-}
+  margin-top: -20px;
+  overflow-x: auto;
+} */
 
 .fa-clipboard.fas {
   cursor: pointer;
@@ -156,10 +155,47 @@ hr {
   color: #9fca56;
 }
 
-.value {
-}
 .symbol {
   color: #55b5db;
+}
+.tooltip {
+  /* position: relative; */
+  /* position: relative; */
+  /* position: relative; */
+  /* height: 10px; */
+  /* width: 140px; */
+  /* background: yellowgreen; */
+  /* display: flex; */
+  float: right;
+}
+/* Tooltip for Copy Text */
+.tooltip .tooltiptext {
+  font-size: smaller;
+  visibility: hidden;
+  width: 150px;
+  background-color: gray;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 0.3s;
+  top: -10%;
+  left: 50%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 @media only screen and (max-width: 480px) {
   .main-body {
