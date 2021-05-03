@@ -7,9 +7,13 @@ content.addEventListener("click", () => {
     '<script src="https://grab-ui.netlify.app/components/get_started"></script>'
   );
 
-  let tooltip = document.querySelector(".tooltip");
+  let tooltip = document.querySelector("#scripttooltip");
   console.log(tooltip, "ye apna tooltip");
   tooltip.innerHTML = "Copied";
+});
+content.addEventListener("mouseout", () => {
+  let tooltip = document.querySelector("#scripttooltip");
+  tooltip.innerHTML = "Copy to Clipboard";
 });
 
 // Copy css link

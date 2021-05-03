@@ -206,8 +206,13 @@ hr {
     /* visibility: hidden; */
     display: none;
   }
-  .copy-icon {
-    margin-right: 10px;
+
+  .code-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .tooltip {
+    margin-bottom: 10px;
   }
 }
 
@@ -219,8 +224,5 @@ hr {
   .sidebar {
     /* visibility: hidden; */
     display: none;
-  }
-  .copy-icon {
-    margin-right: 10px;
   }
 }
