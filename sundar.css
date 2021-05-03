@@ -111,6 +111,7 @@ hr {
   padding: 1rem;
   overflow-y: hidden;
   border-radius: 0.2rem;
+  line-height: 30px;
 }
 
 /* .copy {

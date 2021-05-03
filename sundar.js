@@ -8,7 +8,7 @@ content.addEventListener("click", () => {
   );
 
   let tooltip = document.querySelector("#scripttooltip");
-  console.log(tooltip, "ye apna tooltip");
+  console.log(tooltip, "ye script tooltip");
   tooltip.innerHTML = "Copied";
 });
 content.addEventListener("mouseout", () => {
@@ -25,7 +25,7 @@ content.addEventListener("click", () => {
     '<link rel="stylesheet" href="https://grab-ui.netlify.app/components/get_started">'
   );
   let tooltip = document.querySelector("#mytooltip");
-  console.log(tooltip, "ye apna tooltip");
+  console.log(tooltip, "ye css tooltip");
   tooltip.innerHTML = "Copied";
 });
 
