@@ -33,3 +33,11 @@ content.addEventListener("mouseout", () => {
   let tooltip = document.querySelector("#mytooltip");
   tooltip.innerHTML = "Copy to Clipboard";
 });
+
+$(window).load(function () {
+  $(function () {
+    $("#alertlink").click(function () {
+      $("#main").load("./components/alert/alert.html");
+    });
+  });
+});
