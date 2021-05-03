@@ -45,11 +45,25 @@ a {
   margin: 0rem 5rem;
   align-items: center;
 }
-.navbar ul li a {
+.navbar-ul li a {
   text-decoration: none;
   color: inherit;
 }
 
+.fas.fa-bars {
+  font-size: 1.6rem;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.navbar-ul .component-link-item {
+  display: none;
+}
 /* Header */
 
 .header-section {
@@ -109,8 +123,41 @@ a {
   }
 
   .navbar-ul li {
-    margin: 0rem 1rem;
+    margin: 0;
+    padding: 1rem;
   }
+  .fas.fa-bars {
+    display: inline-block;
+    padding-right: 1rem;
+    color: #ff0044;
+  }
+
+  .close-menu {
+    display: block;
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    /* line-height: 50px; */
+    color: #ff0044;
+    display: none;
+    cursor: pointer;
+  }
+  .navbar-ul {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    display: none;
+  }
+  .navbar-ul .component-link-item {
+    display: inherit;
+  }
+
   .header-section {
     padding: 1rem;
   }
@@ -135,14 +182,47 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 880px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   body {
     overflow: scroll;
     overflow-x: hidden;
   }
   .navbar-ul li {
-    margin: 0rem 3rem;
+    margin: 0;
+    padding: 1rem;
   }
+  .fas.fa-bars {
+    display: inline-block;
+    padding-right: 1rem;
+    color: #ff0044;
+  }
+
+  .close-menu {
+    display: block;
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    /* line-height: 50px; */
+    color: #ff0044;
+    display: none;
+    cursor: pointer;
+  }
+  .navbar-ul {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    display: none;
+  }
+  .navbar-ul .component-link-item {
+    display: inherit;
+  }
+
   .header-section {
     padding: 1rem;
   }
