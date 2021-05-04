@@ -220,7 +220,7 @@ a {
     display: none;
   }
   .navbar-ul .component-link-item {
-    display: inherit;
+    display: block;
   }
 
   .header-section {

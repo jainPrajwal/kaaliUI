@@ -42,44 +42,63 @@ $(window).load(function () {
   });
 });
 
-if (parseInt(window.innerWidth) <= 768) {
-  document.querySelector(".navbar-ul").style.display = "none";
-  document.querySelector(".close-menu").style.display = "none";
-  document.querySelector(".fa-bars").style.display = "block";
-} else {
-  document.querySelector(".navbar-ul").style.display = "flex";
-  document.querySelector(".fa-bars").style.display = "none";
-  document.querySelector(".close-menu").style.display = "none";
+if (document.querySelector(".fas.fa-bars").style.display != "none") {
+  console.log("bars visible");
+  document.querySelector(".fa-bars").addEventListener("click", () => {
+    console.log("clicked yahs");
+    document.querySelector(".navbar-ul").style.display = "flex";
+    document.querySelector(".fas.fa-bars").style.display = "none";
+    document.querySelector(".close-menu").style.display = "block";
+  });
 }
-document.querySelector(".fa-bars").addEventListener("click", () => {
-  console.log("clicked yahs");
-  if (document.querySelector(".navbar-ul").style.display === "none") {
-    document.querySelector(".navbar-ul").style.display = "block";
-    document.querySelector(".navbar-ul").classList.add("slide-in-top");
 
-    // Hide hamburger
-    document.querySelector(".fa-bars").style.display = "none";
-
-    // Show Close Button
-    document.querySelector(".close-menu").style.display = "block";
-  } else {
-    document.querySelector(".close-menu").style.display = "none";
-  }
-});
-
-document.querySelector(".close-menu").addEventListener("click", () => {
-  if (document.querySelector(".close-menu").style.display == "none") {
-    document.querySelector(".close-menu").style.display = "block";
-  } else {
+if (document.querySelector(".close-menu").style.display != "none") {
+  document.querySelector(".close-menu").addEventListener("click", () => {
+    console.log("close button dikh raha hai");
     document.querySelector(".navbar-ul").style.display = "none";
-
-    // Hide Close Menu
+    document.querySelector(".fas.fa-bars").style.display = "block";
     document.querySelector(".close-menu").style.display = "none";
+  });
+}
 
-    // Show Bars
-    document.querySelector(".fa-bars").style.display = "block";
-  }
-});
+// if (parseInt(window.innerWidth) <= 768) {
+//   document.querySelector(".navbar-ul").style.display = "none";
+//   document.querySelector(".close-menu").style.display = "none";
+//   document.querySelector(".fa-bars").style.display = "block";
+// } else {
+//   document.querySelector(".navbar-ul").style.display = "flex";
+//   document.querySelector(".fa-bars").style.display = "none";
+//   document.querySelector(".close-menu").style.display = "none";
+// }
+// document.querySelector(".fa-bars").addEventListener("click", () => {
+//   console.log("clicked yahs");
+//   if (document.querySelector(".navbar-ul").style.display === "none") {
+//     document.querySelector(".navbar-ul").style.display = "block";
+//     document.querySelector(".navbar-ul").classList.add("slide-in-top");
+
+//     // Hide hamburger
+//     document.querySelector(".fa-bars").style.display = "none";
+
+//     // Show Close Button
+//     document.querySelector(".close-menu").style.display = "block";
+//   } else {
+//     document.querySelector(".close-menu").style.display = "none";
+//   }
+// });
+
+// document.querySelector(".close-menu").addEventListener("click", () => {
+//   if (document.querySelector(".close-menu").style.display == "none") {
+//     document.querySelector(".close-menu").style.display = "block";
+//   } else {
+//     document.querySelector(".navbar-ul").style.display = "none";
+
+//     // Hide Close Menu
+//     document.querySelector(".close-menu").style.display = "none";
+
+//     // Show Bars
+//     document.querySelector(".fa-bars").style.display = "block";
+//   }
+// });
 
 $(window).load(function () {
   $(function () {
@@ -129,7 +148,7 @@ $(window).resize((e) => {
 
   document.querySelector(".close-menu").addEventListener("click", () => {
     if (document.querySelector(".close-menu").style.display == "none") {
-      document.querySelector(".close-menu").style.display = "block";
+      // document.querySelector(".close-menu").style.display = "block";
     } else {
       document.querySelector(".navbar-ul").classList.add("slide-out-top");
       document.querySelector(".close-menu").style.display = "none";
