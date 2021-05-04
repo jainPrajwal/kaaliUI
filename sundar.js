@@ -174,3 +174,23 @@ $(window).resize((e) => {
   //   document.querySelector(".close-menu").style.display = "none";
   // }
 });
+function displayProcedure() {
+  document.querySelector(".navbar-ul").style.display = "none";
+  document.querySelector(".close-menu").style.display = "none";
+  document.querySelector(".fas.fa-bars").style.display = "block";
+}
+$(window).load(function () {
+  $(function () {
+    $("#component-avatar").click(function () {
+      displayProcedure();
+      $("#main").load("./components/avatar/avatar.html");
+    });
+  });
+});
+$(window).load(function () {
+  $(function () {
+    $("#avatarlink").click(function () {
+      $("#main").load("./components/avatar/avatar.html");
+    });
+  });
+});

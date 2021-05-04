@@ -1,0 +1,34 @@
+.outer-avatar-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid gray;
+  min-height: 100vh;
+}
+
+.avatar-container {
+  /* background-color: aliceblue; */
+  /* border: 1px solid red; */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.avatar.avatar-sm {
+  height: 60px;
+  width: 60px;
+}
+
+.avatar.avatar-md {
+  height: 80px;
+  width: 80px;
+}
+
+.avatar.avatar-lg {
+  height: 100px;
+  width: 100px;
+}
