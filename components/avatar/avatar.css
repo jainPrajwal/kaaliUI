@@ -32,3 +32,51 @@
   height: 100px;
   width: 100px;
 }
+.image-container {
+  position: relative;
+}
+
+.status {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  right: 0.5px;
+}
+.status.status-available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #09ff00;
+  border: 1px solid #098a67;
+  position: absolute;
+}
+
+.status.status-do-not-disturb {
+  background-color: #ff0044;
+}
+
+.avatar-letter {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  letter-spacing: 1.5px;
+}
+
+#shade-pink {
+  background-color: #db2777;
+}
+
+#shade-blue {
+  background-color: #1654ff;
+}
+
+#shade-green {
+  background-color: #098a67;
+}

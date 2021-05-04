@@ -11,6 +11,7 @@
     <div class="main-container">
       <div class="secondary-header hero">avatar</div>
       <div class="outer-avatar-container">
+        <div class="tertiary-header hero">regular avatar</div>
         <div class="avatar-container">
           <img
             src="/assets/images/avatar_1.jpg"
@@ -28,7 +29,67 @@
             class="avatar avatar-lg"
           />
         </div>
+        <hr class="alert-hr" />
+        <div class="tertiary-header hero">avatar with status</div>
+        <div class="avatar-container">
+          <div class="image-container">
+            <img
+              src="/assets/images/avatar_1.jpg"
+              alt=""
+              class="avatar avatar-sm"
+            />
+            <span class="status status-available"></span>
+          </div>
+          <div class="image-container">
+            <img
+              src="/assets/images/avatar_1.jpg"
+              alt=""
+              class="avatar avatar-sm"
+            />
+            <span class="status status-do-not-disturb"></span>
+          </div>
+        </div>
+        <hr class="alert-hr" />
+        <div class="tertiary-header hero">avatar with letters</div>
+        <div class="avatar-container">
+          <div class="image-container">
+            <div class="avatar-letter avatar-sm" id="shade-green">RR</div>
+          </div>
+          <div class="image-container">
+            <div class="avatar-letter avatar-sm" id="shade-pink">PJ</div>
+            <span class="status status-available"></span>
+          </div>
+          <div class="image-container">
+            <div class="avatar-letter avatar-sm" id="shade-blue">DR</div>
+            <span class="status status-do-not-disturb"></span>
+          </div>
+        </div>
+        <div class="code-box">
+          <div class="code-container">
+            <div class="tooltip">
+              <i class="fas fa-clipboard" id="clip-avatar-letter-shade-green">
+                <span id="avatar-letter-green-tooltip" class="tooltiptext"
+                  >Copy to Clipboard</span
+                ></i
+              >
+            </div>
+
+            <div class="token tag">
+              <pre
+                class="code"
+              ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>avatar-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span>
+              <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span>
+                        <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>avatar-letter avatar-sm<span class="single-quote">"</span><span class="attr"> id</span><span class="symbol">=</span><span class="single-quote">"</span>shade-green<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/><span class="norma-code-text">                              RR</span>                            
+                        <span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>               <span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>           <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span>
+                        <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>avatar-letter avatar-sm<span class="single-quote">"</span><span class="attr"> id</span><span class="symbol">=</span><span class="single-quote">"</span>shade-pink<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/><span class="norma-code-text">                              PJ</span>                            
+                        <span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span>
+                        <span class="lt symbol">&lt;</span><span>span</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>status status-available <span class="single-quote">"</span><span class="gt symbol">&gt;</span> <span class="lt symbol">&lt;</span><span class="slash">/</span>span<span class="gt symbol">&gt;</span><br>               <span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span></pre>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="/components/avatar/avatar.js"></script>
+  <script src="/sundar.js"></script>
 </html>
