@@ -194,3 +194,20 @@ $(window).load(function () {
     });
   });
 });
+
+// Card
+$(window).load(function () {
+  $(function () {
+    $("#component-card").click(function () {
+      displayProcedure();
+      $("#main").load("./components/card/card.html");
+    });
+  });
+});
+$(window).load(function () {
+  $(function () {
+    $("#cardlink").click(function () {
+      $("#main").load("./components/card/card.html");
+    });
+  });
+});
