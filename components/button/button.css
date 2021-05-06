@@ -1,0 +1,86 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
+.outer-button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid gray;
+  min-height: 100vh;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #1654ff;
+  color: rgb(248, 248, 248);
+}
+.btn-primary:focus {
+  border: 1px solid skyblue;
+}
+.btn-success {
+  background-color: #098a67;
+  color: rgb(248, 248, 248);
+}
+.btn-success:focus {
+  border: 1px solid yellowgreen;
+}
+
+.btn-warning {
+  background-color: #ffae00a4;
+  color: rgb(248, 248, 248);
+}
+
+.btn-warning:focus {
+  border: 1px solid yellow;
+}
+
+.btn-danger {
+  background-color: #ff0044;
+  color: rgb(248, 248, 248);
+}
+
+.btn-danger:focus {
+  border: 1px solid pink;
+}
+
+.btn-secondary {
+  background-color: rgb(248, 248, 248);
+  color: black;
+}
+.btn-secondary:focus {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .btn {
+    max-width: 180px;
+    white-space: nowrap;
+  }
+}

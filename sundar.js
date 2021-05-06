@@ -229,3 +229,21 @@ $(window).load(function () {
     });
   });
 });
+
+// button
+$(window).load(function () {
+  $(function () {
+    $("#component-button").click(function () {
+      displayProcedure();
+      $("#main").load("./components/button/button.html");
+    });
+  });
+});
+
+$(window).load(function () {
+  $(function () {
+    $("#buttonlink").click(function () {
+      $("#main").load("./components/button/button.html");
+    });
+  });
+});

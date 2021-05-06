@@ -38,6 +38,7 @@ a {
 
 .sidebar-list-items {
   padding: 1rem;
+  max-width: 80px;
 }
 
 .main-container {
