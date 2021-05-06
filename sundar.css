@@ -159,7 +159,7 @@ hr {
 .symbol {
   color: #55b5db;
 }
-.tooltip {
+.copy-tooltip {
   /* position: relative; */
   /* position: relative; */
   /* position: relative; */
@@ -169,8 +169,8 @@ hr {
   /* display: flex; */
   float: right;
 }
-/* Tooltip for Copy Text */
-.tooltip .tooltiptext {
+/* copy-tooltip for Copy Text */
+.copy-tooltip .tooltiptext {
   font-size: smaller;
   visibility: hidden;
   width: 150px;
@@ -186,7 +186,7 @@ hr {
   left: 50%;
 }
 
-.tooltip .tooltiptext::after {
+.copy-tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   border-width: 5px;
@@ -212,10 +212,10 @@ hr {
     display: flex;
     flex-direction: column;
   }
-  .tooltip {
+  .copy-tooltip {
     margin-bottom: 10px;
   }
-  .tooltip .tooltiptext {
+  .copy-tooltip .tooltiptext {
     left: 0%;
   }
 }
@@ -233,10 +233,10 @@ hr {
     display: flex;
     flex-direction: column;
   }
-  .tooltip {
+  .copy-tooltip {
     margin-bottom: 10px;
   }
-  .tooltip .tooltiptext {
+  .copy-tooltip .tooltiptext {
     left: 0%;
   }
 }

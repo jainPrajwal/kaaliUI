@@ -211,3 +211,21 @@ $(window).load(function () {
     });
   });
 });
+
+// tooltip
+$(window).load(function () {
+  $(function () {
+    $("#component-tooltip").click(function () {
+      displayProcedure();
+      $("#main").load("./components/tooltip/tooltip.html");
+    });
+  });
+});
+
+$(window).load(function () {
+  $(function () {
+    $("#tooltiplink").click(function () {
+      $("#main").load("./components/tooltip/tooltip.html");
+    });
+  });
+});
