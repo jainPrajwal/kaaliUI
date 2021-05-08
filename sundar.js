@@ -265,3 +265,21 @@ $(window).load(function () {
     });
   });
 });
+
+// Badge
+$(window).load(function () {
+  $(function () {
+    $("#component-badge").click(function () {
+      displayProcedure();
+      $("#main").load("./components/badge/badge.html");
+    });
+  });
+});
+
+$(window).load(function () {
+  $(function () {
+    $("#badgelink").click(function () {
+      $("#main").load("./components/badge/badge.html");
+    });
+  });
+});
