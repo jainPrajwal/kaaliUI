@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/components/button/button.css" />
+    <link rel="stylesheet" href="/components/toast/toast.css" />
+    <title>Avatar</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="secondary-header hero">toast</div>
+      <div class="outer-toast-container">
+        <div class="btn-container">
+          <div class="tertiary-header hero">primary toast</div>
+          <button class="btn btn-primary">primary button</button>
+          <hr class="alert-hr" />
+          <div class="tertiary-header hero">success toast</div>
+
+          <button class="btn btn-success">success button</button>
+          <hr class="alert-hr" />
+          <div class="tertiary-header hero">danger toast</div>
+
+          <button class="btn btn-danger">danger button</button>
+          <hr class="alert-hr" />
+        </div>
+
+        <div class="toast toast-center toast-primary">
+          <p class="toast-content">
+            <i class="fas fa-info-circle"></i>Information
+          </p>
+        </div>
+
+        <div class="toast toast-center toast-success">
+          <p class="toast-content">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>Success!
+          </p>
+        </div>
+        <div class="toast toast-center toast-failure">
+          <p class="toast-content">
+            <i class="fas fa-exclamation-triangle"></i>Error!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/components/toast/toast.js"></script>
+  <script src="/sundar.js"></script>
+</html>

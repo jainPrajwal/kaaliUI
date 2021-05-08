@@ -55,10 +55,12 @@ document.querySelector("#clip-alert-success").addEventListener("click", () => {
   console.log(tooltip, "ye apna tooltip");
   tooltip.innerHTML = "Copied";
 });
-content.addEventListener("mouseout", () => {
-  let tooltip = document.querySelector("#success-tooltip");
-  tooltip.innerHTML = "Copy to Clipboard";
-});
+document
+  .querySelector("#clip-alert-success")
+  .addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#success-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
 
 // ----------------------------------------------------------------
 // Info Alert

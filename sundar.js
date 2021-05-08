@@ -247,3 +247,21 @@ $(window).load(function () {
     });
   });
 });
+
+// toast
+$(window).load(function () {
+  $(function () {
+    $("#component-toast").click(function () {
+      displayProcedure();
+      $("#main").load("./components/toast/toast.html");
+    });
+  });
+});
+
+$(window).load(function () {
+  $(function () {
+    $("#toastlink").click(function () {
+      $("#main").load("./components/toast/toast.html");
+    });
+  });
+});
