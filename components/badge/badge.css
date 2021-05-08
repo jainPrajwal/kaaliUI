@@ -57,3 +57,17 @@
   left: 51.5%;
   line-height: 16.6px;
 }
+.rating {
+  margin-right: 0.5rem;
+}
+.badge-rating {
+  background-color: #098a67;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  padding: 0rem 0.3rem;
+  font-size: x-small;
+  height: 20px;
+  font-weight: bold;
+}
