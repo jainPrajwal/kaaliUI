@@ -3,7 +3,7 @@ importedalert.src = "/components/alert/alert.js";
 document.head.appendChild(importedalert);
 
 // Copy Script Link
-var content = document.querySelector("#script-link");
+content = document.querySelector("#script-link");
 console.log(content);
 content.addEventListener("click", () => {
   console.log("called");
