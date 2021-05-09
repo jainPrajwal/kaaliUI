@@ -72,7 +72,7 @@ if (document.querySelector("#clip-alert-success") != null) {
 
 // ----------------------------------------------------------------
 // Info Alert
-if (document.querySelector("#btn-info-close") != null) {
+if (document.querySelector("#clip-alert-info") != null) {
   document.querySelector("#btn-info-close").addEventListener("click", () => {
     document.querySelector(".alert-info").classList.add("fade-out-top");
   });
