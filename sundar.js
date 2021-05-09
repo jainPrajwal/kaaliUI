@@ -283,3 +283,12 @@ $(window).load(function () {
     });
   });
 });
+
+$(window).load(function () {
+  $(function () {
+    $("#componentslink").click(function () {
+      console.log("clickedddddd");
+      $("#main").load("./components/alert/alert.html");
+    });
+  });
+});
