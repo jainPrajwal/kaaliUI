@@ -13,25 +13,27 @@ closeButton.addEventListener("click", () => {
 // Copy content for Danger Alert
 let content = document.querySelector("#clip-alert-danger");
 console.log(content);
-content.addEventListener("click", () => {
-  console.log("called");
-  navigator.clipboard.writeText(
-    '<div class="alert-content alert-danger">' +
-      "\n\t" +
-      " This is a danger alert with dismissal button." +
-      "\n" +
-      '\t <span class="btn-dismiss" id="btn-danger-close">&times;</span>' +
-      "\n"
-  );
+if (content != null) {
+  content.addEventListener("click", () => {
+    console.log("called");
+    navigator.clipboard.writeText(
+      '<div class="alert-content alert-danger">' +
+        "\n\t" +
+        " This is a danger alert with dismissal button." +
+        "\n" +
+        '\t <span class="btn-dismiss" id="btn-danger-close">&times;</span>' +
+        "\n"
+    );
 
-  let tooltip = document.querySelector("#danger-tooltip");
-  console.log(tooltip, "ye apna tooltip");
-  tooltip.innerHTML = "Copied";
-});
-content.addEventListener("mouseout", () => {
-  let tooltip = document.querySelector("#danger-tooltip");
-  tooltip.innerHTML = "Copy to Clipboard";
-});
+    let tooltip = document.querySelector("#danger-tooltip");
+    console.log(tooltip, "ye apna tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  content.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#danger-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
 
 // ----------------------------------------------------------------
 // Success Alert
