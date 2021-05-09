@@ -12,8 +12,9 @@ closeButton.addEventListener("click", () => {
 
 // Copy content for Danger Alert
 let content = document.querySelector("#clip-alert-danger");
-console.log(content);
+
 if (content != null) {
+  console.log(content);
   content.addEventListener("click", () => {
     console.log("called");
     navigator.clipboard.writeText(

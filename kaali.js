@@ -4,39 +4,43 @@
 
 // Copy Script Link
 content = document.querySelector("#script-link");
-console.log(content);
-content.addEventListener("click", () => {
-  console.log("called");
-  navigator.clipboard.writeText(
-    '<script src="https://kaaliui.netlify.app/kaali.js"></>'
-  );
+if (content != null) {
+  console.log(content);
+  content.addEventListener("click", () => {
+    console.log("called");
+    navigator.clipboard.writeText(
+      '<script src="https://kaaliui.netlify.app/kaali.js"></>'
+    );
 
-  var tooltip = document.querySelector("#scripttooltip");
-  console.log(tooltip, "ye script tooltip");
-  tooltip.innerHTML = "Copied";
-});
-content.addEventListener("mouseout", () => {
-  var tooltip = document.querySelector("#scripttooltip");
-  tooltip.innerHTML = "Copy to Clipboard";
-});
+    var tooltip = document.querySelector("#scripttooltip");
+    console.log(tooltip, "ye script tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  content.addEventListener("mouseout", () => {
+    var tooltip = document.querySelector("#scripttooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
 
 // Copy css link
 content = document.querySelector("#css-link");
-console.log(content);
-content.addEventListener("click", () => {
-  console.log("called");
-  navigator.clipboard.writeText(
-    '<link rel="stylesheet" href="https://kaaliui.netlify.app/kaali.css">'
-  );
-  let tooltip = document.querySelector("#mytooltip");
-  console.log(tooltip, "ye css tooltip");
-  tooltip.innerHTML = "Copied";
-});
+if (content != null) {
+  console.log(content);
+  content.addEventListener("click", () => {
+    console.log("called");
+    navigator.clipboard.writeText(
+      '<link rel="stylesheet" href="https://kaaliui.netlify.app/kaali.css">'
+    );
+    let tooltip = document.querySelector("#mytooltip");
+    console.log(tooltip, "ye css tooltip");
+    tooltip.innerHTML = "Copied";
+  });
 
-content.addEventListener("mouseout", () => {
-  let tooltip = document.querySelector("#mytooltip");
-  tooltip.innerHTML = "Copy to Clipboard";
-});
+  content.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#mytooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
 
 $(window).load(function () {
   $(function () {
