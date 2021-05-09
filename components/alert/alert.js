@@ -1,10 +1,8 @@
 // ALert Danger
-
-let alertbox = document.querySelector(".alert-danger");
-
 let closeButton = document.querySelector("#btn-danger-close");
-
 closeButton.addEventListener("click", () => {
+  let alertbox = document.querySelector(".alert-danger");
+
   console.log("lal bhadak");
   alertbox.classList.add("fade-out-top");
   // alertbox.style.display = "none";
@@ -75,13 +73,13 @@ if (document.querySelector("#clip-alert-success") != null) {
 // Info Alert
 
 document.querySelector("#btn-info-close").addEventListener("click", () => {
+  console.log("blue called");
   document.querySelector(".alert-info").classList.add("fade-out-top");
 });
 
 // Copy Content of info Alert
 if (document.querySelector("#clip-alert-info") != null) {
   document.querySelector("#clip-alert-info").addEventListener("click", () => {
-    console.log("blue called");
     navigator.clipboard.writeText(
       '<div class="alert-content alert-info">' +
         "\n\t" +
