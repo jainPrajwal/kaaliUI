@@ -1,0 +1,123 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #ff0044;
+  --blue: #1654ff;
+  --green: forestgreen;
+  --yellow: #ffae00a4;
+  /* regular font color */
+  --font-color: rgb(248, 248, 248);
+
+  /* font sizes */
+  --font-primary-header: 6.625rem;
+  --font-secondary-header: 2rem;
+  --font-tertiary-header: 1.56rem;
+  --font-regular: 1rem;
+  --font-sm: 13px;
+
+  /* Backgrounds */
+  --sidebar-background: #101010;
+  --navbar-background: #000000;
+  --main-background: #2f3136;
+  --card-background: #191919;
+  --plain-card-body-background: #2b2a2a;
+  --plain-card-fallback-image: #7f7f7f;
+  --card-ecommerce-bod-background: whitesmoke;
+  --status-available-background: #09ff00;
+  /* Border */
+  --border-color: gray;
+
+  /* status */
+  --status-do-not-disturb: var(--red);
+
+  /* codebox colors */
+  --note-color: #ffbd2e;
+  --token-tag-color: #55b5db;
+  --token-attribute-color: #9fca56;
+}
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
+.outer-button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid gray;
+  min-height: 100vh;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  width: 170px;
+}
+
+.btn-primary {
+  background-color: var(--blue);
+  color: var(--font-color);
+}
+.btn-primary:focus {
+  border: 1px solid skyblue;
+}
+.btn-success {
+  background-color: var(--green);
+  color: var(--font-color);
+}
+.btn-success:focus {
+  border: 1px solid yellowgreen;
+}
+
+.btn-warning {
+  background-color: #ffae00a4;
+  color: var(--font-color);
+}
+
+.btn-warning:focus {
+  border: 1px solid yellow;
+}
+
+.btn-danger {
+  background-color: var(--red);
+  color: var(--font-color);
+}
+
+.btn-danger:focus {
+  border: 1px solid pink;
+}
+
+.btn-secondary {
+  background-color: var(--font-color);
+  color: black;
+}
+.btn-secondary:focus {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .btn {
+    max-width: 180px;
+    white-space: nowrap;
+  }
+}
