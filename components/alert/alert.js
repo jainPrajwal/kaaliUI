@@ -1,6 +1,5 @@
 // ALert Danger
-let closeButton = document.querySelector("#btn-danger-close");
-closeButton.addEventListener("click", () => {
+document.querySelector("#btn-danger-close").addEventListener("click", () => {
   let alertbox = document.querySelector(".alert-danger");
 
   console.log("lal bhadak");
