@@ -72,12 +72,13 @@ if (document.querySelector("#clip-alert-success") != null) {
 
 // ----------------------------------------------------------------
 // Info Alert
-if (document.querySelector("#clip-alert-info") != null) {
-  document.querySelector("#btn-info-close").addEventListener("click", () => {
-    document.querySelector(".alert-info").classList.add("fade-out-top");
-  });
 
-  // Copy Content of info Alert
+document.querySelector("#btn-info-close").addEventListener("click", () => {
+  document.querySelector(".alert-info").classList.add("fade-out-top");
+});
+
+// Copy Content of info Alert
+if (document.querySelector("#clip-alert-info") != null) {
   document.querySelector("#clip-alert-info").addEventListener("click", () => {
     console.log("blue called");
     navigator.clipboard.writeText(
@@ -102,12 +103,13 @@ if (document.querySelector("#clip-alert-info") != null) {
 
 // ----------------------------------------------------------------
 // warning Alert
-if (document.querySelector("#clip-alert-warning") != null) {
-  document.querySelector("#btn-warning-close").addEventListener("click", () => {
-    document.querySelector(".alert-warning").classList.add("fade-out-top");
-  });
 
-  // Copy Content of warning Alert
+document.querySelector("#btn-warning-close").addEventListener("click", () => {
+  document.querySelector(".alert-warning").classList.add("fade-out-top");
+});
+
+// Copy Content of warning Alert
+if (document.querySelector("#clip-alert-warning") != null) {
   document
     .querySelector("#clip-alert-warning")
     .addEventListener("click", () => {
