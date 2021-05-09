@@ -21,8 +21,7 @@ content.addEventListener("click", () => {
       " This is a danger alert with dismissal button." +
       "\n" +
       '\t <span class="btn-dismiss" id="btn-danger-close">&times;</span>' +
-      "\n" +
-      "</div>"
+      "\n"
   );
 
   let tooltip = document.querySelector("#danger-tooltip");
