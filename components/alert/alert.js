@@ -104,10 +104,11 @@ if (document.querySelector("#clip-alert-info") != null) {
 
 // ----------------------------------------------------------------
 // warning Alert
-
-document.querySelector("#btn-warning-close").addEventListener("click", () => {
-  document.querySelector(".alert-warning").classList.add("fade-out-top");
-});
+if (document.querySelector("#btn-warning-close") != null) {
+  document.querySelector("#btn-warning-close").addEventListener("click", () => {
+    document.querySelector(".alert-warning").classList.add("fade-out-top");
+  });
+}
 
 // Copy Content of warning Alert
 if (document.querySelector("#clip-alert-warning") != null) {
