@@ -75,7 +75,7 @@ document.querySelector("#btn-info-close").addEventListener("click", () => {
 
 // Copy Content of info Alert
 document.querySelector("#clip-alert-info").addEventListener("click", () => {
-  console.log("called");
+  console.log("blue called");
   navigator.clipboard.writeText(
     '<div class="alert-content alert-info">' +
       "\n\t" +
@@ -88,7 +88,7 @@ document.querySelector("#clip-alert-info").addEventListener("click", () => {
   console.log(tooltip, "ye apna tooltip");
   tooltip.innerHTML = "Copied";
 });
-content.addEventListener("mouseout", () => {
+document.querySelector("#clip-alert-info").addEventListener("mouseout", () => {
   let tooltip = document.querySelector("#info-tooltip");
   tooltip.innerHTML = "Copy to Clipboard";
 });
