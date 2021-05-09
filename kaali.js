@@ -1,10 +1,14 @@
+var importedalert = document.createElement("script");
+importedalert.src = "/components/alert/alert.js";
+document.head.appendChild(importedalert);
+
 // Copy Script Link
 var content = document.querySelector("#script-link");
 console.log(content);
 content.addEventListener("click", () => {
   console.log("called");
   navigator.clipboard.writeText(
-    '<script src="https://kaaliui.netlify.app/kaali.js"></script>'
+    '<script src="https://kaaliui.netlify.app/kaali.js"></>'
   );
 
   var tooltip = document.querySelector("#scripttooltip");
