@@ -38,6 +38,7 @@ content.addEventListener("mouseout", () => {
 
 // Close Success Alert
 document.querySelector("#btn-success-close").addEventListener("click", () => {
+  console.log("green alert close");
   document.querySelector(".alert-success").classList.add("fade-out-top");
 });
 
