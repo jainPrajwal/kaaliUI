@@ -4,28 +4,28 @@ document.querySelector("#btn-danger-close").addEventListener("click", () => {
 
   console.log("lal bhadak");
   alertbox.classList.add("fade-out-top");
-  resetDangerAlert();
+  // resetDangerAlert();
   // alertbox.style.display = "none";
 });
 // Close Success Alert
 document.querySelector("#btn-success-close").addEventListener("click", () => {
   console.log("green alert close");
   document.querySelector(".alert-success").classList.add("fade-out-top");
-  resetSuccessAlert();
+  // resetSuccessAlert();
 });
 
 // Close info alert
 document.querySelector("#btn-info-close").addEventListener("click", () => {
   console.log("blue called");
   document.querySelector(".alert-info").classList.add("fade-out-top");
-  resetInfoALert();
+  // resetInfoALert();
 });
 
 // Close warning alert
 if (document.querySelector("#btn-warning-close") != null) {
   document.querySelector("#btn-warning-close").addEventListener("click", () => {
     document.querySelector(".alert-warning").classList.add("fade-out-top");
-    resetWarningAlert();
+    // resetWarningAlert();
   });
 }
 
