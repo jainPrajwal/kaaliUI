@@ -45,53 +45,60 @@ document.querySelector("#btn-success-close").addEventListener("click", () => {
 });
 
 // Copy Content of Success Alert
-document.querySelector("#clip-alert-success").addEventListener("click", () => {
-  console.log("called");
-  navigator.clipboard.writeText(
-    '<div class="alert-content alert-success">' +
-      "\n\t" +
-      " This is a success alert with dismissal button." +
-      "\n" +
-      "</div>"
-  );
+if (document.querySelector("#clip-alert-success") != null) {
+  document
+    .querySelector("#clip-alert-success")
+    .addEventListener("click", () => {
+      console.log("called");
+      navigator.clipboard.writeText(
+        '<div class="alert-content alert-success">' +
+          "\n\t" +
+          " This is a success alert with dismissal button." +
+          "\n" +
+          "</div>"
+      );
 
-  let tooltip = document.querySelector("#success-tooltip");
-  console.log(tooltip, "ye apna tooltip");
-  tooltip.innerHTML = "Copied";
-});
-document
-  .querySelector("#clip-alert-success")
-  .addEventListener("mouseout", () => {
-    let tooltip = document.querySelector("#success-tooltip");
-    tooltip.innerHTML = "Copy to Clipboard";
-  });
+      let tooltip = document.querySelector("#success-tooltip");
+      console.log(tooltip, "ye apna tooltip");
+      tooltip.innerHTML = "Copied";
+    });
+  document
+    .querySelector("#clip-alert-success")
+    .addEventListener("mouseout", () => {
+      let tooltip = document.querySelector("#success-tooltip");
+      tooltip.innerHTML = "Copy to Clipboard";
+    });
+}
 
 // ----------------------------------------------------------------
 // Info Alert
+if (document.querySelector("#btn-info-close") != null) {
+  document.querySelector("#btn-info-close").addEventListener("click", () => {
+    document.querySelector(".alert-info").classList.add("fade-out-top");
+  });
 
-document.querySelector("#btn-info-close").addEventListener("click", () => {
-  document.querySelector(".alert-info").classList.add("fade-out-top");
-});
+  // Copy Content of info Alert
+  document.querySelector("#clip-alert-info").addEventListener("click", () => {
+    console.log("blue called");
+    navigator.clipboard.writeText(
+      '<div class="alert-content alert-info">' +
+        "\n\t" +
+        " This is a info alert with dismissal button." +
+        "\n" +
+        "</div>"
+    );
 
-// Copy Content of info Alert
-document.querySelector("#clip-alert-info").addEventListener("click", () => {
-  console.log("blue called");
-  navigator.clipboard.writeText(
-    '<div class="alert-content alert-info">' +
-      "\n\t" +
-      " This is a info alert with dismissal button." +
-      "\n" +
-      "</div>"
-  );
-
-  let tooltip = document.querySelector("#info-tooltip");
-  console.log(tooltip, "ye apna tooltip");
-  tooltip.innerHTML = "Copied";
-});
-document.querySelector("#clip-alert-info").addEventListener("mouseout", () => {
-  let tooltip = document.querySelector("#info-tooltip");
-  tooltip.innerHTML = "Copy to Clipboard";
-});
+    let tooltip = document.querySelector("#info-tooltip");
+    console.log(tooltip, "ye apna tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  document
+    .querySelector("#clip-alert-info")
+    .addEventListener("mouseout", () => {
+      let tooltip = document.querySelector("#info-tooltip");
+      tooltip.innerHTML = "Copy to Clipboard";
+    });
+}
 
 // ----------------------------------------------------------------
 // warning Alert
