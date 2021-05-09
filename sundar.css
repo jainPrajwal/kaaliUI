@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
 :root {
   --red: #ff0044;
   --blue: #1654ff;
@@ -138,6 +140,7 @@ hr {
 }
 
 .code-container {
+  font-family: "Inconsolata", monospace;
   background-color: #151718;
   height: auto;
   max-width: 740px;
@@ -175,9 +178,16 @@ hr {
   /* height: 240px; */
   overflow: hidden;
   display: inline-block;
+
   /* width: 600px; */
 }
+.code {
+  font-family: "Inconsolata", monospace;
+}
 
+.code > span {
+  font-family: "Inconsolata", monospace;
+}
 /* .trying-out {
   overflow: hidden;
   display: flex;
