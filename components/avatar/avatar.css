@@ -1,3 +1,38 @@
+:root {
+  --red: #ff0044;
+  --blue: #1654ff;
+  --green: #098a67;
+  --yellow: #ffae00a4;
+  /* regular font color */
+  --font-color: rgb(248, 248, 248);
+
+  /* font sizes */
+  --font-primary-header: 6.625rem;
+  --font-secondary-header: 2rem;
+  --font-tertiary-header: 1.56rem;
+  --font-regular: 1rem;
+  --font-sm: 13px;
+
+  /* Backgrounds */
+  --sidebar-background: #101010;
+  --navbar-background: #000000;
+  --main-background: #2f3136;
+  --card-background: #191919;
+  --plain-card-body-background: #2b2a2a;
+  --plain-card-fallback-image: #7f7f7f;
+  --card-ecommerce-bod-background: whitesmoke;
+  --status-available-background: #09ff00;
+  /* Border */
+  --border-color: gray;
+
+  /* status */
+  --status-do-not-disturb: var(--red);
+
+  /* codebox colors */
+  --note-color: #ffbd2e;
+  --token-tag-color: #55b5db;
+  --token-attribute-color: #9fca56;
+}
 .outer-avatar-container {
   display: flex;
   flex-direction: column;
@@ -49,13 +84,13 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #09ff00;
-  border: 1px solid #098a67;
+  background-color: var(--status-available-background);
+  border: 1px solid var(--green);
   position: absolute;
 }
 
 .status.status-do-not-disturb {
-  background-color: #ff0044;
+  background-color: var(--red);
 }
 
 .avatar-letter {
@@ -75,11 +110,11 @@
 }
 
 #shade-blue {
-  background-color: #1654ff;
+  background-color: var(--blue);
 }
 
 #shade-green {
-  background-color: #098a67;
+  background-color: var(--green);
 }
 
 #avatar-letter-tooltip,

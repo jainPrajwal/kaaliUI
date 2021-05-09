@@ -1,4 +1,38 @@
 :root {
+  --red: #ff0044;
+  --blue: #1654ff;
+  --green: #098a67;
+  --yellow: #ffae00a4;
+  /* regular font color */
+  --font-color: rgb(248, 248, 248);
+
+  /* font sizes */
+  --font-primary-header: 6.625rem;
+  --font-secondary-header: 2rem;
+  --font-tertiary-header: 1.56rem;
+  --font-regular: 1rem;
+  --font-sm: 13px;
+
+  /* Backgrounds */
+  --sidebar-background: #101010;
+  --navbar-background: #000000;
+  --main-background: #2f3136;
+  --card-background: #191919;
+  --plain-card-body-background: #2b2a2a;
+  --plain-card-fallback-image: #7f7f7f;
+  --card-ecommerce-bod-background: whitesmoke;
+  --status-available-background: #09ff00;
+  /* Border */
+  --border-color: gray;
+
+  /* status */
+  --status-do-not-disturb: var(--red);
+
+  /* codebox colors */
+  --note-color: #ffbd2e;
+  --token-tag-color: #55b5db;
+  --token-attribute-color: #9fca56;
+
   --minimumColumnWidth: 150px;
 }
 .outer-card-container {
@@ -27,7 +61,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  background-color: #191919;
+  background-color: var(--card-background);
   transition: background-color 200ms ease-in-out;
   border-radius: 0.2rem;
 }
@@ -52,7 +86,7 @@
 .card-title {
   margin-bottom: 1rem;
   font-weight: 700;
-  color: white;
+  color: var(--font-color);
 }
 
 .card-subtitle {
@@ -77,7 +111,7 @@
 }
 
 .plain-card-fallback-body {
-  background-color: #2b2a2a;
+  background-color: var(--plain-card-body-background);
   position: relative;
   overflow: hidden;
   /* ye nai kiya to image body se bahar aayegi */
@@ -93,7 +127,7 @@
 }
 
 .barbie {
-  background-color: #098a67;
+  background-color: var(--green);
 }
 
 .plain-card-fallback-image {
@@ -103,7 +137,7 @@
   top: 40%;
   left: 40%;
   transform: rotate(25deg) translate(31px, 14px);
-  background-color: #7f7f7f;
+  background-color: var(--plain-card-fallback-image);
 }
 
 .plain-card-title {
@@ -123,7 +157,7 @@
   gap: 24px;
 }
 .card-horizontal-body {
-  background-color: #2b2a2a;
+  background-color: var(--plain-card-body-background);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -194,7 +228,7 @@
 }
 
 .card-ecommerce-body {
-  background-color: whitesmoke;
+  background-color: var(--card-ecommerce-body-background);
   color: black;
   display: flex;
   justify-content: center;
@@ -232,7 +266,7 @@
   text-align: center;
 }
 .product-details:hover {
-  color: #1654ff;
+  color: var(--blue);
 }
 .product-name {
   text-transform: uppercase;
@@ -241,7 +275,7 @@
   margin: 0;
 }
 .badge-rating {
-  color: rgb(248, 248, 248);
+  color: var(--font-color);
 }
 .ratings-count {
   margin-left: 8px;
@@ -289,7 +323,7 @@
 }
 
 .discount-price {
-  color: #098a67;
+  color: var(--green);
 }
 @-webkit-keyframes slide-top {
   0% {

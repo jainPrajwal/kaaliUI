@@ -2,6 +2,42 @@
 *::before {
   box-sizing: border-box;
 }
+
+:root {
+  --red: #ff0044;
+  --blue: #1654ff;
+  --green: #098a67;
+  --yellow: #ffae00a4;
+  /* regular font color */
+  --font-color: rgb(248, 248, 248);
+
+  /* font sizes */
+  --font-primary-header: 6.625rem;
+  --font-secondary-header: 2rem;
+  --font-tertiary-header: 1.56rem;
+  --font-regular: 1rem;
+  --font-sm: 13px;
+
+  /* Backgrounds */
+  --sidebar-background: #101010;
+  --navbar-background: #000000;
+  --main-background: #2f3136;
+  --card-background: #191919;
+  --plain-card-body-background: #2b2a2a;
+  --plain-card-fallback-image: #7f7f7f;
+  --card-ecommerce-bod-background: whitesmoke;
+  --status-available-background: #09ff00;
+  /* Border */
+  --border-color: gray;
+
+  /* status */
+  --status-do-not-disturb: var(--red);
+
+  /* codebox colors */
+  --note-color: #ffbd2e;
+  --token-tag-color: #55b5db;
+  --token-attribute-color: #9fca56;
+}
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
 .outer-tooltip-container {
   display: flex;
@@ -25,7 +61,7 @@
   content: "top";
   position: absolute;
   background-color: black;
-  color: white;
+  color: var(--font-color);
   padding: 0.5rem;
   border-radius: 5px;
   left: -1%;
@@ -47,7 +83,7 @@
   content: "left";
   position: absolute;
   background-color: black;
-  color: white;
+  color: var(--font-color);
   padding: 0.5rem;
   border-radius: 5px;
   right: 110%;
@@ -69,7 +105,7 @@
   content: "right";
   position: absolute;
   background-color: black;
-  color: white;
+  color: var(--font-color);
   padding: 0.5rem;
   border-radius: 5px;
   left: 110%;
@@ -94,7 +130,7 @@
   content: "bottom";
   position: absolute;
   background-color: black;
-  color: white;
+  color: var(--font-color);
   padding: 0.5rem;
   border-radius: 5px;
   top: 110%;
@@ -118,7 +154,7 @@
   padding: 0.8rem 1rem;
   font-family: "Merriweather Sans", sans-serif;
   background-color: #2b2a2a;
-  color: rgb(248, 248, 248);
+  color: var(--font-color);
   outline: none;
   border-radius: 0.5rem;
   border: none;
