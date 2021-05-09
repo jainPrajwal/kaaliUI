@@ -11,7 +11,7 @@ document.querySelector("#btn-danger-close").addEventListener("click", () => {
 document.querySelector("#btn-success-close").addEventListener("click", () => {
   console.log("green alert close");
   document
-    .querySelector(".alert-content..alert-success")
+    .querySelector(".alert-content.alert-success")
     .classList.add("fade-out-top");
   // resetSuccessAlert();
 });
