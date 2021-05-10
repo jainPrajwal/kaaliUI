@@ -310,7 +310,25 @@ $(window).load(function () {
     });
   });
 });
+// ---------------------------------------------------------------------------------------------
 
+// Modal
+$(window).load(function () {
+  $(function () {
+    $("#component-modal").click(function () {
+      displayProcedure();
+      $("#main").load("./components/modal/modal.html");
+    });
+  });
+});
+
+$(window).load(function () {
+  $(function () {
+    $("#modallink").click(function () {
+      $("#main").load("./components/modal/modal.html");
+    });
+  });
+});
 // ---------------------------------------------------------------------------------------------
 
 // This is for navbar's component links
@@ -704,4 +722,36 @@ if (document.querySelector(".btn-danger") != null) {
 
 function resetFailure() {
   document.querySelector(".toast-failure").classList.remove("fade-out-bottom");
+}
+
+// _______________________________________________________________________________________________________________
+
+// Modal.js
+if (document.querySelector(".btn.btn-like") != null) {
+  document.querySelector(".btn.btn-like").addEventListener("click", () => {
+    console.log("like clicked");
+    document.querySelector(".modal").style.display = "block";
+    document.querySelector(".modal").classList.add("fade-in");
+  });
+}
+
+function removeFadeInFromModal() {
+  document.querySelector(".modal").classList.remove("fade-in");
+}
+// Close Modal
+if (document.querySelector("#btn-modal-close") != null) {
+  document.querySelector("#btn-modal-close").addEventListener("click", () => {
+    removeFadeInFromModal();
+    let alertbox = document.querySelector(".modal");
+    if (alertbox != null) {
+      console.log("modal close clicked", alertbox);
+
+      document.querySelector(".modal").classList.add("fade-out");
+      setTimeout(() => {
+        if (alertbox.classList.contains("fade-out")) {
+          document.querySelector(".modal").style.display = "none";
+        }
+      }, 1500);
+    }
+  });
 }
