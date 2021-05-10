@@ -1,5 +1,5 @@
 var importedalert = document.createElement("script");
-importedalert.src = "/components/alert/alert.js";
+importedalert.src = "/src/components/alert/alert.js";
 document.head.appendChild(importedalert);
 
 // Copy Script Link
