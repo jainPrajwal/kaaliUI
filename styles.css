@@ -57,7 +57,18 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+/* Scroll Bar */
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+body:-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--red);
+}
 /* Navigation bar */
 .navbar {
   position: fixed;
@@ -196,6 +207,17 @@ a {
     display: none;
     cursor: pointer;
   }
+  .navbar-ul::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .navbar-ul:-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .navbar-ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ffc72c;
+  }
   .navbar-ul {
     position: fixed;
     top: 60px;
@@ -208,6 +230,7 @@ a {
     justify-content: start;
     align-items: flex-start;
     display: none;
+    overflow-y: scroll;
   }
   .navbar-ul .component-link-item-mobile {
     display: block;
@@ -265,6 +288,17 @@ a {
     display: none;
     cursor: pointer;
   }
+  .navbar-ul::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .navbar-ul:-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .navbar-ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ffc72c;
+  }
   .navbar-ul {
     position: fixed;
     top: 60px;
@@ -277,6 +311,7 @@ a {
     justify-content: start;
     align-items: flex-start;
     display: none;
+    overflow-y: scroll;
   }
   .navbar-ul .component-link-item-mobile {
     display: block;

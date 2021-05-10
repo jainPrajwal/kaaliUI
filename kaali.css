@@ -63,7 +63,6 @@ a {
 .sidebar {
   /* background-color: #2f3136; */
   background-color: var(--sidebar-background);
-  overflow-y: auto;
   display: flex;
   justify-content: center;
 }
@@ -73,7 +72,6 @@ a {
   display: flex;
   justify-content: center;
   position: fixed;
-  /* overflow-y: scroll; */
 }
 
 .sidebar-list {
