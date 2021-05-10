@@ -24,8 +24,17 @@ if (document.querySelector("#btn-success-close") != null) {
     document
       .querySelector(".alert-content.alert-success")
       .classList.add("fade-out-top");
-    document.querySelector(".alert-content.alert-success").style.display =
-      "none";
+    setTimeout(() => {
+      if (
+        document
+          .querySelector(".alert-content.alert-success")
+          .classList.contains("fade-out-top")
+      ) {
+        document.querySelector(".alert-content.alert-success").style.display =
+          "none";
+      }
+    }, 1000);
+
     // resetSuccessAlert();
   });
 }
@@ -37,7 +46,17 @@ if (document.querySelector("#btn-info-close") != null) {
     document
       .querySelector(".alert-content.alert-info")
       .classList.add("fade-out-top");
-    document.querySelector(".alert-content.alert-info").style.display = "none";
+    setTimeout(() => {
+      if (
+        document
+          .querySelector(".alert-content.alert-info")
+          .classList.contains("fade-out-top")
+      ) {
+        document.querySelector(".alert-content.alert-info").style.display =
+          "none";
+      }
+    }, 1000);
+
     // resetInfoALert();
   });
 }
@@ -48,8 +67,17 @@ if (document.querySelector("#btn-warning-close") != null) {
     document
       .querySelector(".alert-content.alert-warning")
       .classList.add("fade-out-top");
-    document.querySelector(".alert-content.alert-warning").style.display =
-      "none";
+    setTimeout(() => {
+      if (
+        document
+          .querySelector(".alert-content.alert-warning")
+          .classList.contains("fade-out-top")
+      ) {
+        document.querySelector(".alert-content.alert-warning").style.display =
+          "none";
+      }
+    }, 1000);
+
     // resetWarningAlert();
   });
 }
