@@ -1,7 +1,3 @@
-// var importedalert = document.createElement("script");
-// importedalert.src = "/src/components/alert/alert.js";
-// document.head.appendChild(importedalert);
-
 // Copy Script Link
 content = document.querySelector("#script-link");
 if (content != null) {
@@ -21,6 +17,7 @@ if (content != null) {
     tooltip.innerHTML = "Copy to Clipboard";
   });
 }
+// ---------------------------------------------------------------------------------------------
 
 // Copy css link
 content = document.querySelector("#css-link");
@@ -41,15 +38,9 @@ if (content != null) {
     tooltip.innerHTML = "Copy to Clipboard";
   });
 }
+// ---------------------------------------------------------------------------------------------
 
-$(window).load(function () {
-  $(function () {
-    $("#alertlink").click(function () {
-      $("#main").load("./components/alert/alert.html");
-    });
-  });
-});
-
+// Making navbar responsive STEP 1
 if (
   document.querySelector(".fas.fa-bars") != null &&
   document.querySelector(".fas.fa-bars").style.display != "none"
@@ -75,45 +66,48 @@ if (
   });
 }
 
-// if (parseInt(window.innerWidth) <= 768) {
-//   document.querySelector(".navbar-ul").style.display = "none";
-//   document.querySelector(".close-menu").style.display = "none";
-//   document.querySelector(".fa-bars").style.display = "block";
-// } else {
-//   document.querySelector(".navbar-ul").style.display = "flex";
-//   document.querySelector(".fa-bars").style.display = "none";
-//   document.querySelector(".close-menu").style.display = "none";
-// }
-// document.querySelector(".fa-bars").addEventListener("click", () => {
-//   console.log("clicked yahs");
-//   if (document.querySelector(".navbar-ul").style.display === "none") {
-//     document.querySelector(".navbar-ul").style.display = "block";
-//     document.querySelector(".navbar-ul").classList.add("slide-in-top");
+/*if (parseInt(window.innerWidth) <= 768) {
+  document.querySelector(".navbar-ul").style.display = "none";
+  document.querySelector(".close-menu").style.display = "none";
+  document.querySelector(".fa-bars").style.display = "block";
+} else {
+  document.querySelector(".navbar-ul").style.display = "flex";
+  document.querySelector(".fa-bars").style.display = "none";
+  document.querySelector(".close-menu").style.display = "none";
+}
+document.querySelector(".fa-bars").addEventListener("click", () => {
+  console.log("clicked yahs");
+  if (document.querySelector(".navbar-ul").style.display === "none") {
+    document.querySelector(".navbar-ul").style.display = "block";
+    document.querySelector(".navbar-ul").classList.add("slide-in-top");
 
-//     // Hide hamburger
-//     document.querySelector(".fa-bars").style.display = "none";
+    // Hide hamburger
+    document.querySelector(".fa-bars").style.display = "none";
 
-//     // Show Close Button
-//     document.querySelector(".close-menu").style.display = "block";
-//   } else {
-//     document.querySelector(".close-menu").style.display = "none";
-//   }
-// });
+    // Show Close Button
+    document.querySelector(".close-menu").style.display = "block";
+  } else {
+    document.querySelector(".close-menu").style.display = "none";
+  }
+});
 
-// document.querySelector(".close-menu").addEventListener("click", () => {
-//   if (document.querySelector(".close-menu").style.display == "none") {
-//     document.querySelector(".close-menu").style.display = "block";
-//   } else {
-//     document.querySelector(".navbar-ul").style.display = "none";
+document.querySelector(".close-menu").addEventListener("click", () => {
+  if (document.querySelector(".close-menu").style.display == "none") {
+    document.querySelector(".close-menu").style.display = "block";
+  } else {
+    document.querySelector(".navbar-ul").style.display = "none";
 
-//     // Hide Close Menu
-//     document.querySelector(".close-menu").style.display = "none";
+    // Hide Close Menu
+    document.querySelector(".close-menu").style.display = "none";
 
-//     // Show Bars
-//     document.querySelector(".fa-bars").style.display = "block";
-//   }
-// });
+    // Show Bars
+    document.querySelector(".fa-bars").style.display = "block";
+  }
+});
+*/
+// ---------------------------------------------------------------------------------------------
 
+//load alert.html for mobile
 $(window).load(function () {
   $(function () {
     $("#component-alert").click(function () {
@@ -124,12 +118,25 @@ $(window).load(function () {
     });
   });
 });
-// } else {
-//   document.querySelector(".navbar-ul").style.display = "flex";
-//   document.querySelector(".fa-bars").style.display = "none";
-//   document.querySelector(".close-menu").style.display = "none";
-// }
 
+// load alert.html for desktop
+$(window).load(function () {
+  $(function () {
+    $("#alertlink").click(function () {
+      $("#main").load("./components/alert/alert.html");
+    });
+  });
+});
+// ---------------------------------------------------------------------------------------------
+
+// Common Procedure to load components on mobile
+function displayProcedure() {
+  document.querySelector(".navbar-ul").style.display = "none";
+  document.querySelector(".close-menu").style.display = "none";
+  document.querySelector(".fas.fa-bars").style.display = "block";
+}
+// ---------------------------------------------------------------------------------------------
+// Making navbar responsive STEP 2
 $(window).resize((e) => {
   if (parseInt(window.innerWidth) <= 768) {
     document.querySelector(".navbar-ul").style.display = "none";
@@ -182,17 +189,12 @@ $(window).resize((e) => {
       });
     });
   });
-  // } else {
-  //   document.querySelector(".navbar-ul").style.display = "flex";
-  //   document.querySelector(".fa-bars").style.display = "none";
-  //   document.querySelector(".close-menu").style.display = "none";
-  // }
 });
-function displayProcedure() {
-  document.querySelector(".navbar-ul").style.display = "none";
-  document.querySelector(".close-menu").style.display = "none";
-  document.querySelector(".fas.fa-bars").style.display = "block";
-}
+// ---------------------------------------------------------------------------------------------
+
+// Avatar
+
+//load avatar.html for mobile
 $(window).load(function () {
   $(function () {
     $("#component-avatar").click(function () {
@@ -201,6 +203,7 @@ $(window).load(function () {
     });
   });
 });
+//load alert.html for desktop
 $(window).load(function () {
   $(function () {
     $("#avatarlink").click(function () {
@@ -208,6 +211,8 @@ $(window).load(function () {
     });
   });
 });
+
+// ---------------------------------------------------------------------------------------------
 
 // Card
 $(window).load(function () {
@@ -225,6 +230,8 @@ $(window).load(function () {
     });
   });
 });
+
+// ---------------------------------------------------------------------------------------------
 
 // tooltip
 $(window).load(function () {
@@ -244,6 +251,8 @@ $(window).load(function () {
   });
 });
 
+// ---------------------------------------------------------------------------------------------
+
 // button
 $(window).load(function () {
   $(function () {
@@ -261,6 +270,8 @@ $(window).load(function () {
     });
   });
 });
+
+// ---------------------------------------------------------------------------------------------
 
 // toast
 $(window).load(function () {
@@ -280,6 +291,8 @@ $(window).load(function () {
   });
 });
 
+// ---------------------------------------------------------------------------------------------
+
 // Badge
 $(window).load(function () {
   $(function () {
@@ -298,6 +311,9 @@ $(window).load(function () {
   });
 });
 
+// ---------------------------------------------------------------------------------------------
+
+// This is for navbar's component links
 $(window).load(function () {
   $(function () {
     $("#componentslink").click(function () {
@@ -306,3 +322,7 @@ $(window).load(function () {
     });
   });
 });
+
+//_______________________________________________________________________________________________________________
+
+// Alert.js
