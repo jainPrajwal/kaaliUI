@@ -10,7 +10,7 @@ if (document.querySelector("#btn-danger-close") != null) {
         document.querySelector(".alert-content.alert-danger").style.display =
           "none";
       }
-    }, 100);
+    }, 1000);
 
     // resetDangerAlert();
     // alertbox.style.display = "none";
