@@ -102,11 +102,12 @@
 }
 
 .btn-secondary {
-  background-color: var(--font-color);
-  color: black;
+  background-color: transparent;
+  color: var(--font-color);
+  border: 1px solid gray;
 }
 .btn-secondary:focus {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(248, 248, 248);
 }
 
 @media only screen and (max-width: 768px) {

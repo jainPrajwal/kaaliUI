@@ -63,10 +63,10 @@
 }
 
 .alert-danger {
-  color: #ff0000;
-
-  background-image: linear-gradient(rgb(96 0 0 / 40%), rgb(179 0 0 / 51%));
-  border: 1px solid red;
+  color: #ff0c00;
+  /* background-image: linear-gradient(rgb(96 0 0 / 40%), rgb(179 0 0 / 51%)); */
+  background-image: linear-gradient(rgb(71 16 0 / 51%), rgb(112 35 0 / 52%));
+  border: 1px solid #ff0c00;
 }
 
 .alert-success {
