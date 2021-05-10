@@ -5,8 +5,13 @@ if (document.querySelector("#btn-danger-close") != null) {
 
     console.log("lal bhadak");
     alertbox.classList.add("fade-out-top");
-    document.querySelector(".alert-content.alert-danger").style.display =
-      "none";
+    setTimeout(() => {
+      if (alertbox.classList.contains("fade-out-top")) {
+        document.querySelector(".alert-content.alert-danger").style.display =
+          "none";
+      }
+    }, 50);
+
     // resetDangerAlert();
     // alertbox.style.display = "none";
   });
