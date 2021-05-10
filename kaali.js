@@ -50,7 +50,10 @@ $(window).load(function () {
   });
 });
 
-if (document.querySelector(".fas.fa-bars").style.display != "none") {
+if (
+  document.querySelector(".fas.fa-bars") != null &&
+  document.querySelector(".fas.fa-bars").style.display != "none"
+) {
   console.log("bars visible");
   document.querySelector(".fa-bars").addEventListener("click", () => {
     console.log("clicked yahs");
@@ -60,7 +63,10 @@ if (document.querySelector(".fas.fa-bars").style.display != "none") {
   });
 }
 
-if (document.querySelector(".close-menu").style.display != "none") {
+if (
+  document.querySelector(".close-menu") != null &&
+  document.querySelector(".close-menu").style.display != "none"
+) {
   document.querySelector(".close-menu").addEventListener("click", () => {
     console.log("close button dikh raha hai");
     document.querySelector(".navbar-ul").style.display = "none";

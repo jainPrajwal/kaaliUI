@@ -1,34 +1,42 @@
 // Close danger alert
-document.querySelector("#btn-danger-close").addEventListener("click", () => {
-  let alertbox = document.querySelector(".alert-content.alert-danger");
+if (document.querySelector("#btn-danger-close") != null) {
+  document.querySelector("#btn-danger-close").addEventListener("click", () => {
+    let alertbox = document.querySelector(".alert-content.alert-danger");
 
-  console.log("lal bhadak");
-  alertbox.classList.add("fade-out-top");
-  document.querySelector(".alert-content.alert-danger").style.display =
-    "hidden";
-  // resetDangerAlert();
-  // alertbox.style.display = "none";
-});
+    console.log("lal bhadak");
+    alertbox.classList.add("fade-out-top");
+    document.querySelector(".alert-content.alert-danger").style.display =
+      "hidden";
+    // resetDangerAlert();
+    // alertbox.style.display = "none";
+  });
+}
+
 // Close Success Alert
-document.querySelector("#btn-success-close").addEventListener("click", () => {
-  console.log("green alert close");
-  document
-    .querySelector(".alert-content.alert-success")
-    .classList.add("fade-out-top");
-  document.querySelector(".alert-content.alert-success").style.display =
-    "hidden";
-  // resetSuccessAlert();
-});
+if (document.querySelector("#btn-success-close") != null) {
+  document.querySelector("#btn-success-close").addEventListener("click", () => {
+    console.log("green alert close");
+    document
+      .querySelector(".alert-content.alert-success")
+      .classList.add("fade-out-top");
+    document.querySelector(".alert-content.alert-success").style.display =
+      "hidden";
+    // resetSuccessAlert();
+  });
+}
 
 // Close info alert
-document.querySelector("#btn-info-close").addEventListener("click", () => {
-  console.log("blue called");
-  document
-    .querySelector(".alert-content.alert-info")
-    .classList.add("fade-out-top");
-  document.querySelector(".alert-content.alert-info").style.display = "hidden";
-  // resetInfoALert();
-});
+if (document.querySelector("#btn-info-close") != null) {
+  document.querySelector("#btn-info-close").addEventListener("click", () => {
+    console.log("blue called");
+    document
+      .querySelector(".alert-content.alert-info")
+      .classList.add("fade-out-top");
+    document.querySelector(".alert-content.alert-info").style.display =
+      "hidden";
+    // resetInfoALert();
+  });
+}
 
 // Close warning alert
 if (document.querySelector("#btn-warning-close") != null) {

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Varela+Round&display=swap");
 :root {
   --red: #ff0044;
   --blue: #1654ff;
@@ -40,7 +41,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Merriweather Sans", sans-serif;
+  /* font-family: "Merriweather Sans", sans-serif;
+   */
+  font-family: "Varela Round", sans-serif;
 }
 
 body {
