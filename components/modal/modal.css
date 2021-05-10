@@ -59,7 +59,7 @@
   transition: transform 300ms ease-out;
 }
 
-.btn:focus {
+.btn.btn-like:focus {
   transform: scale(1.1);
 }
 .modal {
@@ -72,7 +72,72 @@
 .modal-container {
   position: relative;
 }
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
 
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.row-saved-collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.modal-save-item-to-icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-symbol {
+  background-color: rgb(160, 201, 255);
+  color: var(--blue);
+}
+
+.save-symbol {
+  background-color: rgb(250, 192, 192);
+}
+
+.create-text {
+  color: #58a6ff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.7px;
+}
+
+.secondary-text {
+  color: gray;
+  font-size: var(--font-sm);
+}
+.checkbox {
+  height: 28px;
+  width: 28px;
+  padding: 0.2rem;
+}
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -84,6 +149,13 @@
 }
 #btn-modal-close {
   cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.btn.btn-primary {
+  width: 100%;
+  margin: 0;
+  margin-top: 0.5rem;
 }
 /* Animations */
 .fade-out {
