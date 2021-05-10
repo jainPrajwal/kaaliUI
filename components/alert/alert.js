@@ -6,7 +6,7 @@ if (document.querySelector("#btn-danger-close") != null) {
     console.log("lal bhadak");
     alertbox.classList.add("fade-out-top");
     document.querySelector(".alert-content.alert-danger").style.display =
-      "hidden";
+      "none";
     // resetDangerAlert();
     // alertbox.style.display = "none";
   });
@@ -20,7 +20,7 @@ if (document.querySelector("#btn-success-close") != null) {
       .querySelector(".alert-content.alert-success")
       .classList.add("fade-out-top");
     document.querySelector(".alert-content.alert-success").style.display =
-      "hidden";
+      "none";
     // resetSuccessAlert();
   });
 }
@@ -32,8 +32,7 @@ if (document.querySelector("#btn-info-close") != null) {
     document
       .querySelector(".alert-content.alert-info")
       .classList.add("fade-out-top");
-    document.querySelector(".alert-content.alert-info").style.display =
-      "hidden";
+    document.querySelector(".alert-content.alert-info").style.display = "none";
     // resetInfoALert();
   });
 }
@@ -45,7 +44,7 @@ if (document.querySelector("#btn-warning-close") != null) {
       .querySelector(".alert-content.alert-warning")
       .classList.add("fade-out-top");
     document.querySelector(".alert-content.alert-warning").style.display =
-      "hidden";
+      "none";
     // resetWarningAlert();
   });
 }
