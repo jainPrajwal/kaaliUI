@@ -52,7 +52,7 @@
 }
 
 .form-container {
-  border: 1px solid gray;
+  border: 1px solid var(--border-color);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -129,9 +129,11 @@
 @media only screen and (max-width: 768px) {
   .form {
     width: 100%;
+    margin: 0;
   }
   .form-container {
     padding: 1rem;
+    border: none;
   }
 }
 
