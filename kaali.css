@@ -7,6 +7,7 @@
 @import url("./components/card/card.css");
 @import url("./components/toast/toast.css");
 @import url("./components/tooltip/tooltip.css");
+@import url("./components/typography/typography.css");
 @import url("./styles.css");
 
 :root {
@@ -83,7 +84,6 @@ a {
 
 .sidebar-list-items {
   padding: 1rem;
-  max-width: 80px;
 }
 
 .main-container {
@@ -94,22 +94,16 @@ a {
   /* background-color: #36393f; */
 }
 
-.getting-started-header {
-}
-
 .secondary-header {
   font-size: var(--font-secondary-header);
   font-weight: 600;
 }
 
-.hero {
-  padding: 1rem 0rem;
-}
-.text {
+/* .text {
   text-align: left;
   letter-spacing: 0.8px;
   line-height: 30px;
-}
+} */
 
 .params {
   margin: 1rem 0rem;

@@ -10,11 +10,15 @@
   --font-color: rgb(248, 248, 248);
 
   /* font sizes */
-  --font-primary-header: 6.625rem;
+  --font-main-header: 6.625rem;
+  --font-primary-header: 3.6rem;
   --font-secondary-header: 2rem;
   --font-tertiary-header: 1.56rem;
   --font-regular: 1rem;
   --font-sm: 13px;
+
+  /* Mobile Header */
+  --font-primary-header-mobile: 3rem;
 
   /* Backgrounds */
   --sidebar-background: #101010;
@@ -129,27 +133,40 @@ a {
   background-image: url("https://web-assets.cred.club/_next/assets/images/home-page/video-bg.png");
   background-attachment: fixed;
 }
-.header {
+.header-container {
   color: rgb(248, 248, 248);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   text-align: center;
+  margin-top: 100px;
+}
+.header {
+  color: rgb(248, 248, 248);
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-.primary-header {
+/* .primary-header {
   font-size: var(--font-primary-header);
   font-weight: 600;
   margin-top: 100px;
   letter-spacing: -3px;
+} */
+.header-primary {
+  font-size: var(--font-main-header);
+  letter-spacing: 0px;
 }
 
-.tertiary-header {
+/* .tertiary-header {
   font-size: var(--font-tertiary-header);
   font-weight: 600;
-}
+} */
+/* .header-tertiary {
+  font-size: var(--font-tertiary-header);
+  font-weight: 600;
+} */
 
 .get-started {
   display: flex;
@@ -232,18 +249,12 @@ a {
   .header-section {
     padding: 1rem;
   }
-  .header {
+  .header-container {
     align-items: flex-start;
     text-align: left;
   }
-  .primary-header {
-    font-size: 3rem;
-    /* padding: 1rem 5rem; */
-  }
-
-  .secondary-header {
-    margin-top: 1rem;
-    font-size: 1rem;
+  .header-primary {
+    font-size: var(--font-primary-header-mobile);
   }
 
   .get-started {
@@ -313,12 +324,7 @@ a {
     padding: 1rem;
   }
   .primary-header {
-    font-size: 3rem;
-    /* padding: 1rem 5rem; */
-  }
-  .secondary-header {
-    margin-top: 1rem;
-    font-size: 1rem;
+    font-size: var(--font-primary-header-mobile);
   }
 }
 

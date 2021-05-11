@@ -330,7 +330,25 @@ $(window).load(function () {
   });
 });
 // ---------------------------------------------------------------------------------------------
+// typography
+$(window).load(function () {
+  $(function () {
+    $("#component-typo").click(function () {
+      displayProcedure();
+      $("#main").load("./components/typography/typography.html");
+    });
+  });
+});
 
+$(window).load(function () {
+  $(function () {
+    $("#typolink").click(function () {
+      $("#main").load("./components/typography/typography.html");
+    });
+  });
+});
+
+// ---------------------------------------------------------------------------------------------
 // This is for navbar's component links
 $(window).load(function () {
   $(function () {
@@ -810,3 +828,7 @@ if (document.querySelector("#btn-modal-close") != null) {
         "#2F3136";
     });
 }
+
+// _________________________________________________________________________________________________________________________
+
+// Typography
