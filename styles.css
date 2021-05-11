@@ -147,6 +147,10 @@ a {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+.header-primary {
+  font-size: var(--font-main-header);
+  letter-spacing: 0px;
+}
 
 /* .primary-header {
   font-size: var(--font-primary-header);
@@ -154,10 +158,6 @@ a {
   margin-top: 100px;
   letter-spacing: -3px;
 } */
-.header-primary {
-  font-size: var(--font-main-header);
-  letter-spacing: 0px;
-}
 
 /* .tertiary-header {
   font-size: var(--font-tertiary-header);
