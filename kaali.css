@@ -9,7 +9,11 @@
 @import url("./components/tooltip/tooltip.css");
 @import url("./components/typography/typography.css");
 @import url("./styles.css");
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --red: #ff0044;
   --blue: #1654ff;
@@ -45,7 +49,9 @@
   --token-tag-color: #55b5db;
   --token-attribute-color: #9fca56;
 }
-
+body {
+  overflow: hidden;
+}
 li {
   list-style: none;
 }
@@ -56,9 +62,11 @@ a {
 
 .main-body {
   display: grid;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   grid-template-columns: 15% 85%;
   margin-top: 50px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -66,13 +74,12 @@ a {
   background-color: var(--sidebar-background);
   display: flex;
   justify-content: center;
+  overflow: auto;
 }
-
 .sidebar-container {
-  margin-top: 20px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
-  position: fixed;
 }
 
 .sidebar-list {
@@ -88,10 +95,11 @@ a {
 
 .main-container {
   margin-top: 20px;
-  min-height: 100vh;
+  height: 100vh;
   padding: 1rem;
   text-align: left;
   /* background-color: #36393f; */
+  overflow-y: scroll;
 }
 
 .secondary-header {
