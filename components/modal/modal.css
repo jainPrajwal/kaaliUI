@@ -68,6 +68,10 @@
   padding: 1rem;
   max-width: 440px;
   display: none;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  left: 30%;
 }
 .modal-container {
   position: relative;
@@ -100,7 +104,7 @@
 
 .modal-save-item-to-icon {
   height: 60px;
-  width: 60px;
+  min-width: 60px;
   margin-right: 20px;
   font-size: 2.5rem;
   display: flex;
@@ -152,10 +156,14 @@
   font-size: 1.5rem;
 }
 
+#btn-modal-close:hover {
+  color: var(--blue);
+}
 .btn.btn-primary {
   width: 100%;
   margin: 0;
   margin-top: 0.5rem;
+  max-width: none;
 }
 /* Animations */
 .fade-out {
@@ -224,5 +232,13 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .modal {
+    left: 10%;
+    max-width: 80%;
+    top: 10%;
   }
 }

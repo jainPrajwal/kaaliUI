@@ -119,6 +119,7 @@
 /* left */
 .tooltip-left {
   left: 110%;
+  z-index: 1;
 }
 .tooltip-left::after {
   content: "";
@@ -129,6 +130,7 @@
   border-width: 5px;
   border-style: solid;
   border-color: transparent rgb(248, 248, 248) transparent transparent;
+  z-index: 1;
 }
 
 .btn-demo-left-left:hover .tooltip-left {

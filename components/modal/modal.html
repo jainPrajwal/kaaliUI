@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/components/toast/toast.css" />
     <link rel="stylesheet" href="/components/button/button.css" />
     <link rel="stylesheet" href="/components/modal/modal.css" />
+
     <title>Modal</title>
   </head>
   <body>
@@ -20,6 +22,7 @@
             class="image image-heart"
           />
         </button>
+        <div class="some-text">Hello This is Prajwal</div>
         <div class="modal">
           <div class="modal-container">
             <div class="modal-header">
@@ -56,9 +59,16 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-primary">Done</button>
+              <button class="btn btn-primary" id="collection-btn-done">
+                Done
+              </button>
             </div>
           </div>
+        </div>
+        <div class="toast toast-center toast-primary">
+          <p class="toast-content">
+            <i class="fas fa-info-circle"></i>Information
+          </p>
         </div>
       </div>
     </div>

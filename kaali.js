@@ -727,31 +727,86 @@ function resetFailure() {
 // _______________________________________________________________________________________________________________
 
 // Modal.js
+modalIsOpen = false;
 if (document.querySelector(".btn.btn-like") != null) {
   document.querySelector(".btn.btn-like").addEventListener("click", () => {
     console.log("like clicked");
     document.querySelector(".modal").style.display = "block";
     document.querySelector(".modal").classList.add("fade-in");
+    modalIsOpen = true;
+
+    if (modalIsOpen == true) {
+      window.onclick = function (e) {
+        console.log("window clicked");
+        let alertbox = document.querySelector(".modal");
+        console.log("alertox", alertbox);
+        console.log(e.target, "ye target hai");
+        // if (
+        //   e.target !== alertbox &&
+        //   e.target !== document.querySelector(".image.image-heart")
+        // ) {
+        //   console.log("alertox", alertbox);
+        //   alertbox.style.display = "none";
+        // }
+        if (e.target == document.querySelector(".outer-modal-container")) {
+          alertbox.style.display = "none";
+          document.querySelector(
+            ".outer-modal-container"
+          ).style.backgroundColor = "#2F3136";
+        }
+      };
+    }
+
+    document.querySelector(".outer-modal-container").style.backgroundColor =
+      "#f5f5f538";
   });
 }
+// console.log(modalIsOpen, "kya modla open hai");
 
 function removeFadeInFromModal() {
   document.querySelector(".modal").classList.remove("fade-in");
+}
+
+function removeFadeOutFromModal() {
+  document.querySelector(".modal").classList.remove("fade-out-top");
 }
 // Close Modal
 if (document.querySelector("#btn-modal-close") != null) {
   document.querySelector("#btn-modal-close").addEventListener("click", () => {
     removeFadeInFromModal();
+    document.querySelector(".outer-modal-container").style.backgroundColor =
+      "#2F3136";
     let alertbox = document.querySelector(".modal");
     if (alertbox != null) {
       console.log("modal close clicked", alertbox);
 
-      document.querySelector(".modal").classList.add("fade-out");
+      document.querySelector(".modal").classList.add("fade-out-top");
       setTimeout(() => {
-        if (alertbox.classList.contains("fade-out")) {
+        if (alertbox.classList.contains("fade-out-top")) {
           document.querySelector(".modal").style.display = "none";
         }
       }, 1500);
+      // document.querySelector(".modal").style.display = "none";
     }
   });
+
+  document
+    .querySelector("#collection-btn-done")
+    .addEventListener("click", () => {
+      removeFadeOutFromModal();
+      removeFadeInFromModal();
+      let alertbox = document.querySelector(".modal");
+      if (alertbox != null) {
+        console.log("modal close clicked", alertbox);
+
+        document.querySelector(".modal").classList.add("fade-out-top");
+        setTimeout(() => {
+          if (alertbox.classList.contains("fade-out-top")) {
+            document.querySelector(".modal").style.display = "none";
+          }
+        }, 1500);
+      }
+      document.querySelector(".outer-modal-container").style.backgroundColor =
+        "#2F3136";
+    });
 }
