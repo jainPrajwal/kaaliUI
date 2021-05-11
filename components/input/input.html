@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/components/toast/toast.css" />
+
+    <link rel="stylesheet" href="/components/typography/typography.css" />
+    <link rel="stylesheet" href="/components/button/button.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <title>Typography</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header header-secondary">inputs</div>
+      <div class="outer-input-container">
+        <form action="" class="form">
+          <div class="form-container">
+            <div class="form-title header header-secondary text-center">
+              sign up
+            </div>
+            <div class="form-row">
+              <input
+                type="text"
+                class="input input-email"
+                id="username"
+                required
+              />
+              <label for="username" class="label-name"
+                ><span class="content-name">username</span></label
+              >
+            </div>
+            <div class="form-row">
+              <input
+                type="password"
+                class="input input-password"
+                id="password"
+                required
+              />
+              <label for="password" class="label-name"
+                ><span class="content-name">password</span></label
+              >
+            </div>
+            <button class="btn btn-primary">submit</button>
+          </div>
+        </form>
+        <div class="toast toast-center toast-primary">
+          <p class="toast-content">
+            <i class="fas fa-info-circle"></i>Information
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/kaali.js"></script>
+</html>

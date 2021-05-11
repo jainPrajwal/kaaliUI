@@ -347,6 +347,24 @@ $(window).load(function () {
     });
   });
 });
+// ---------------------------------------------------------------------------------------------
+// inputs
+$(window).load(function () {
+  $(function () {
+    $("#component-input").click(function () {
+      displayProcedure();
+      $("#main").load("./components/input/input.html");
+    });
+  });
+});
+
+$(window).load(function () {
+  $(function () {
+    $("#inputlink").click(function () {
+      $("#main").load("./components/input/input.html");
+    });
+  });
+});
 
 // ---------------------------------------------------------------------------------------------
 // This is for navbar's component links
