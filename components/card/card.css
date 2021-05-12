@@ -34,7 +34,7 @@
   --token-tag-color: #55b5db;
   --token-attribute-color: #9fca56;
 
-  --minimumColumnWidth: 150px;
+  --minimumColumnWidth: 160px;
 }
 .outer-card-container {
   display: flex;
@@ -103,7 +103,7 @@
 .plain-card-container {
   grid-gap: 24px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   /* border: 1px solid gray; */
   padding: 1rem;
   grid-template-rows: minmax(180px, auto);
