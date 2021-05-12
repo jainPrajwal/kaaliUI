@@ -23,7 +23,7 @@
     <title>kaali UI</title>
   </head>
   <body>
-    <div class="navbar-wrapper">
+    <div class="container">
       <nav class="navbar">
         <div class="brand">
           <img
@@ -83,73 +83,58 @@
           </li>
         </ul>
       </nav>
-    </div>
+      <div class="sidebar-container">
+        <ul class="sidebar-list">
+          <li class="sidebar-list-items">
+            <a href="#" id="alertlink">alert</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="avatarlink">avatar</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="cardlink">card</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="tooltiplink">tooltip</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="buttonlink">button</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="toastlink">toast</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="badgelink">badge</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="modallink">modal</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="typolink">typography</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="#" id="inputlink">input</a>
+          </li>
+          <hr class="hr-sidebar" />
+        </ul>
+      </div>
 
-    <div class="main-body">
-      <section class="sidebar">
-        <div class="sidebar-container">
-          <ul class="sidebar-list">
-            <li class="sidebar-list-items">
-              <a href="#" id="alertlink">alert</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="avatarlink">avatar</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="cardlink">card</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="tooltiplink">tooltip</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="buttonlink">button</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="toastlink">toast</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="badgelink">badge</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="modallink">modal</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="typolink">typography</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="inputlink">input</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="inputlink">helo</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="inputlink">input</a>
-            </li>
-            <hr />
-            <li class="sidebar-list-items">
-              <a href="#" id="inputlink">input</a>
-            </li>
-            <hr />
-          </ul>
-        </div>
-      </section>
-      <section class="main" id="main">
-        <div class="main-container">
-          <div class="header header-secondary">getting started</div>
-          <div class="outer-container">
+      <div class="main-body">
+        <section class="main" id="main">
+          <div class="main-container">
+            <div class="header header-secondary">getting started</div>
+
             <div class="introduction params">
-              <div class="header-tertiary">introduction</div>
+              <div class="header header-tertiary">introduction</div>
               <div class="text">
                 building websites with dark mode?then you have landed at perfect
                 place!
@@ -160,7 +145,7 @@
             </div>
 
             <div class="css-link params">
-              <div class="header-tertiary">css</div>
+              <div class="header header-tertiary">css</div>
               <div class="text">
                 paste the below snippet into &lt;head&gt; of your html page to
                 load our css styling.
@@ -190,7 +175,7 @@
             </div>
 
             <div class="js-link params">
-              <div class="header-tertiary">javascript</div>
+              <div class="header header-tertiary">javascript</div>
               <div class="text">
                 paste the below snippet after &lt;body&gt; of your html page to
                 load our javascript functionalities.
@@ -214,8 +199,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   </body>
   <script src="./kaali.js"></script>
