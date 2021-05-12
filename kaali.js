@@ -847,6 +847,59 @@ if (document.querySelector("#btn-modal-close") != null) {
     });
 }
 
-// _________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________
 
 // Typography
+
+// _________________________________________________________________________________________________________________
+
+// Badge
+
+// Copy Content for Badge
+let badgeclip = document.querySelector("#clip-badge");
+if (badgeclip != null) {
+  badgeclip.addEventListener("click", () => {
+    console.log("badge clip called");
+    navigator.clipboard.writeText(
+      '<div class="badge-container">' +
+        "\n" +
+        '\t<div class="badge badge-notification">' +
+        "\n" +
+        '\t\t<i class="fas fa-bell">' +
+        "\n" +
+        '\t\t\t<span class="notification-count">99+</span>' +
+        "\n" +
+        "\t\t</i>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        '\t<div class="badge badge-cart">' +
+        "\n" +
+        '\t\t<i class="fas fa-bell">' +
+        "\n" +
+        '\t\t\t<span class="cart-count">3</span>' +
+        "\n" +
+        "\t\t</i>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        '\t<div class="badge badge-notification">' +
+        "\n" +
+        '\t<span class="rating">4.3</span>' +
+        "\n" +
+        '\t\t<i class="fas fa-star"></i>' +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        "</div>"
+    );
+
+    let tooltip = document.querySelector("#badge-tooltip");
+    console.log(tooltip, "ye badge tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  badgeclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#badge-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}

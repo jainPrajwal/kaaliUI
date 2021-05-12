@@ -254,12 +254,14 @@ hr {
   z-index: 10;
   opacity: 1;
   transition: opacity 0.3s;
-  top: -10%;
-  left: 50%;
+  top: -2.9%;
+  left: 54.3%;
 }
 
 .copy-tooltip .tooltiptext::after {
   content: "";
+  left: 50%;
+  top: 100%;
   position: absolute;
   border-width: 5px;
   border-style: solid;

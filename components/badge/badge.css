@@ -40,7 +40,7 @@
   flex-direction: column;
   padding: 1rem;
   border: 1px solid gray;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .badge-container {
   display: flex;
