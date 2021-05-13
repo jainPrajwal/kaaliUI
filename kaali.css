@@ -161,7 +161,7 @@ hr {
 
 .code-box {
   padding: 1rem;
-  /* position: relative; */
+  position: relative;
 }
 
 .code-container {
@@ -174,7 +174,6 @@ hr {
   overflow-y: hidden;
   border-radius: 0.2rem;
   line-height: 30px;
-  overflow: visible;
 }
 .normal-code-text {
   color: rgb(248, 248, 248);
@@ -199,7 +198,6 @@ hr {
 
 .fa-clipboard.fas {
   cursor: pointer;
-  position: relative;
 }
 .code-container > pre {
   /* height: 240px; */
@@ -256,10 +254,11 @@ hr {
   z-index: 10;
   opacity: 1;
   transition: opacity 0.3s;
-  top: -212.9%;
-  left: -625.7%;
+  top: 0%;
+  left: 53.9%;
 }
 
+/* .copy-tooltip .tooltiptext::after { */
 .copy-tooltip .tooltiptext::after {
   content: "";
   left: 50%;
@@ -269,7 +268,6 @@ hr {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
 .fa-clipboard:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
@@ -297,6 +295,10 @@ hr {
   }
   .copy-tooltip .tooltiptext {
     left: 0%;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 21.1%;
+    top: 100%;
   }
 }
 
