@@ -161,7 +161,7 @@ hr {
 
 .code-box {
   padding: 1rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .code-container {
@@ -174,6 +174,7 @@ hr {
   overflow-y: hidden;
   border-radius: 0.2rem;
   line-height: 30px;
+  overflow: visible;
 }
 .normal-code-text {
   color: rgb(248, 248, 248);
@@ -198,6 +199,7 @@ hr {
 
 .fa-clipboard.fas {
   cursor: pointer;
+  position: relative;
 }
 .code-container > pre {
   /* height: 240px; */
@@ -254,8 +256,8 @@ hr {
   z-index: 10;
   opacity: 1;
   transition: opacity 0.3s;
-  top: -2.9%;
-  left: 54.3%;
+  top: -212.9%;
+  left: -625.7%;
 }
 
 .copy-tooltip .tooltiptext::after {

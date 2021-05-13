@@ -846,7 +846,86 @@ if (document.querySelector("#btn-modal-close") != null) {
         "#2F3136";
     });
 }
+let modalclip = document.querySelector("#clip-modal");
+if (modalclip != null) {
+  modalclip.addEventListener("click", () => {
+    console.log("modal clip called");
+    navigator.clipboard.writeText(
+      '<div class="modal">' +
+        "\n" +
+        '\t<div class="modal-container">' +
+        "\n" +
+        '\t<div class="modal-header">' +
+        "\n" +
+        '\t\t<div class="header header-tertiary" style="margin-bottom: 0">Save item to' +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        '\t\t<span id="btn-modal-close">×</span>' +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        '\t<hr class="modal-hr"/>' +
+        "\n" +
+        '\t<div class="modal-body">' +
+        "\n" +
+        '\t\t<div class="row">' +
+        "\n" +
+        '\t\t<a href="#" class="collection create-new-collection">' +
+        "\n" +
+        '\t\t\t<div class="modal-save-item-to-icon create-symbol">+</div>' +
+        "\n" +
+        '\t\t\t\t<div class="create-text heading">create a new collection</div>' +
+        "\n" +
+        "\t\t</a>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        '\t\t<div class="row row-saved-collection">' +
+        "\n" +
+        '\t\t\t<a href="#" class="collection saved-collection">' +
+        "\n" +
+        '\t\t\t\t<div class="modal-save-item-to-icon save-symbol">' +
+        "\n" +
+        '\t\t\t\t<img src="/assets/images/heart.png" alt="add to cart" class="image image-heart"/>' +
+        "\n" +
+        "\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t<div class="create-text">' +
+        "\n" +
+        '\t\t\t\t\t<span class="heading">my wishlist </span>' +
+        "\n" +
+        '\t\t\t\t\t<span class="secondary-text">Private: 9 items </span>' +
+        "\n" +
+        "\t\t\t\t</div>" +
+        "\t\t\t\t</a>" +
+        "\n" +
+        '\t\t\t<input type="checkbox" class="checkbox checkbox-mywishlist" id="username" checked />' +
+        "\n" +
+        "\t\t\t</div>" +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        '\t\t\t <div class="modal-footer">' +
+        "\n" +
+        '\t\t\t<button class="btn btn-primary"id="collection-btn-done">Done</button>' +
+        "\n" +
+        "\t\t\t</div>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        "</div>"
+    );
 
+    let tooltip = document.querySelector("#modal-tooltip");
+    console.log(tooltip, "ye modal-tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  modalclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#modal-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
 // _________________________________________________________________________________________________________________
 
 // Typography
