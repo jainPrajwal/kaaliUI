@@ -903,3 +903,91 @@ if (badgeclip != null) {
     tooltip.innerHTML = "Copy to Clipboard";
   });
 }
+// ____________________________________________________________________________________________________________
+// Button
+
+let buttonclip = document.querySelector("#clip-button");
+if (buttonclip != null) {
+  buttonclip.addEventListener("click", () => {
+    console.log("button clip called");
+    navigator.clipboard.writeText(
+      '<div class="btn-container">' +
+        "\n" +
+        '\t<button class="btn btn-primary">primary button</button>' +
+        "\n" +
+        '\t<button class="btn btn-secondary">secondary button</button>' +
+        "\n" +
+        '\t<button class="btn btn-success">success button</button>' +
+        "\n" +
+        '\t<button class="btn btn-danger">danger button</button>' +
+        "\n" +
+        '\t<button class="btn btn-warning">warning button</button>' +
+        "\n" +
+        "</div>"
+    );
+
+    let tooltip = document.querySelector("#button-tooltip");
+    console.log(tooltip, "ye button tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  buttonclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#button-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
+
+// ____________________________________________________________________________________________________________
+// Input
+let inputclip = document.querySelector("#clip-input");
+if (inputclip != null) {
+  inputclip.addEventListener("click", () => {
+    console.log("input clip called");
+    navigator.clipboard.writeText(
+      '<form action="#" class="form">' +
+        "\n" +
+        '\t<div class="form-container">' +
+        "\n" +
+        '\t\t<div class="form-title header header-secondary text-center">' +
+        "\n" +
+        "\t\t\tsign up" +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        '\t\t<div class="form-row">' +
+        "\n" +
+        '\t\t\t<input type="text" class="input input-email" id="username" required />' +
+        "\n" +
+        '\t\t\t<label for="username"class="label-name">' +
+        "\n" +
+        '\t\t\t<span class="content-name">username </span>' +
+        "\n" +
+        "\t\t\t</label>" +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        '\t\t<div class="form-row">' +
+        "\n" +
+        '\t\t\t <input type="password" class="input input-password" id="password" required />' +
+        "\n" +
+        '\t\t\t <label for="password"class="label-name">' +
+        "\n" +
+        '\t\t\t <span class="content-name">password </span>' +
+        "\n" +
+        "\t\t\t</label>" +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        "</form>"
+    );
+
+    let tooltip = document.querySelector("#input-tooltip");
+    console.log(tooltip, "ye input tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  inputclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#input-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
