@@ -302,7 +302,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 880px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .container {
     grid-template-columns: 100%;
     grid-gap: 1rem;
@@ -319,6 +319,25 @@ hr {
     margin-bottom: 10px;
   }
   .copy-tooltip .tooltiptext {
-    left: 0%;
+    top: 0%;
+    left: 0;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 21.1%;
+    top: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1250px) {
+  .copy-tooltip {
+    margin-bottom: 10px;
+  }
+  .copy-tooltip .tooltiptext {
+    top: 0%;
+    left: 80%;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 55%;
+    top: 100%;
   }
 }

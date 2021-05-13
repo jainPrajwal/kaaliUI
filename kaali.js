@@ -760,6 +760,52 @@ function resetFailure() {
   document.querySelector(".toast-failure").classList.remove("fade-out-bottom");
 }
 
+content = document.querySelector("#clip-toast");
+if (content != null) {
+  console.log(content);
+  content.addEventListener("click", () => {
+    console.log("called");
+    navigator.clipboard.writeText(
+      '<div class="toast toast-center toast-primary">' +
+        "\n" +
+        '\t<p class="toast-content">' +
+        "\n" +
+        '\t\t<i class="fas fa-info-circle">information </i>' +
+        "\n" +
+        "\t</p>" +
+        "\n" +
+        "</div>" +
+        "\n" +
+        '<div class="toast toast-center toast-primary">' +
+        "\n" +
+        '\t<p class="toast-content">' +
+        "\n" +
+        '\t\t<i class="fas fa-info-circle">success </i>' +
+        "\n" +
+        "\t</p>" +
+        "\n" +
+        "</div>" +
+        '<div class="toast toast-center toast-danger">' +
+        "\n" +
+        '\t<p class="toast-content">' +
+        "\n" +
+        '\t\t<i class="fas fa-info-circle">error! </i>' +
+        "\n" +
+        "\t</p>" +
+        "\n" +
+        "</div>"
+    );
+
+    let tooltip = document.querySelector("#toast-tooltip");
+    console.log(tooltip, "ye toast tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  content.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#toast-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
+
 // _______________________________________________________________________________________________________________
 
 // Modal.js
