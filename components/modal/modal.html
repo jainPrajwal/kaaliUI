@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/components/toast/toast.css" />
+    <link rel="stylesheet" href="/components/button/button.css" />
+    <link rel="stylesheet" href="/components/modal/modal.css" />
+
+    <title>Modal</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header header-secondary">modal</div>
+
+      <div class="outer-modal-container">
+        <button class="btn btn-like">
+          <img
+            src="/assets/images/—Pngtree—beautiful bright red heart_6252575.png"
+            alt="add to cart"
+            class="image image-heart"
+          />
+        </button>
+        <div class="some-text">Hello This is Prajwal</div>
+        <div class="modal">
+          <div class="modal-container">
+            <div class="modal-header">
+              <div class="header header-tertiary">Save item to</div>
+              <span id="btn-modal-close">&times;</span>
+            </div>
+            <hr class="modal-hr" />
+            <div class="modal-body">
+              <div class="row">
+                <a href="#" class="collection create-new-collection">
+                  <div class="modal-save-item-to-icon create-symbol">+</div>
+                  <div class="create-text heading">create a new collection</div>
+                </a>
+              </div>
+              <div class="row row-saved-collection">
+                <a href="#" class="collection saved-collection">
+                  <div class="modal-save-item-to-icon save-symbol">
+                    <img
+                      src="/assets/images/—Pngtree—beautiful bright red heart_6252575.png"
+                      alt="add to cart"
+                      class="image image-heart"
+                    />
+                  </div>
+                  <div class="create-text">
+                    <span class="heading">my wishlist</span
+                    ><span class="secondary-text">Private: 9 items</span>
+                  </div>
+                </a>
+                <input
+                  type="checkbox"
+                  class="checkbox checkbox-mywishlist"
+                  checked
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" id="collection-btn-done">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="toast toast-center toast-primary">
+          <p class="toast-content">
+            <i class="fas fa-info-circle"></i>Information
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/kaali.js"></script>
+</html>

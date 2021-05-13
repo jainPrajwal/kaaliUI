@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/components/toast/toast.css" />
+
+    <link rel="stylesheet" href="/components/typography/typography.css" />
+    <link rel="stylesheet" href="/components/button/button.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <title>Typography</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header header-secondary">inputs</div>
+      <div class="outer-input-container">
+        <form action="" class="form">
+          <div class="form-container">
+            <div class="form-title header header-secondary text-center">
+              sign up
+            </div>
+            <div class="form-row">
+              <input
+                type="text"
+                class="input input-email"
+                id="username"
+                required
+              />
+              <label for="username" class="label-name"
+                ><span class="content-name">username</span></label
+              >
+            </div>
+            <div class="form-row">
+              <input
+                type="password"
+                class="input input-password"
+                id="password"
+                required
+              />
+              <label for="password" class="label-name"
+                ><span class="content-name">password</span></label
+              >
+            </div>
+            <button class="btn btn-primary">submit</button>
+          </div>
+        </form>
+        <div class="toast toast-center toast-primary">
+          <p class="toast-content">
+            <i class="fas fa-info-circle"></i>Information
+          </p>
+        </div>
+        <!-- Code Box for all badges -->
+        <div class="code-box">
+          <div class="code-container">
+            <div class="copy-tooltip">
+              <i class="fas fa-clipboard" id="clip-input">
+                <span id="input-tooltip" class="tooltiptext"
+                  >Copy to Clipboard</span
+                ></i
+              >
+            </div>
+
+            <div class="token tag">
+              <pre
+                class="code"
+              ><span class="lt symbol">&lt;</span>form </span><span class="attr">action</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>form<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-title header header-secondary text-center<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="normal-code-text">sign up</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-row<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>input <span class="attr">type</span><span class="symbol">=</span><span class="single-quote">"</span>text<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>input input-email<span class="single-quote">"</span><span class="attr"> id</span><span class="symbol">=</span><span class="single-quote">"</span>username<span class="single-quote">"</span><span class="attr"> required </span><span class="slash">/</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>label <span class="attr">for</span><span class="symbol">=</span><span class="single-quote">"</span>username<span class="single-quote">"</span><span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>label-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>span <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>content-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">username</span> <span class="lt symbol">&lt;</span><span class="slash">/</span>span<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>label<span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span>  <br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-row<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>input <span class="attr">type</span><span class="symbol">=</span><span class="single-quote">"</span>password<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>input input-password<span class="single-quote">"</span><span class="attr"> id</span><span class="symbol">=</span><span class="single-quote">"</span>password<span class="single-quote">"</span><span class="attr"> required </span><span class="slash">/</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>label <span class="attr">for</span><span class="symbol">=</span><span class="single-quote">"</span>password<span class="single-quote">"</span><span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>label-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>span <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>content-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">password</span> <span class="lt symbol">&lt;</span><span class="slash">/</span>span<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>label<span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">/</span>form<span class="gt symbol">&gt;</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/kaali.js"></script>
+</html>
