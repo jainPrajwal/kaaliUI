@@ -312,7 +312,7 @@ hr {
     top: 0%;
   }
   .copy-tooltip .tooltiptext::after {
-    left: 21.1%;
+    left: 10%;
     top: 100%;
   }
 }
@@ -326,24 +326,27 @@ hr {
     /* visibility: hidden; */
     display: none;
   }
+  .code-box {
+    padding: 1rem 0rem;
+  }
   .code-container {
     display: flex;
     flex-direction: column;
   }
   .copy-tooltip {
-    margin-bottom: 10px;
+    position: unset;
   }
   .copy-tooltip .tooltiptext {
     top: 0%;
     left: 0;
   }
   .copy-tooltip .tooltiptext::after {
-    left: 21.1%;
+    left: 10%;
     top: 100%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 768px) and (max-width: 1014px) {
   .copy-tooltip {
     margin-bottom: 10px;
     position: absolute;
