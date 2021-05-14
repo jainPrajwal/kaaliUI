@@ -1116,3 +1116,219 @@ if (inputclip != null) {
     tooltip.innerHTML = "Copy to Clipboard";
   });
 }
+// _________________________________________________________________________________________________________________
+// Card
+
+let cardclip = document.querySelector("#clip-card");
+if (cardclip != null) {
+  cardclip.addEventListener("click", () => {
+    console.log("card clip called");
+    navigator.clipboard.writeText(
+      '<div class="card">' +
+        "\n" +
+        '\t<div class="card-container">' +
+        "\n" +
+        '\t\t<div class="card-body">' +
+        "\n" +
+        '\t\t\t<div class="card-item">' +
+        "\n" +
+        '\t\t\t\t<a href="#">' +
+        "\n" +
+        '\t\t\t\t\t<div class="card-image-container">' +
+        "\n" +
+        '\t\t\t\t\t\t<img src="https://i.scdn.co/image/ab67616d00001e02fd2df008046f04c32d9c0c2e" alt="card-image" class="card-image">' +
+        "\n" +
+        "\t\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t\t<div class="card-content">' +
+        "\n" +
+        '\t\t\t\t\t\t<div class="card-title">Believer</div>' +
+        "\n" +
+        '\t\t\t\t\t\t<div class="card-subtitle">Imagine Dragons</div>' +
+        "\n" +
+        "\t\t\t\t\t</div>" +
+        "\n" +
+        "\t\t\t\t</a>" +
+        "\n" +
+        "\t\t\t</div>" +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        "</div>"
+    );
+
+    let tooltip = document.querySelector("#card-tooltip");
+    console.log(tooltip, "ye card-tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  modalclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#card-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
+
+// ecommerce card
+let cardecommerceclip = document.querySelector("#clip-card-ecommerce");
+if (cardecommerceclip != null) {
+  cardecommerceclip.addEventListener("click", () => {
+    console.log("card ecommerce called");
+    navigator.clipboard.writeText(
+      '<div class="card card-ecommerce">' +
+        "\n" +
+        '\t<div class="card-ecommerce-container">' +
+        "\n" +
+        '\t\t<div class="card-ecommerce-body">' +
+        "\n" +
+        '\t\t\t<div class="card-ecommerce-item">' +
+        "\n" +
+        '\t\t\t\t<a href="#">' +
+        "\n" +
+        '\t\t\t\t\t<div class="card-ecommerce-image-container">' +
+        "\n" +
+        '\t\t\t\t\t\t<img src="https://rukminim1.flixcart.com/image/312/312/kfvfwy80/mobile/j/h/t/poco-c3-mzb07riin-original-imafw8qbg63kvngr.jpeg?q=70" alt="card-image" class="card-ecommerce-image">' +
+        "\n" +
+        "\t\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t\t<div class="card-ecommerce-content">' +
+        "\n" +
+        '\t\t\t\t\t\t<div class="product-details">' +
+        "\n" +
+        '\t\t\t\t\t\t\t<a href="#">' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="product-name">poco c3</span>(' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="product-model-name">Arctic Blue</span>' +
+        "\n" +
+        '<span class="product-model-variant">32 gb)</span>' +
+        "\n" +
+        "\t\t\t\t\t\t\t</a>" +
+        "\n" +
+        "\t\t\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t\t\t<div class="rating-details">' +
+        "\n" +
+        '\t\t\t\t\t\t<div class="badge badge-rating">' +
+        "\n" +
+        '\t\t\t\t\t\t\t<span class="rating">4.3</span>' +
+        "\n" +
+        '\t\t\t\t\t\t\t<i class="fas fa-star"></i>' +
+        "\n" +
+        "\t\t\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t\t\t<div class="product-price-details">' +
+        "\n" +
+        '\t\t\t\t\t\t\t<span class="discounted-price">₹7,499</span>' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="original-price">₹9,999</span>' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="discount-price">25% off</span>' +
+        "\n" +
+        "\t\t\t\t\t\t</div>" +
+        "\n" +
+        "\t\t\t\t\t</div>" +
+        "\n" +
+        "\t\t\t\t</a>" +
+        "\n" +
+        "\t\t\t</div>" +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        "</div>"
+    );
+
+    let tooltip = document.querySelector("#card-ecommerce-tooltip");
+    console.log(tooltip, "ye cardecommerceclip-tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  cardecommerceclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#card-ecommerce-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
+
+// horizontal card
+let cardhorizontalclip = document.querySelector("#clip-card-horizontal");
+if (cardhorizontalclip != null) {
+  cardhorizontalclip.addEventListener("click", () => {
+    console.log("card ecommerce called");
+    navigator.clipboard.writeText(
+      '<div class="card card-ecommerce">' +
+        "\n" +
+        '\t<div class="card-ecommerce-container">' +
+        "\n" +
+        '\t\t<div class="card-ecommerce-body">' +
+        "\n" +
+        '\t\t\t<div class="card-ecommerce-item">' +
+        "\n" +
+        '\t\t\t\t<a href="#">' +
+        "\n" +
+        '\t\t\t\t\t<div class="card-ecommerce-image-container">' +
+        "\n" +
+        '\t\t\t\t\t\t<img src="https://rukminim1.flixcart.com/image/312/312/kfvfwy80/mobile/j/h/t/poco-c3-mzb07riin-original-imafw8qbg63kvngr.jpeg?q=70" alt="card-image" class="card-ecommerce-image">' +
+        "\n" +
+        "\t\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t\t<div class="card-ecommerce-content">' +
+        "\n" +
+        '\t\t\t\t\t\t<div class="product-details">' +
+        "\n" +
+        '\t\t\t\t\t\t\t<a href="#">' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="product-name">poco c3</span>(' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="product-model-name">Arctic Blue</span>' +
+        "\n" +
+        '<span class="product-model-variant">32 gb)</span>' +
+        "\n" +
+        "\t\t\t\t\t\t\t</a>" +
+        "\n" +
+        "\t\t\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t\t\t<div class="rating-details">' +
+        "\n" +
+        '\t\t\t\t\t\t<div class="badge badge-rating">' +
+        "\n" +
+        '\t\t\t\t\t\t\t<span class="rating">4.3</span>' +
+        "\n" +
+        '\t\t\t\t\t\t\t<i class="fas fa-star"></i>' +
+        "\n" +
+        "\t\t\t\t\t\t</div>" +
+        "\n" +
+        '\t\t\t\t\t\t<div class="product-price-details">' +
+        "\n" +
+        '\t\t\t\t\t\t\t<span class="discounted-price">₹7,499</span>' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="original-price">₹9,999</span>' +
+        "\n" +
+        '\t\t\t\t\t\t<span class="discount-price">25% off</span>' +
+        "\n" +
+        "\t\t\t\t\t\t</div>" +
+        "\n" +
+        "\t\t\t\t\t</div>" +
+        "\n" +
+        "\t\t\t\t</a>" +
+        "\n" +
+        "\t\t\t</div>" +
+        "\n" +
+        "\t\t</div>" +
+        "\n" +
+        "\t</div>" +
+        "\n" +
+        "</div>"
+    );
+
+    let tooltip = document.querySelector("#card-tooltip-horizontal");
+    console.log(tooltip, "ye cardecommerceclip-tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  cardecommerceclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#card-tooltip-horizontal");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
+
+// plain card

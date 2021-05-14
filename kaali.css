@@ -137,7 +137,13 @@ hr {
   width: 100%;
   border-top: 1px solid white;
 }
-
+.outer-get-started-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid gray;
+  min-height: 100vh;
+}
 .note {
   color: #ffbd2e;
   font-size: 1rem;
@@ -209,7 +215,9 @@ hr {
 .code {
   font-family: "Inconsolata", monospace;
 }
-
+.comments {
+  color: #9fca56;
+}
 .code > span {
   font-family: "Inconsolata", monospace;
 }
@@ -275,6 +283,9 @@ hr {
   opacity: 1;
 }
 @media only screen and (max-width: 480px) {
+  .code-box {
+    padding: 1rem 0;
+  }
   .container {
     grid-template-columns: 100%;
     grid-gap: 1rem;
@@ -332,13 +343,15 @@ hr {
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1250px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
   .copy-tooltip {
     margin-bottom: 10px;
+    position: absolute;
+    left: 91%;
   }
   .copy-tooltip .tooltiptext {
-    top: 0%;
-    left: 80%;
+    top: -100%;
+    left: -690%;
   }
   .copy-tooltip .tooltiptext::after {
     left: 55%;
