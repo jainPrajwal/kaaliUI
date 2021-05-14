@@ -317,7 +317,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1020px) {
   .container {
     grid-template-columns: 100%;
     grid-gap: 1rem;
@@ -346,15 +346,15 @@ hr {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1014px) {
+@media screen and (min-width: 1020px) and (max-width: 1380px) {
   .copy-tooltip {
     margin-bottom: 10px;
     position: absolute;
-    left: 91%;
+    float: right;
+    left: 66%;
   }
   .copy-tooltip .tooltiptext {
-    top: -100%;
-    left: -690%;
+    top: -110%;
   }
   .copy-tooltip .tooltiptext::after {
     left: 55%;

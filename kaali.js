@@ -1299,65 +1299,17 @@ if (cardplainclip != null) {
   cardplainclip.addEventListener("click", () => {
     console.log("card ecommerce called");
     navigator.clipboard.writeText(
-      '<div class="card card-ecommerce">' +
+      '<div class="card">' +
         "\n" +
-        '\t<div class="card-ecommerce-container">' +
+        '\t<div class="plain-card-container">' +
         "\n" +
-        '\t\t<div class="card-ecommerce-body">' +
+        '\t\t<a class="plain-card-fallback-body chakde" href="">' +
         "\n" +
-        '\t\t\t<div class="card-ecommerce-item">' +
+        '\t\t\t<img src="https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg" alt="image" class="plain-card-fallback-image"/>' +
         "\n" +
-        '\t\t\t\t<a href="#">' +
+        '\t\t\t<h3 class="plain-card-title">Podcasts</h3>' +
         "\n" +
-        '\t\t\t\t\t<div class="card-ecommerce-image-container">' +
-        "\n" +
-        '\t\t\t\t\t\t<img src="https://rukminim1.flixcart.com/image/312/312/kfvfwy80/mobile/j/h/t/poco-c3-mzb07riin-original-imafw8qbg63kvngr.jpeg?q=70" alt="card-image" class="card-ecommerce-image">' +
-        "\n" +
-        "\t\t\t\t\t</div>" +
-        "\n" +
-        '\t\t\t\t\t<div class="card-ecommerce-content">' +
-        "\n" +
-        '\t\t\t\t\t\t<div class="product-details">' +
-        "\n" +
-        '\t\t\t\t\t\t\t<a href="#">' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="product-name">poco c3</span>(' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="product-model-name">Arctic Blue</span>' +
-        "\n" +
-        '<span class="product-model-variant">32 gb)</span>' +
-        "\n" +
-        "\t\t\t\t\t\t\t</a>" +
-        "\n" +
-        "\t\t\t\t\t\t</div>" +
-        "\n" +
-        '\t\t\t\t\t\t<div class="rating-details">' +
-        "\n" +
-        '\t\t\t\t\t\t<div class="badge badge-rating">' +
-        "\n" +
-        '\t\t\t\t\t\t\t<span class="rating">4.3</span>' +
-        "\n" +
-        '\t\t\t\t\t\t\t<i class="fas fa-star"></i>' +
-        "\n" +
-        "\t\t\t\t\t\t</div>" +
-        "\n" +
-        '\t\t\t\t\t\t<div class="product-price-details">' +
-        "\n" +
-        '\t\t\t\t\t\t\t<span class="discounted-price">₹7,499</span>' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="original-price">₹9,999</span>' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="discount-price">25% off</span>' +
-        "\n" +
-        "\t\t\t\t\t\t</div>" +
-        "\n" +
-        "\t\t\t\t\t</div>" +
-        "\n" +
-        "\t\t\t\t</a>" +
-        "\n" +
-        "\t\t\t</div>" +
-        "\n" +
-        "\t\t</div>" +
+        "\t\t</a>" +
         "\n" +
         "\t</div>" +
         "\n" +
@@ -1380,65 +1332,17 @@ if (cardfallbackclip != null) {
   cardfallbackclip.addEventListener("click", () => {
     console.log("card ecommerce called");
     navigator.clipboard.writeText(
-      '<div class="card card-ecommerce">' +
+      '<div class="card">' +
         "\n" +
-        '\t<div class="card-ecommerce-container">' +
+        '\t<div class="plain-card-container">' +
         "\n" +
-        '\t\t<div class="card-ecommerce-body">' +
+        '\t\t<a class="plain-card-fallback-body chakde" href="">' +
         "\n" +
-        '\t\t\t<div class="card-ecommerce-item">' +
+        '\t\t\t<div class="plain-card-fallback-image"></div>' +
         "\n" +
-        '\t\t\t\t<a href="#">' +
+        '\t\t\t<h3 class="plain-card-title">Podcasts</h3>' +
         "\n" +
-        '\t\t\t\t\t<div class="card-ecommerce-image-container">' +
-        "\n" +
-        '\t\t\t\t\t\t<img src="https://rukminim1.flixcart.com/image/312/312/kfvfwy80/mobile/j/h/t/poco-c3-mzb07riin-original-imafw8qbg63kvngr.jpeg?q=70" alt="card-image" class="card-ecommerce-image">' +
-        "\n" +
-        "\t\t\t\t\t</div>" +
-        "\n" +
-        '\t\t\t\t\t<div class="card-ecommerce-content">' +
-        "\n" +
-        '\t\t\t\t\t\t<div class="product-details">' +
-        "\n" +
-        '\t\t\t\t\t\t\t<a href="#">' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="product-name">poco c3</span>(' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="product-model-name">Arctic Blue</span>' +
-        "\n" +
-        '<span class="product-model-variant">32 gb)</span>' +
-        "\n" +
-        "\t\t\t\t\t\t\t</a>" +
-        "\n" +
-        "\t\t\t\t\t\t</div>" +
-        "\n" +
-        '\t\t\t\t\t\t<div class="rating-details">' +
-        "\n" +
-        '\t\t\t\t\t\t<div class="badge badge-rating">' +
-        "\n" +
-        '\t\t\t\t\t\t\t<span class="rating">4.3</span>' +
-        "\n" +
-        '\t\t\t\t\t\t\t<i class="fas fa-star"></i>' +
-        "\n" +
-        "\t\t\t\t\t\t</div>" +
-        "\n" +
-        '\t\t\t\t\t\t<div class="product-price-details">' +
-        "\n" +
-        '\t\t\t\t\t\t\t<span class="discounted-price">₹7,499</span>' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="original-price">₹9,999</span>' +
-        "\n" +
-        '\t\t\t\t\t\t<span class="discount-price">25% off</span>' +
-        "\n" +
-        "\t\t\t\t\t\t</div>" +
-        "\n" +
-        "\t\t\t\t\t</div>" +
-        "\n" +
-        "\t\t\t\t</a>" +
-        "\n" +
-        "\t\t\t</div>" +
-        "\n" +
-        "\t\t</div>" +
+        "\t\t</a>" +
         "\n" +
         "\t</div>" +
         "\n" +
