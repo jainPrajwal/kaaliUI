@@ -239,7 +239,9 @@ hr {
   /* width: 140px; */
   /* background: yellowgreen; */
   /* display: flex; */
-  float: right;
+  /* float: right; */
+  position: absolute;
+  left: 60%;
 }
 /* copy-tooltip for Copy Text */
 .copy-tooltip .tooltiptext {
@@ -254,8 +256,8 @@ hr {
   z-index: 10;
   opacity: 1;
   transition: opacity 0.3s;
-  top: 0%;
-  left: 53.9%;
+  top: -100%;
+  left: -626.1%;
 }
 
 /* .copy-tooltip .tooltiptext::after { */
@@ -292,9 +294,11 @@ hr {
   }
   .copy-tooltip {
     margin-bottom: 10px;
+    position: unset;
   }
   .copy-tooltip .tooltiptext {
     left: 0%;
+    top: 0%;
   }
   .copy-tooltip .tooltiptext::after {
     left: 21.1%;
