@@ -160,7 +160,7 @@
 #btn-modal-close:hover {
   color: var(--blue);
 }
-.btn.btn-primary {
+.btn.btn-primary.btn-modal {
   width: 100%;
   margin: 0;
   margin-top: 0.5rem;
