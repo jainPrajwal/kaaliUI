@@ -116,6 +116,7 @@
 .btn.btn-primary.btn-input {
   width: 100%;
   margin: 0;
+  max-width: none;
 }
 .form .input:focus + .label-name::after,
 .form .input:valid + .label-name::after {
