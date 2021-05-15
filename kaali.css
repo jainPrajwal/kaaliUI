@@ -316,11 +316,13 @@ hr {
     top: 100%;
   }
 }
-
 @media screen and (min-width: 480px) and (max-width: 1020px) {
   .container {
     grid-template-columns: 100%;
     grid-gap: 1rem;
+  }
+  .main-body {
+    padding: 1rem;
   }
   .sidebar-container {
     /* visibility: hidden; */

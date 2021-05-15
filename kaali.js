@@ -974,11 +974,43 @@ if (modalclip != null) {
 }
 // _________________________________________________________________________________________________________________
 
-// Typography
+// Typography.js
+let typoclip = document.querySelector("#clip-typo");
+if (typoclip != null) {
+  typoclip.addEventListener("click", () => {
+    console.log("typo clip called");
+    navigator.clipboard.writeText(
+      '<div class="header header-primary">primary header</div>' +
+        "\n" +
+        '<div class="header header-secondary">secondary header</div>' +
+        "\n" +
+        '<div class="header header-tertiary">tertiary header</div>' +
+        "\n" +
+        '<div class="text text-primary">primary text</div>' +
+        "\n" +
+        "\n" +
+        '<div class="text text-regular">regular text</div>' +
+        "\n" +
+        '<div class="text text-small">small text</div>' +
+        "\n" +
+        '<div class="text text-small text-gray">small gray text</div>' +
+        "\n" +
+        '<div class="text text-center">centered text</div>'
+    );
 
-// _________________________________________________________________________________________________________________
+    let tooltip = document.querySelector("#typo-tooltip");
+    console.log(tooltip, "ye tooltip tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  typoclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#typo-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
 
-// Badge
+//_______________________________________________________________________________________________________________
+
+// Badge.js
 
 // Copy Content for Badge
 let badgeclip = document.querySelector("#clip-badge");
@@ -1029,7 +1061,7 @@ if (badgeclip != null) {
   });
 }
 // ____________________________________________________________________________________________________________
-// Button
+// Button.js
 
 let buttonclip = document.querySelector("#clip-button");
 if (buttonclip != null) {
@@ -1062,7 +1094,7 @@ if (buttonclip != null) {
 }
 
 // ____________________________________________________________________________________________________________
-// Input
+// Input.js
 let inputclip = document.querySelector("#clip-input");
 if (inputclip != null) {
   inputclip.addEventListener("click", () => {
@@ -1117,7 +1149,7 @@ if (inputclip != null) {
   });
 }
 // _________________________________________________________________________________________________________________
-// Card
+// Card.js
 
 let cardclip = document.querySelector("#clip-card");
 if (cardclip != null) {
@@ -1355,6 +1387,39 @@ if (cardfallbackclip != null) {
   });
   cardfallbackclip.addEventListener("mouseout", () => {
     let tooltip = document.querySelector("#card-tooltip-fallback");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
+
+// _______________________________________________________________________________________________________________
+// tooltip.js
+
+let tooltipclip = document.querySelector("#clip-tooltip");
+if (tooltipclip != null) {
+  tooltipclip.addEventListener("click", () => {
+    console.log("tooltip clip called");
+    navigator.clipboard.writeText(
+      '<div class="btn-container">' +
+        "\n" +
+        '\t<button class="btn-demo">top<span class="tooltip tooltip-top">top</span>' +
+        "\n" +
+        '\t<button class="btn-demo btn-demo-left">left<span class="tooltip tooltip-left">left</span>' +
+        "\n" +
+        '\t<button class="btn btn-success">success button</button>' +
+        "\n" +
+        '\t<button class="btn-demo btn-demo-bottom">bottom<span class="tooltip tooltip-bottom">bottom</span>' +
+        "\n" +
+        '\t<button class="btn-demo btn-demo-right">right<span class="tooltip tooltip-right">right</span>' +
+        "\n" +
+        "</div>"
+    );
+
+    let tooltip = document.querySelector("#tooltip-tooltip");
+    console.log(tooltip, "ye tooltip tooltip");
+    tooltip.innerHTML = "Copied";
+  });
+  tooltipclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#tooltip-tooltip");
     tooltip.innerHTML = "Copy to Clipboard";
   });
 }
