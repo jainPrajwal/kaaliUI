@@ -15,8 +15,8 @@
   --font-sm: 13px;
 
   /* Backgrounds */
-  --sidebar-background: #101010;
-  --navbar-background: #000000;
+  --sidebar-background: #0d1117;
+  --navbar-background: #0d1117;
   --main-background: #2f3136;
   --card-background: #191919;
   --plain-card-body-background: #2b2a2a;
@@ -118,8 +118,8 @@
   background-color: var(--green);
 }
 
-#avatar-letter-tooltip,
+/* #avatar-letter-tooltip,
 #avatar-image-status-tooltip,
 #avatar-image-regular-tooltip {
-  /* top: -2%; */
-}
+  /* top: -2%; 
+} */

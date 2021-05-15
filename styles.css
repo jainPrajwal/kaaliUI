@@ -40,7 +40,9 @@
   --token-tag-color: #55b5db;
   --token-attribute-color: #9fca56;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
