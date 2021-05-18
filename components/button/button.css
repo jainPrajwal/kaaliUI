@@ -111,6 +111,10 @@
   border: 1px solid rgb(248, 248, 248);
 }
 
+.btn:hover {
+  filter: brightness(90%);
+}
+
 @media only screen and (max-width: 768px) {
   .btn-container {
     flex-direction: column;
