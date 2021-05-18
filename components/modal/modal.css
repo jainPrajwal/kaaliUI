@@ -64,7 +64,7 @@
   transform: scale(1.1);
 }
 .modal {
-  background-color: var(--card-background);
+  background-color: var(--navbar-background);
   color: var(--font-color);
   padding: 1rem;
   max-width: 440px;
@@ -240,6 +240,7 @@
   .modal {
     left: 10%;
     max-width: 80%;
-    top: 10%;
+    /* top: 10%; */
+    transform: translateY(-50%, 50%);
   }
 }
