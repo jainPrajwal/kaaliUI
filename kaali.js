@@ -123,6 +123,19 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#alertlink").click(function () {
+      removeActiveClass();
+      document.querySelector("#alertlink").classList.add("active");
+      $("#main").load("./components/alert/alert.html");
+    });
+  });
+});
+
+$(window).load(function () {
+  $(function () {
+    $("#component-alert").click(function () {
+      displayProcedure();
+      removeActiveClass();
+      document.querySelector("#alertlink").classList.add("active");
       $("#main").load("./components/alert/alert.html");
     });
   });
@@ -178,18 +191,16 @@ $(window).resize((e) => {
       document.querySelector(".navbar-ul").style.display = "none";
     }
   });
-
-  $(window).load(function () {
-    $(function () {
-      $("#component-alert").click(function () {
-        document.querySelector(".navbar-ul").style.display = "none";
-        document.querySelector(".close-menu").style.display = "none";
-        document.querySelector(".fa-bars").style.display = "block";
-        $("#main").load("./components/alert/alert.html");
-      });
-    });
-  });
 });
+
+// remove active class
+function removeActiveClass() {
+  let activeclass = document.querySelector(".active");
+  console.log(activeclass, "active class");
+  if (activeclass != null) {
+    activeclass.classList.remove("active");
+  }
+}
 // ---------------------------------------------------------------------------------------------
 
 // Avatar
@@ -199,6 +210,8 @@ $(window).load(function () {
   $(function () {
     $("#component-avatar").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#avatarlink").classList.add("active");
       $("#main").load("./components/avatar/avatar.html");
     });
   });
@@ -207,6 +220,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#avatarlink").click(function () {
+      removeActiveClass();
+      document.querySelector("#avatarlink").classList.add("active");
       $("#main").load("./components/avatar/avatar.html");
     });
   });
@@ -219,6 +234,8 @@ $(window).load(function () {
   $(function () {
     $("#component-card").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#cardlink").classList.add("active");
       $("#main").load("./components/card/card.html");
     });
   });
@@ -226,6 +243,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#cardlink").click(function () {
+      removeActiveClass();
+      document.querySelector("#cardlink").classList.add("active");
       $("#main").load("./components/card/card.html");
     });
   });
@@ -238,6 +257,8 @@ $(window).load(function () {
   $(function () {
     $("#component-tooltip").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#tooltiplink").classList.add("active");
       $("#main").load("./components/tooltip/tooltip.html");
     });
   });
@@ -246,6 +267,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#tooltiplink").click(function () {
+      removeActiveClass();
+      document.querySelector("#tooltiplink").classList.add("active");
       $("#main").load("./components/tooltip/tooltip.html");
     });
   });
@@ -258,6 +281,8 @@ $(window).load(function () {
   $(function () {
     $("#component-button").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#buttonlink").classList.add("active");
       $("#main").load("./components/button/button.html");
     });
   });
@@ -266,6 +291,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#buttonlink").click(function () {
+      removeActiveClass();
+      document.querySelector("#buttonlink").classList.add("active");
       $("#main").load("./components/button/button.html");
     });
   });
@@ -278,6 +305,8 @@ $(window).load(function () {
   $(function () {
     $("#component-toast").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#toastlink").classList.add("active");
       $("#main").load("./components/toast/toast.html");
     });
   });
@@ -286,6 +315,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#toastlink").click(function () {
+      removeActiveClass();
+      document.querySelector("#toastlink").classList.add("active");
       $("#main").load("./components/toast/toast.html");
     });
   });
@@ -298,6 +329,8 @@ $(window).load(function () {
   $(function () {
     $("#component-badge").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#badgelink").classList.add("active");
       $("#main").load("./components/badge/badge.html");
     });
   });
@@ -306,6 +339,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#badgelink").click(function () {
+      removeActiveClass();
+      document.querySelector("#badgelink").classList.add("active");
       $("#main").load("./components/badge/badge.html");
     });
   });
@@ -317,6 +352,8 @@ $(window).load(function () {
   $(function () {
     $("#component-modal").click(function () {
       displayProcedure();
+      document.querySelector("#modallink").classList.add("active");
+      $("#main").load("./components/modal/modal.html");
       $("#main").load("./components/modal/modal.html");
     });
   });
@@ -325,6 +362,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#modallink").click(function () {
+      removeActiveClass();
+      document.querySelector("#modallink").classList.add("active");
       $("#main").load("./components/modal/modal.html");
     });
   });
@@ -335,6 +374,8 @@ $(window).load(function () {
   $(function () {
     $("#component-typo").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#typolink").classList.add("active");
       $("#main").load("./components/typography/typography.html");
     });
   });
@@ -343,6 +384,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#typolink").click(function () {
+      removeActiveClass();
+      document.querySelector("#typolink").classList.add("active");
       $("#main").load("./components/typography/typography.html");
     });
   });
@@ -353,6 +396,8 @@ $(window).load(function () {
   $(function () {
     $("#component-input").click(function () {
       displayProcedure();
+      removeActiveClass();
+      document.querySelector("#inputlink").classList.add("active");
       $("#main").load("./components/input/input.html");
     });
   });
@@ -361,6 +406,8 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#inputlink").click(function () {
+      removeActiveClass();
+      document.querySelector("#inputlink").classList.add("active");
       $("#main").load("./components/input/input.html");
     });
   });

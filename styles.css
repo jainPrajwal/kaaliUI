@@ -129,6 +129,18 @@ a {
 .navbar-ul .component-link-item-mobile {
   display: none;
 }
+.component-link-item-desktop {
+  transition: all 500ms ease-out;
+}
+.navbar-item-link {
+  transition: all 500ms ease-out;
+}
+.navbar-item-link:hover {
+  color: var(--status-available-background);
+}
+.navbar-ul .component-link-item-desktop:hover {
+  color: var(--status-available-background);
+}
 /* Header */
 
 .header-section {
@@ -275,7 +287,7 @@ a {
   .fas.fa-bars {
     display: inline-block;
     padding-right: 1rem;
-    color: var(--red);
+    color: var(--status-available-background);
   }
 
   .close-menu {
@@ -283,7 +295,7 @@ a {
     font-size: 2.5rem;
     padding-right: 1rem;
     /* line-height: 50px; */
-    color: var(--red);
+    color: var(--status-available-background);
     display: none;
     cursor: pointer;
   }
@@ -356,7 +368,7 @@ a {
   .fas.fa-bars {
     display: inline-block;
     padding-right: 1rem;
-    color: var(--red);
+    color: var(--status-available-background);
   }
 
   .close-menu {
@@ -364,7 +376,7 @@ a {
     font-size: 2.5rem;
     padding-right: 1rem;
     /* line-height: 50px; */
-    color: var(--red);
+    color: var(--status-available-background);
     display: none;
     cursor: pointer;
   }

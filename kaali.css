@@ -112,6 +112,10 @@ a {
   background: #ffc72c;
 }
 
+.active {
+  color: var(--status-available-background);
+}
+
 .sidebar-list-items {
   padding: 1rem;
   text-align: center;
@@ -119,7 +123,6 @@ a {
 
 .sidebar-container {
 }
-
 .secondary-header {
   font-size: var(--font-secondary-header);
   font-weight: 600;
@@ -137,13 +140,13 @@ a {
 
 hr {
   width: 100%;
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
 }
 .outer-get-started-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   min-height: 100vh;
 }
 .note {
