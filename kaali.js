@@ -107,18 +107,6 @@ document.querySelector(".close-menu").addEventListener("click", () => {
 */
 // ---------------------------------------------------------------------------------------------
 
-//load alert.html for mobile
-$(window).load(function () {
-  $(function () {
-    $("#component-alert").click(function () {
-      document.querySelector(".navbar-ul").style.display = "none";
-      document.querySelector(".close-menu").style.display = "none";
-      document.querySelector(".fa-bars").style.display = "block";
-      $("#main").load("./components/alert/alert.html");
-    });
-  });
-});
-
 // load alert.html for desktop
 $(window).load(function () {
   $(function () {
@@ -129,7 +117,7 @@ $(window).load(function () {
     });
   });
 });
-
+//load alert.html for mobile
 $(window).load(function () {
   $(function () {
     $("#component-alert").click(function () {
@@ -151,7 +139,7 @@ function displayProcedure() {
 // ---------------------------------------------------------------------------------------------
 // Making navbar responsive STEP 2
 $(window).resize((e) => {
-  if (parseInt(window.innerWidth) <= 768) {
+  if (parseInt(window.innerWidth) <= 985) {
     document.querySelector(".navbar-ul").style.display = "none";
     document.querySelector(".close-menu").style.display = "none";
     document.querySelector(".fa-bars").style.display = "block";

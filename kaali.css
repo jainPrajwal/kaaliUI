@@ -156,20 +156,6 @@ hr {
   letter-spacing: 0.8px;
 }
 
-/* iframe {
-  margin: 1rem 0rem;
-} */
-
-/* Code Container */
-
-/* .outer-code-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-} */
-
 .code-box {
   padding: 1rem;
   position: relative;
@@ -190,23 +176,6 @@ hr {
   color: rgb(248, 248, 248);
 }
 
-/* .copy {
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  cursor: pointer;
-} */
-
-/* .copy-icon {
-  margin-bottom: 0.5rem;
-  display: flex;
-  justify-content: flex-end;
-  color: rgb(248, 248, 248);
-  margin-right: -5px;
-  margin-top: -20px;
-  overflow-x: auto;
-} */
-
 .fa-clipboard.fas {
   cursor: pointer;
 }
@@ -226,12 +195,6 @@ hr {
 .code > span {
   font-family: "Inconsolata", monospace;
 }
-/* .trying-out {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .token.tag {
   color: #55b5db;
@@ -250,13 +213,6 @@ hr {
   color: gray;
 }
 .copy-tooltip {
-  /* position: relative; */
-  /* position: relative; */
-  /* position: relative; */
-  /* height: 10px; */
-  /* width: 140px; */
-  /* background: yellowgreen; */
-  /* display: flex; */
   /* float: right; */
   position: absolute;
   left: 60%;
@@ -326,7 +282,8 @@ hr {
     top: 100%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1020px) {
+
+@media screen and (min-width: 480px) and (max-width: 985px) {
   .container {
     grid-template-columns: 100%;
     grid-gap: 1rem;
@@ -357,8 +314,23 @@ hr {
     top: 100%;
   }
 }
+@media screen and (min-width: 985px) and (max-width: 1200px) {
+  .copy-tooltip {
+    margin-bottom: 10px;
+    position: absolute;
+    float: right;
+    left: 76%;
+  }
+  .copy-tooltip .tooltiptext {
+    top: -110%;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 51%;
+    top: 100%;
+  }
+}
 
-@media screen and (min-width: 1020px) and (max-width: 1380px) {
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
   .copy-tooltip {
     margin-bottom: 10px;
     position: absolute;

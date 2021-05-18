@@ -170,22 +170,6 @@ a {
   letter-spacing: 0px;
 }
 
-/* .primary-header {
-  font-size: var(--font-primary-header);
-  font-weight: 600;
-  margin-top: 100px;
-  letter-spacing: -3px;
-} */
-
-/* .tertiary-header {
-  font-size: var(--font-tertiary-header);
-  font-weight: 600;
-} */
-/* .header-tertiary {
-  font-size: var(--font-tertiary-header);
-  font-weight: 600;
-} */
-
 .get-started {
   display: flex;
   justify-content: center;
@@ -356,7 +340,7 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 985px) {
   body {
     overflow: scroll;
     overflow-x: hidden;
