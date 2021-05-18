@@ -1,15 +1,13 @@
 // Copy Script Link
 content = document.querySelector("#script-link");
 if (content != null) {
-  console.log(content);
   content.addEventListener("click", () => {
-    console.log("called");
     navigator.clipboard.writeText(
       '<script src="https://kaaliui.netlify.app/kaali.js"></>'
     );
 
     var tooltip = document.querySelector("#scripttooltip");
-    console.log(tooltip, "ye script tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   content.addEventListener("mouseout", () => {
@@ -22,14 +20,12 @@ if (content != null) {
 // Copy css link
 content = document.querySelector("#css-link");
 if (content != null) {
-  console.log(content);
   content.addEventListener("click", () => {
-    console.log("called");
     navigator.clipboard.writeText(
       '<link rel="stylesheet" href="https://kaaliui.netlify.app/kaali.css">'
     );
     let tooltip = document.querySelector("#mytooltip");
-    console.log(tooltip, "ye css tooltip");
+
     tooltip.innerHTML = "Copied";
   });
 
@@ -45,9 +41,7 @@ if (
   document.querySelector(".fas.fa-bars") != null &&
   document.querySelector(".fas.fa-bars").style.display != "none"
 ) {
-  console.log("bars visible");
   document.querySelector(".fa-bars").addEventListener("click", () => {
-    console.log("clicked yahs");
     document.querySelector(".navbar-ul").style.display = "flex";
     document.querySelector(".fas.fa-bars").style.display = "none";
     document.querySelector(".close-menu").style.display = "block";
@@ -59,52 +53,11 @@ if (
   document.querySelector(".close-menu").style.display != "none"
 ) {
   document.querySelector(".close-menu").addEventListener("click", () => {
-    console.log("close button dikh raha hai");
     document.querySelector(".navbar-ul").style.display = "none";
     document.querySelector(".fas.fa-bars").style.display = "block";
     document.querySelector(".close-menu").style.display = "none";
   });
 }
-
-/*if (parseInt(window.innerWidth) <= 768) {
-  document.querySelector(".navbar-ul").style.display = "none";
-  document.querySelector(".close-menu").style.display = "none";
-  document.querySelector(".fa-bars").style.display = "block";
-} else {
-  document.querySelector(".navbar-ul").style.display = "flex";
-  document.querySelector(".fa-bars").style.display = "none";
-  document.querySelector(".close-menu").style.display = "none";
-}
-document.querySelector(".fa-bars").addEventListener("click", () => {
-  console.log("clicked yahs");
-  if (document.querySelector(".navbar-ul").style.display === "none") {
-    document.querySelector(".navbar-ul").style.display = "block";
-    document.querySelector(".navbar-ul").classList.add("slide-in-top");
-
-    // Hide hamburger
-    document.querySelector(".fa-bars").style.display = "none";
-
-    // Show Close Button
-    document.querySelector(".close-menu").style.display = "block";
-  } else {
-    document.querySelector(".close-menu").style.display = "none";
-  }
-});
-
-document.querySelector(".close-menu").addEventListener("click", () => {
-  if (document.querySelector(".close-menu").style.display == "none") {
-    document.querySelector(".close-menu").style.display = "block";
-  } else {
-    document.querySelector(".navbar-ul").style.display = "none";
-
-    // Hide Close Menu
-    document.querySelector(".close-menu").style.display = "none";
-
-    // Show Bars
-    document.querySelector(".fa-bars").style.display = "block";
-  }
-});
-*/
 // ---------------------------------------------------------------------------------------------
 
 // load alert.html for desktop
@@ -148,14 +101,8 @@ $(window).resize((e) => {
     document.querySelector(".fa-bars").style.display = "none";
     document.querySelector(".close-menu").style.display = "none";
   }
-  console.log("gadbad yaha hai", window.innerWidth);
 
   document.querySelector(".fa-bars").addEventListener("click", () => {
-    console.log(
-      "clicked yahs",
-      document.querySelector(".navbar-ul").style.display.value
-    );
-
     if (document.querySelector(".navbar-ul").style.display === "none") {
       document.querySelector(".navbar-ul").style.display = "block";
       document.querySelector(".navbar-ul").classList.add("slide-in-top");
@@ -184,7 +131,7 @@ $(window).resize((e) => {
 // remove active class
 function removeActiveClass() {
   let activeclass = document.querySelector(".active");
-  console.log(activeclass, "active class");
+
   if (activeclass != null) {
     activeclass.classList.remove("active");
   }
@@ -406,7 +353,6 @@ $(window).load(function () {
 $(window).load(function () {
   $(function () {
     $("#componentslink").click(function () {
-      console.log("clickedddddd");
       $("#main").load("./components/alert/alert.html");
     });
   });
@@ -420,7 +366,6 @@ if (document.querySelector("#btn-danger-close") != null) {
   document.querySelector("#btn-danger-close").addEventListener("click", () => {
     let alertbox = document.querySelector(".alert-content.alert-danger");
 
-    console.log("lal bhadak");
     alertbox.classList.add("fade-out-top");
     setTimeout(() => {
       if (alertbox.classList.contains("fade-out-top")) {
@@ -437,7 +382,6 @@ if (document.querySelector("#btn-danger-close") != null) {
 // Close Success Alert
 if (document.querySelector("#btn-success-close") != null) {
   document.querySelector("#btn-success-close").addEventListener("click", () => {
-    console.log("green alert close");
     document
       .querySelector(".alert-content.alert-success")
       .classList.add("fade-out-top");
@@ -459,7 +403,6 @@ if (document.querySelector("#btn-success-close") != null) {
 // Close info alert
 if (document.querySelector("#btn-info-close") != null) {
   document.querySelector("#btn-info-close").addEventListener("click", () => {
-    console.log("blue called");
     document
       .querySelector(".alert-content.alert-info")
       .classList.add("fade-out-top");
@@ -519,7 +462,6 @@ function resetWarningAlert() {
 
 if (document.querySelector("#clip-alert-danger") != null) {
   document.querySelector("#clip-alert-danger").addEventListener("click", () => {
-    console.log("called");
     navigator.clipboard.writeText(
       '<div class="alert-content alert-danger">' +
         "\n\t" +
@@ -530,7 +472,7 @@ if (document.querySelector("#clip-alert-danger") != null) {
     );
 
     let tooltip = document.querySelector("#danger-tooltip");
-    console.log(tooltip, "ye apna tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   document
@@ -549,7 +491,6 @@ if (document.querySelector("#clip-alert-success") != null) {
   document
     .querySelector("#clip-alert-success")
     .addEventListener("click", () => {
-      console.log("called");
       navigator.clipboard.writeText(
         '<div class="alert-content alert-success">' +
           "\n\t" +
@@ -559,7 +500,7 @@ if (document.querySelector("#clip-alert-success") != null) {
       );
 
       let tooltip = document.querySelector("#success-tooltip");
-      console.log(tooltip, "ye apna tooltip");
+
       tooltip.innerHTML = "Copied";
     });
   document
@@ -585,7 +526,7 @@ if (document.querySelector("#clip-alert-info") != null) {
     );
 
     let tooltip = document.querySelector("#info-tooltip");
-    console.log(tooltip, "ye apna tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   document
@@ -604,7 +545,6 @@ if (document.querySelector("#clip-alert-warning") != null) {
   document
     .querySelector("#clip-alert-warning")
     .addEventListener("click", () => {
-      console.log("called");
       navigator.clipboard.writeText(
         '<div class="alert-content alert-warning">' +
           "\n\t" +
@@ -614,7 +554,7 @@ if (document.querySelector("#clip-alert-warning") != null) {
       );
 
       let tooltip = document.querySelector("#warning-tooltip");
-      console.log(tooltip, "ye apna tooltip");
+
       tooltip.innerHTML = "Copied";
     });
   document
@@ -630,9 +570,7 @@ if (document.querySelector("#clip-alert-warning") != null) {
 // Avatar.js
 content = document.querySelector("#clip-avatar-letter");
 if (content != null) {
-  console.log(content);
   content.addEventListener("click", () => {
-    console.log("called");
     navigator.clipboard.writeText(
       '<div class="avatar-container">' +
         "\n" +
@@ -673,7 +611,7 @@ if (content != null) {
     );
 
     let tooltip = document.querySelector("#avatar-letter-tooltip");
-    console.log(tooltip, "ye apna tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   content.addEventListener("mouseout", () => {
@@ -685,9 +623,7 @@ if (content != null) {
 // For image avatar with status
 content = document.querySelector("#clip-avatar-image-status");
 if (content != null) {
-  console.log(content);
   content.addEventListener("click", () => {
-    console.log("called");
     navigator.clipboard.writeText(
       '<div class="avatar-container">' +
         "\n" +
@@ -711,7 +647,7 @@ if (content != null) {
     );
 
     let tooltip = document.querySelector("#avatar-image-status-tooltip");
-    console.log(tooltip, "ye apna tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   content.addEventListener("mouseout", () => {
@@ -723,9 +659,7 @@ if (content != null) {
 // For regular avatars
 content = document.querySelector("#clip-avatar-regular");
 if (content != null) {
-  console.log(content);
   content.addEventListener("click", () => {
-    console.log("called");
     navigator.clipboard.writeText(
       '<div class="avatar-container">' +
         "\n" +
@@ -739,7 +673,7 @@ if (content != null) {
     );
 
     let tooltip = document.querySelector("#avatar-image-regular-tooltip");
-    console.log(tooltip, "ye apna tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   content.addEventListener("mouseout", () => {
@@ -753,7 +687,6 @@ if (content != null) {
 
 if (document.querySelector(".btn-primary") != null) {
   document.querySelector(".btn-primary").addEventListener("click", () => {
-    console.log("helo");
     document.querySelector(".toast-primary").style.visibility = "visible";
     setTimeout(() => {
       document.querySelector(".toast-primary").classList.add("fade-out-bottom");
@@ -768,7 +701,6 @@ function resetPrimary() {
 
 if (document.querySelector(".btn-success") != null) {
   document.querySelector(".btn-success").addEventListener("click", () => {
-    console.log("helo");
     document.querySelector(".toast-success").style.visibility = "visible";
     setTimeout(() => {
       document.querySelector(".toast-success").classList.add("fade-out-bottom");
@@ -782,7 +714,6 @@ function resetSuccess() {
 }
 if (document.querySelector(".btn-danger") != null) {
   document.querySelector(".btn-danger").addEventListener("click", () => {
-    console.log("danger");
     document.querySelector(".toast-failure").style.visibility = "visible";
     setTimeout(() => {
       document.querySelector(".toast-failure").classList.add("fade-out-bottom");
@@ -797,9 +728,7 @@ function resetFailure() {
 
 content = document.querySelector("#clip-toast");
 if (content != null) {
-  console.log(content);
   content.addEventListener("click", () => {
-    console.log("called");
     navigator.clipboard.writeText(
       '<div class="toast toast-center toast-primary">' +
         "\n" +
@@ -832,7 +761,7 @@ if (content != null) {
     );
 
     let tooltip = document.querySelector("#toast-tooltip");
-    console.log(tooltip, "ye toast tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   content.addEventListener("mouseout", () => {
@@ -847,22 +776,19 @@ if (content != null) {
 modalIsOpen = false;
 if (document.querySelector(".btn.btn-like") != null) {
   document.querySelector(".btn.btn-like").addEventListener("click", () => {
-    console.log("like clicked");
     document.querySelector(".modal").style.display = "block";
     document.querySelector(".modal").classList.add("fade-in");
     modalIsOpen = true;
 
     if (modalIsOpen == true) {
       window.onclick = function (e) {
-        console.log("window clicked");
         let alertbox = document.querySelector(".modal");
-        console.log("alertox", alertbox);
-        console.log(e.target, "ye target hai");
+
         // if (
         //   e.target !== alertbox &&
         //   e.target !== document.querySelector(".image.image-heart")
         // ) {
-        //   console.log("alertox", alertbox);
+        //
         //   alertbox.style.display = "none";
         // }
         if (e.target == document.querySelector(".outer-modal-container")) {
@@ -878,7 +804,7 @@ if (document.querySelector(".btn.btn-like") != null) {
       "#f5f5f538";
   });
 }
-// console.log(modalIsOpen, "kya modla open hai");
+//
 
 function removeFadeInFromModal() {
   document.querySelector(".modal").classList.remove("fade-in");
@@ -895,8 +821,6 @@ if (document.querySelector("#btn-modal-close") != null) {
       "#2F3136";
     let alertbox = document.querySelector(".modal");
     if (alertbox != null) {
-      console.log("modal close clicked", alertbox);
-
       document.querySelector(".modal").classList.add("fade-out-top");
       setTimeout(() => {
         if (alertbox.classList.contains("fade-out-top")) {
@@ -914,8 +838,6 @@ if (document.querySelector("#btn-modal-close") != null) {
       removeFadeInFromModal();
       let alertbox = document.querySelector(".modal");
       if (alertbox != null) {
-        console.log("modal close clicked", alertbox);
-
         document.querySelector(".modal").classList.add("fade-out-top");
         setTimeout(() => {
           if (alertbox.classList.contains("fade-out-top")) {
@@ -930,7 +852,6 @@ if (document.querySelector("#btn-modal-close") != null) {
 let modalclip = document.querySelector("#clip-modal");
 if (modalclip != null) {
   modalclip.addEventListener("click", () => {
-    console.log("modal clip called");
     navigator.clipboard.writeText(
       '<div class="modal">' +
         "\n" +
@@ -999,7 +920,7 @@ if (modalclip != null) {
     );
 
     let tooltip = document.querySelector("#modal-tooltip");
-    console.log(tooltip, "ye modal-tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   modalclip.addEventListener("mouseout", () => {
@@ -1013,7 +934,6 @@ if (modalclip != null) {
 let typoclip = document.querySelector("#clip-typo");
 if (typoclip != null) {
   typoclip.addEventListener("click", () => {
-    console.log("typo clip called");
     navigator.clipboard.writeText(
       '<div class="header header-primary">primary header</div>' +
         "\n" +
@@ -1034,7 +954,7 @@ if (typoclip != null) {
     );
 
     let tooltip = document.querySelector("#typo-tooltip");
-    console.log(tooltip, "ye tooltip tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   typoclip.addEventListener("mouseout", () => {
@@ -1051,7 +971,6 @@ if (typoclip != null) {
 let badgeclip = document.querySelector("#clip-badge");
 if (badgeclip != null) {
   badgeclip.addEventListener("click", () => {
-    console.log("badge clip called");
     navigator.clipboard.writeText(
       '<div class="badge-container">' +
         "\n" +
@@ -1087,7 +1006,7 @@ if (badgeclip != null) {
     );
 
     let tooltip = document.querySelector("#badge-tooltip");
-    console.log(tooltip, "ye badge tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   badgeclip.addEventListener("mouseout", () => {
@@ -1101,7 +1020,6 @@ if (badgeclip != null) {
 let buttonclip = document.querySelector("#clip-button");
 if (buttonclip != null) {
   buttonclip.addEventListener("click", () => {
-    console.log("button clip called");
     navigator.clipboard.writeText(
       '<div class="btn-container">' +
         "\n" +
@@ -1119,7 +1037,7 @@ if (buttonclip != null) {
     );
 
     let tooltip = document.querySelector("#button-tooltip");
-    console.log(tooltip, "ye button tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   buttonclip.addEventListener("mouseout", () => {
@@ -1133,7 +1051,6 @@ if (buttonclip != null) {
 let inputclip = document.querySelector("#clip-input");
 if (inputclip != null) {
   inputclip.addEventListener("click", () => {
-    console.log("input clip called");
     navigator.clipboard.writeText(
       '<form action="#" class="form">' +
         "\n" +
@@ -1175,7 +1092,7 @@ if (inputclip != null) {
     );
 
     let tooltip = document.querySelector("#input-tooltip");
-    console.log(tooltip, "ye input tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   inputclip.addEventListener("mouseout", () => {
@@ -1189,7 +1106,6 @@ if (inputclip != null) {
 let cardclip = document.querySelector("#clip-card");
 if (cardclip != null) {
   cardclip.addEventListener("click", () => {
-    console.log("card clip called");
     navigator.clipboard.writeText(
       '<div class="card">' +
         "\n" +
@@ -1227,7 +1143,7 @@ if (cardclip != null) {
     );
 
     let tooltip = document.querySelector("#card-tooltip");
-    console.log(tooltip, "ye card-tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   cardclip.addEventListener("mouseout", () => {
@@ -1240,7 +1156,6 @@ if (cardclip != null) {
 let cardecommerceclip = document.querySelector("#clip-card-ecommerce");
 if (cardecommerceclip != null) {
   cardecommerceclip.addEventListener("click", () => {
-    console.log("card ecommerce called");
     navigator.clipboard.writeText(
       '<div class="card card-ecommerce">' +
         "\n" +
@@ -1308,7 +1223,7 @@ if (cardecommerceclip != null) {
     );
 
     let tooltip = document.querySelector("#card-ecommerce-tooltip");
-    console.log(tooltip, "ye cardecommerceclip-tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   cardecommerceclip.addEventListener("mouseout", () => {
@@ -1321,7 +1236,6 @@ if (cardecommerceclip != null) {
 let cardhorizontalclip = document.querySelector("#clip-card-horizontal");
 if (cardhorizontalclip != null) {
   cardhorizontalclip.addEventListener("click", () => {
-    console.log("card ecommerce called");
     navigator.clipboard.writeText(
       '<div class="card card-horizontal">' +
         "\n" +
@@ -1351,7 +1265,7 @@ if (cardhorizontalclip != null) {
     );
 
     let tooltip = document.querySelector("#card-tooltip-horizontal");
-    console.log(tooltip, "ye cardecommerceclip-tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   cardecommerceclip.addEventListener("mouseout", () => {
@@ -1364,7 +1278,6 @@ if (cardhorizontalclip != null) {
 let cardplainclip = document.querySelector("#clip-card-plain");
 if (cardplainclip != null) {
   cardplainclip.addEventListener("click", () => {
-    console.log("card ecommerce called");
     navigator.clipboard.writeText(
       '<div class="card">' +
         "\n" +
@@ -1384,7 +1297,7 @@ if (cardplainclip != null) {
     );
 
     let tooltip = document.querySelector("#card-tooltip-plain");
-    console.log(tooltip, "ye cardecommerceclip-tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   cardplainclip.addEventListener("mouseout", () => {
@@ -1397,7 +1310,6 @@ if (cardplainclip != null) {
 let cardfallbackclip = document.querySelector("#clip-card-fallback");
 if (cardfallbackclip != null) {
   cardfallbackclip.addEventListener("click", () => {
-    console.log("card ecommerce called");
     navigator.clipboard.writeText(
       '<div class="card">' +
         "\n" +
@@ -1417,7 +1329,7 @@ if (cardfallbackclip != null) {
     );
 
     let tooltip = document.querySelector("#card-tooltip-fallback");
-    console.log(tooltip, "ye cardecommerceclip-tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   cardfallbackclip.addEventListener("mouseout", () => {
@@ -1432,7 +1344,6 @@ if (cardfallbackclip != null) {
 let tooltipclip = document.querySelector("#clip-tooltip");
 if (tooltipclip != null) {
   tooltipclip.addEventListener("click", () => {
-    console.log("tooltip clip called");
     navigator.clipboard.writeText(
       '<div class="btn-container">' +
         "\n" +
@@ -1450,7 +1361,7 @@ if (tooltipclip != null) {
     );
 
     let tooltip = document.querySelector("#tooltip-tooltip");
-    console.log(tooltip, "ye tooltip tooltip");
+
     tooltip.innerHTML = "Copied";
   });
   tooltipclip.addEventListener("mouseout", () => {

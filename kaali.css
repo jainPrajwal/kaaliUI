@@ -119,20 +119,17 @@ a {
 .sidebar-list-items {
   padding: 1rem;
   text-align: center;
+  cursor: pointer;
 }
 
-.sidebar-container {
+.sidebar-list-items:hover {
+  color: var(--status-available-background);
 }
+
 .secondary-header {
   font-size: var(--font-secondary-header);
   font-weight: 600;
 }
-
-/* .text {
-  text-align: left;
-  letter-spacing: 0.8px;
-  line-height: 30px;
-} */
 
 .params {
   margin: 1rem 0rem;
