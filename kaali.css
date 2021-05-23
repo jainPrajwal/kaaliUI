@@ -5,9 +5,11 @@
 @import url("./components/badge/badge.css");
 @import url("./components/button/button.css");
 @import url("./components/card/card.css");
+@import url("./components/input/input.css");
 @import url("./components/toast/toast.css");
 @import url("./components/tooltip/tooltip.css");
 @import url("./components/typography/typography.css");
+@import url("./components/modal/modal.css");
 @import url("./styles.css");
 * {
   padding: 0;
@@ -122,12 +124,6 @@ a {
   font-weight: 600;
 }
 
-/* .text {
-  text-align: left;
-  letter-spacing: 0.8px;
-  line-height: 30px;
-} */
-
 .params {
   margin: 1rem 0rem;
 }
@@ -143,20 +139,6 @@ hr {
   line-height: 30px;
   letter-spacing: 0.8px;
 }
-
-/* iframe {
-  margin: 1rem 0rem;
-} */
-
-/* Code Container */
-
-/* .outer-code-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-} */
 
 .code-box {
   padding: 1rem;
@@ -178,23 +160,6 @@ hr {
   color: rgb(248, 248, 248);
 }
 
-/* .copy {
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  cursor: pointer;
-} */
-
-/* .copy-icon {
-  margin-bottom: 0.5rem;
-  display: flex;
-  justify-content: flex-end;
-  color: rgb(248, 248, 248);
-  margin-right: -5px;
-  margin-top: -20px;
-  overflow-x: auto;
-} */
-
 .fa-clipboard.fas {
   cursor: pointer;
 }
@@ -212,12 +177,6 @@ hr {
 .code > span {
   font-family: "Inconsolata", monospace;
 }
-/* .trying-out {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .token.tag {
   color: #55b5db;
@@ -231,13 +190,6 @@ hr {
   color: #55b5db;
 }
 .copy-tooltip {
-  /* position: relative; */
-  /* position: relative; */
-  /* position: relative; */
-  /* height: 10px; */
-  /* width: 140px; */
-  /* background: yellowgreen; */
-  /* display: flex; */
   float: right;
 }
 /* copy-tooltip for Copy Text */
