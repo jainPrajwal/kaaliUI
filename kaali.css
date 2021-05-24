@@ -10,7 +10,6 @@
 @import url("./components/toast/toast.css");
 @import url("./components/tooltip/tooltip.css");
 @import url("./components/typography/typography.css");
-@import url("./components/modal/modal.css");
 @import url("./styles.css");
 * {
   padding: 0;

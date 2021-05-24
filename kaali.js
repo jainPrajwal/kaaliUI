@@ -68,42 +68,42 @@ function displayProcedure() {
 }
 // ---------------------------------------------------------------------------------------------
 // Making navbar responsive STEP 2
-$(window).resize((e) => {
-  if (parseInt(window.innerWidth) <= 985) {
-    document.querySelector(".navbar-ul").style.display = "none";
-    document.querySelector(".close-menu").style.display = "none";
-    document.querySelector(".fa-bars").style.display = "block";
-  } else {
-    document.querySelector(".navbar-ul").style.display = "flex";
-    document.querySelector(".fa-bars").style.display = "none";
-    document.querySelector(".close-menu").style.display = "none";
-  }
+// $(window).resize((e) => {
+//   if (parseInt(window.innerWidth) <= 985) {
+//     document.querySelector(".navbar-ul").style.display = "none";
+//     document.querySelector(".close-menu").style.display = "none";
+//     document.querySelector(".fa-bars").style.display = "block";
+//   } else {
+//     document.querySelector(".navbar-ul").style.display = "flex";
+//     document.querySelector(".fa-bars").style.display = "none";
+//     document.querySelector(".close-menu").style.display = "none";
+//   }
 
-  document.querySelector(".fa-bars").addEventListener("click", () => {
-    if (document.querySelector(".navbar-ul").style.display === "none") {
-      document.querySelector(".navbar-ul").style.display = "block";
-      document.querySelector(".navbar-ul").classList.add("slide-in-top");
+//   document.querySelector(".fa-bars").addEventListener("click", () => {
+//     if (document.querySelector(".navbar-ul").style.display === "none") {
+//       document.querySelector(".navbar-ul").style.display = "block";
+//       document.querySelector(".navbar-ul").classList.add("slide-in-top");
 
-      // Hide hamburger
-      document.querySelector(".fa-bars").style.display = "none";
+//       // Hide hamburger
+//       document.querySelector(".fa-bars").style.display = "none";
 
-      // Show Close Button
-      document.querySelector(".close-menu").style.display = "block";
-    }
-  });
+//       // Show Close Button
+//       document.querySelector(".close-menu").style.display = "block";
+//     }
+//   });
 
-  document.querySelector(".close-menu").addEventListener("click", () => {
-    if (document.querySelector(".close-menu").style.display == "none") {
-      // document.querySelector(".close-menu").style.display = "block";
-    } else {
-      document.querySelector(".navbar-ul").classList.add("slide-out-top");
-      document.querySelector(".close-menu").style.display = "none";
-      document.querySelector(".fa-bars").style.display = "block";
+//   document.querySelector(".close-menu").addEventListener("click", () => {
+//     if (document.querySelector(".close-menu").style.display == "none") {
+//       // document.querySelector(".close-menu").style.display = "block";
+//     } else {
+//       document.querySelector(".navbar-ul").classList.add("slide-out-top");
+//       document.querySelector(".close-menu").style.display = "none";
+//       document.querySelector(".fa-bars").style.display = "block";
 
-      document.querySelector(".navbar-ul").style.display = "none";
-    }
-  });
-});
+//       document.querySelector(".navbar-ul").style.display = "none";
+//     }
+//   });
+// });
 
 //_______________________________________________________________________________________________________________
 
@@ -434,11 +434,20 @@ if (content != null) {
 
 if (document.querySelector(".btn-primary") != null) {
   document.querySelector(".btn-primary").addEventListener("click", () => {
+    console.log("clicked");
     document.querySelector(".toast-primary").style.visibility = "visible";
     setTimeout(() => {
       document.querySelector(".toast-primary").classList.add("fade-out-bottom");
     }, 1000);
     resetPrimary();
+  });
+  let target = document.querySelector(".btn-primary");
+  removeEventListeners(target, "click");
+}
+
+function removeEventListeners(target, event) {
+  target.removeEventListener(event, () => {
+    console.log(`${target} removed from ${event}`);
   });
 }
 
