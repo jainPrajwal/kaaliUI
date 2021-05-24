@@ -104,6 +104,7 @@ a {
   margin-top: 60px;
   background-color: var(--sidebar-background);
   padding: 1rem 0rem;
+  text-transform: capitalize;
 }
 
 .sidebar-list::-webkit-scrollbar {

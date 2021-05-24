@@ -48,6 +48,9 @@ if (hamburgericon != null) {
     navLinks.classList.toggle("open");
     links.forEach((link) => {
       link.classList.toggle("fade");
+      link.addEventListener("click", () => {
+        link.classList.add("active");
+      });
     });
 
     //Hamburger Animation

@@ -121,6 +121,9 @@ a {
   margin: 0rem 5rem;
   align-items: center;
 }
+.navbar-ul li:hover {
+  color: var(--status-available-background);
+}
 .navbar-ul li a {
   text-decoration: none;
   color: inherit;
