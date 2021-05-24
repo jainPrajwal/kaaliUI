@@ -18,11 +18,11 @@
   --font-sm: 13px;
 
   /* Mobile Header */
-  --font-primary-header-mobile: 3rem;
+  --font-primary-header-mobile: 2.8rem;
 
   /* Backgrounds */
-  --sidebar-background: #101010;
-  --navbar-background: #000000;
+  --sidebar-background: #0d1117;
+  --navbar-background: #0d1117;
   --main-background: #2f3136;
   --card-background: #191919;
   --plain-card-body-background: #2b2a2a;
@@ -40,7 +40,9 @@
   --token-tag-color: #55b5db;
   --token-attribute-color: #9fca56;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -57,6 +59,10 @@ body {
   /* width: 100vw; */
   overflow-x: hidden;
 }
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -123,6 +129,18 @@ a {
 .navbar-ul .component-link-item-mobile {
   display: none;
 }
+.component-link-item-desktop {
+  transition: all 500ms ease-out;
+}
+.navbar-item-link {
+  transition: all 500ms ease-out;
+}
+.navbar-item-link:hover {
+  color: var(--status-available-background);
+}
+.navbar-ul .component-link-item-desktop:hover {
+  color: var(--status-available-background);
+}
 /* Header */
 
 .header-section {
@@ -152,22 +170,6 @@ a {
   letter-spacing: 0px;
 }
 
-/* .primary-header {
-  font-size: var(--font-primary-header);
-  font-weight: 600;
-  margin-top: 100px;
-  letter-spacing: -3px;
-} */
-
-/* .tertiary-header {
-  font-size: var(--font-tertiary-header);
-  font-weight: 600;
-} */
-/* .header-tertiary {
-  font-size: var(--font-tertiary-header);
-  font-weight: 600;
-} */
-
 .get-started {
   display: flex;
   justify-content: center;
@@ -180,13 +182,81 @@ a {
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 1;
-  transition: color 1s ease-in-out;
+  background: linear-gradient(
+    to right,
+    var(--status-available-background) 50%,
+    var(--font-color) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 500ms ease-in-out;
+}
+
+.wrapper-get-started {
+}
+.wrapper-get-started:hover {
 }
 
 .get-started:hover {
   transform: scale(1.02);
+  background-position: left bottom;
 }
 
+.footer {
+  background-color: var(--navbar-background);
+  color: var(--font-color);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+}
+.developer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.developer-name {
+  padding-bottom: 1rem;
+}
+.brand.brand-footer {
+  margin-right: 0;
+}
+.brand-footer-logo {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+}
+
+.wrapper-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social-list {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.social-list-item {
+  font-size: var(--font-tertiary-header);
+  padding: 0.5rem;
+  transition: color 200ms ease;
+}
+.social-list-item:hover {
+  color: var(--status-available-background);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.kaali-repo-link:hover {
+  color: var(--font-color);
+  cursor: pointer;
+}
 /* Media Queries */
 @media only screen and (max-width: 480px) {
   body {
@@ -201,7 +271,7 @@ a {
   .fas.fa-bars {
     display: inline-block;
     padding-right: 1rem;
-    color: var(--red);
+    color: var(--status-available-background);
   }
 
   .close-menu {
@@ -209,7 +279,7 @@ a {
     font-size: 2.5rem;
     padding-right: 1rem;
     /* line-height: 50px; */
-    color: var(--red);
+    color: var(--status-available-background);
     display: none;
     cursor: pointer;
   }
@@ -230,7 +300,7 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--navbar-background);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -259,12 +329,18 @@ a {
 
   .get-started {
     font-size: 1rem;
-    min-width: 220px;
-    padding: 1rem;
+    min-width: 150px;
+    padding: 0.8rem 2rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .developer {
+    padding: 0.5rem 0;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 985px) {
   body {
     overflow: scroll;
     overflow-x: hidden;
@@ -276,7 +352,7 @@ a {
   .fas.fa-bars {
     display: inline-block;
     padding-right: 1rem;
-    color: var(--red);
+    color: var(--status-available-background);
   }
 
   .close-menu {
@@ -284,7 +360,7 @@ a {
     font-size: 2.5rem;
     padding-right: 1rem;
     /* line-height: 50px; */
-    color: var(--red);
+    color: var(--status-available-background);
     display: none;
     cursor: pointer;
   }
@@ -305,7 +381,7 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--navbar-background);
     display: flex;
     flex-direction: column;
     justify-content: start;

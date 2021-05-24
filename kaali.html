@@ -40,12 +40,15 @@
 
         <ul class="navbar-ul">
           <li class="component-link-item-desktop">
-            <a href="./index.html">home</a>
+            <a href="./kaali.html">get started</a>
           </li>
           <li class="component-link-item-desktop">
             <a href="#" id="componentslink">components</a>
           </li>
-          <li class="component-link-item-desktop"><a href="">about</a></li>
+          <li class="component-link-item-desktop">
+            <a href="./index.html#foot">about</a>
+            <!-- This is cool.It not only goes to index.html but also traverses to footer!COOOOOOOOOOOL!!!!!!! -->
+          </li>
           <li class="component-link-item-mobile">
             <a href="./kaali.html">get started</a>
           </li>
@@ -68,61 +71,62 @@
             <a href="#" id="component-badge">badge</a>
           </li>
           <li class="component-link-item-mobile">
-            <a href="#" id="component-button">buttons</a>
+            <a href="#" id="component-button">button</a>
           </li>
-          <li class="component-link-item-mobile"><a href="">images</a></li>
+
           <li class="component-link-item-mobile">
             <a href="#" id="component-input">input</a>
           </li>
           <li class="component-link-item-mobile">
             <a href="#" id="component-modal">modal</a>
           </li>
-          <li class="component-link-item-mobile"><a href="">lists</a></li>
+
           <li class="component-link-item-mobile">
             <a href="#" id="component-typo">typography</a>
           </li>
         </ul>
       </nav>
+
       <div class="sidebar-container">
         <ul class="sidebar-list">
-          <li class="sidebar-list-items">
-            <a href="#" id="alertlink">alert</a>
+          <li class="sidebar-list-items" id="alertlink">
+            <a href="#">alert</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="avatarlink">avatar</a>
+          <li class="sidebar-list-items" id="avatarlink">
+            <a href="#">avatar</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="cardlink">card</a>
+          <li class="sidebar-list-items" id="cardlink">
+            <a href="#">card</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="tooltiplink">tooltip</a>
+          <li class="sidebar-list-items" id="tooltiplink">
+            <a href="#">tooltip</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="buttonlink">button</a>
+          <li class="sidebar-list-items" id="buttonlink">
+            <a href="#">button</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="toastlink">toast</a>
+          <li class="sidebar-list-items" id="toastlink">
+            <a href="#">toast</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="badgelink">badge</a>
+          <li class="sidebar-list-items" id="badgelink">
+            <a href="#">badge</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="modallink">modal</a>
+          <li class="sidebar-list-items" id="modallink">
+            <a href="#">modal</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="typolink">typography</a>
+          <li class="sidebar-list-items" id="typolink">
+            <a href="#">typography</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
-            <a href="#" id="inputlink">input</a>
+          <li class="sidebar-list-items" id="inputlink">
+            <a href="#">input</a>
           </li>
           <hr class="hr-sidebar" />
         </ul>
@@ -130,70 +134,70 @@
 
       <div class="main-body">
         <section class="main" id="main">
+          <div class="header header-secondary">getting started</div>
+          <hr class="alert-hr" />
           <div class="main-container">
-            <div class="header header-secondary">getting started</div>
-
-            <div class="introduction params">
-              <div class="header header-tertiary">introduction</div>
-              <div class="text">
-                building websites with dark mode?then you have landed at perfect
-                place!
+            <div class="outer-get-started-container">
+              <div class="introduction params">
+                <div class="header header-tertiary">introduction</div>
+                <div class="text">
+                  building websites with dark mode?then you have landed at
+                  perfect place!
+                </div>
+                <div class="text">
+                  And yes!Its responsive,colourful and easy to use.
+                </div>
               </div>
-              <div class="text">
-                And yes!Its responsive,colourful and easy to use.
-              </div>
-            </div>
 
-            <div class="css-link params">
-              <div class="header header-tertiary">css</div>
-              <div class="text">
-                paste the below snippet into &lt;head&gt; of your html page to
-                load our css styling.
-              </div>
-              <small class="note"
-                >note:be sure to keep our snippet before your own css
-                stylesheet.</small
-              >
+              <div class="css-link params">
+                <div class="header header-tertiary">css</div>
+                <div class="text">
+                  paste the below snippet into &lt;head&gt; of your html page to
+                  load our css styling.
+                </div>
+                <small class="note"
+                  >note:be sure to keep our snippet before your own css
+                  stylesheet.</small
+                >
 
-              <div class="code-box">
-                <div class="code-container">
-                  <div class="copy-tooltip">
-                    <i class="fas fa-clipboard" id="css-link">
-                      <span id="mytooltip" class="tooltiptext"
-                        >Copy to Clipboard</span
-                      ></i
-                    >
-                  </div>
-
-                  <div class="token tag">
-                    <pre
-                      class="code"
-                    ><span class="lt symbol">&lt;</span>link <span class="attr">rel</span><span class="symbol">=</span><span class="symbol single-quote">"</span><span class="value">stylesheet</span><span class="symbol single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="symbol single-quote">"</span>https://kaaliui.netlify.app/kaali.css<span class="symbol single-quote">"</span><span class="gt">&gt;</span></pre>
+                <div class="code-box">
+                  <div class="code-container">
+                    <div class="copy-tooltip">
+                      <i class="fas fa-clipboard" id="css-link">
+                        <span id="mytooltip" class="tooltiptext"
+                          >Copy to Clipboard</span
+                        ></i
+                      >
+                    </div>
+                    <div class="token tag">
+                      <pre
+                        class="code"
+                      ><span class="lt symbol">&lt;</span>link <span class="attr">rel</span><span class="symbol">=</span><span class="symbol single-quote">"</span><span class="value">stylesheet</span><span class="symbol single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="symbol single-quote">"</span>https://kaaliui.netlify.app/kaali.css<span class="symbol single-quote">"</span><span class="slash">/</span><span class="gt symbol">&gt;</span></pre>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="js-link params">
-              <div class="header header-tertiary">javascript</div>
-              <div class="text">
-                paste the below snippet after &lt;body&gt; of your html page to
-                load our javascript functionalities.
-              </div>
-              <div class="code-box">
-                <div class="code-container">
-                  <div class="copy-tooltip">
-                    <i class="fas fa-clipboard" id="script-link">
-                      <span id="scripttooltip" class="tooltiptext"
-                        >Copy to Clipboard</span
-                      ></i
-                    >
-                  </div>
-
-                  <div class="token tag">
-                    <pre
-                      class="code"
-                    ><span class="lt symbol">&lt;</span>script <span class="attr">src</span><span class="symbol">=</span><span class="symbol single-quote">"</span>https://kaaliui.netlify.app/kaali.js<span class="symbol single-quote">"</span><span class="gt">&gt;</span><span class="lt symbol">&lt;</span><span class="closing-slash">/</span>script<span class="gt">&gt;</span></pre>
+              <div class="js-link params">
+                <div class="header header-tertiary">javascript</div>
+                <div class="text">
+                  paste the below snippet after &lt;body&gt; of your html page
+                  to load our javascript functionalities.
+                </div>
+                <div class="code-box">
+                  <div class="code-container">
+                    <div class="copy-tooltip">
+                      <i class="fas fa-clipboard" id="script-link">
+                        <span id="scripttooltip" class="tooltiptext"
+                          >Copy to Clipboard</span
+                        ></i
+                      >
+                    </div>
+                    <div class="token tag">
+                      <pre
+                        class="code"
+                      ><span class="lt symbol">&lt;</span>script <span class="attr">src</span><span class="symbol">=</span><span class="symbol single-quote">"</span>https://kaaliui.netlify.app/kaali.js<span class="symbol single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">/</span>script<span class="gt symbol">&gt;</span></pre>
+                    </div>
                   </div>
                 </div>
               </div>

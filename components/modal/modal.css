@@ -17,8 +17,8 @@
   --font-sm: 13px;
 
   /* Backgrounds */
-  --sidebar-background: #101010;
-  --navbar-background: #000000;
+  --sidebar-background: #0d1117;
+  --navbar-background: #0d1117;
   --main-background: #2f3136;
   --card-background: #191919;
   --plain-card-body-background: #2b2a2a;
@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   min-height: 100vh;
 }
 
@@ -64,7 +64,7 @@
   transform: scale(1.1);
 }
 .modal {
-  background-color: var(--card-background);
+  background-color: var(--navbar-background);
   color: var(--font-color);
   padding: 1rem;
   max-width: 440px;
@@ -160,7 +160,7 @@
 #btn-modal-close:hover {
   color: var(--blue);
 }
-.btn.btn-primary {
+.btn.btn-primary.btn-modal {
   width: 100%;
   margin: 0;
   margin-top: 0.5rem;
@@ -240,6 +240,7 @@
   .modal {
     left: 10%;
     max-width: 80%;
-    top: 10%;
+    /* top: 10%; */
+    transform: translateY(-50%, 50%);
   }
 }

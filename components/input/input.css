@@ -19,8 +19,8 @@
   /* Mobile headers */
   --font-primary-header-mobile: 2.5rem;
   /* Backgrounds */
-  --sidebar-background: #101010;
-  --navbar-background: #000000;
+  --sidebar-background: #0d1117;
+  --navbar-background: #0d1117;
   --main-background: #2f3136;
   --card-background: #191919;
   --plain-card-body-background: #2b2a2a;
@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   min-height: 100vh;
 }
 .form {
@@ -113,9 +113,10 @@
 .form .input:valid + .label-name .content-name {
   transform: translateY(-100%);
 }
-.btn.btn-primary {
+.btn.btn-primary.btn-input {
   width: 100%;
   margin: 0;
+  max-width: none;
 }
 .form .input:focus + .label-name::after,
 .form .input:valid + .label-name::after {

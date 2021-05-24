@@ -6,6 +6,7 @@
 @import url("./components/button/button.css");
 @import url("./components/card/card.css");
 @import url("./components/input/input.css");
+@import url("./components/modal/modal.css");
 @import url("./components/toast/toast.css");
 @import url("./components/tooltip/tooltip.css");
 @import url("./components/typography/typography.css");
@@ -32,8 +33,8 @@
   --font-sm: 13px;
 
   /* Backgrounds */
-  --sidebar-background: #101010;
-  --navbar-background: #000000;
+  --sidebar-background: #0d1117;
+  --navbar-background: #0d1117;
   --main-background: #2f3136;
   --card-background: #191919;
   --plain-card-body-background: #2b2a2a;
@@ -95,6 +96,7 @@ a {
   height: calc(100vh - 70px);
   margin-top: 60px;
   background-color: var(--sidebar-background);
+  padding: 1rem 0rem;
 }
 
 .sidebar-list::-webkit-scrollbar {
@@ -111,12 +113,18 @@ a {
   background: #ffc72c;
 }
 
+.active {
+  color: var(--status-available-background);
+}
+
 .sidebar-list-items {
   padding: 1rem;
   text-align: center;
+  cursor: pointer;
 }
 
-.sidebar-container {
+.sidebar-list-items:hover {
+  color: var(--status-available-background);
 }
 
 .secondary-header {
@@ -130,9 +138,15 @@ a {
 
 hr {
   width: 100%;
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
 }
-
+.outer-get-started-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  /* border: 1px solid gray; */
+  min-height: 100vh;
+}
 .note {
   color: #ffbd2e;
   font-size: 1rem;
@@ -173,7 +187,9 @@ hr {
 .code {
   font-family: "Inconsolata", monospace;
 }
-
+.comments {
+  color: #9fca56;
+}
 .code > span {
   font-family: "Inconsolata", monospace;
 }
@@ -189,8 +205,15 @@ hr {
 .symbol {
   color: #55b5db;
 }
+.lt.symbol,
+.gt.symbol,
+.slash {
+  color: gray;
+}
 .copy-tooltip {
-  float: right;
+  /* float: right; */
+  position: absolute;
+  left: 60%;
 }
 /* copy-tooltip for Copy Text */
 .copy-tooltip .tooltiptext {
@@ -205,23 +228,28 @@ hr {
   z-index: 10;
   opacity: 1;
   transition: opacity 0.3s;
-  top: -10%;
-  left: 50%;
+  top: -100%;
+  left: -626.1%;
 }
 
+/* .copy-tooltip .tooltiptext::after { */
 .copy-tooltip .tooltiptext::after {
   content: "";
+  left: 50%;
+  top: 100%;
   position: absolute;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
 .fa-clipboard:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
 @media only screen and (max-width: 480px) {
+  .code-box {
+    padding: 1rem 0;
+  }
   .container {
     grid-template-columns: 100%;
     grid-gap: 1rem;
@@ -241,29 +269,77 @@ hr {
   }
   .copy-tooltip {
     margin-bottom: 10px;
+    position: unset;
   }
   .copy-tooltip .tooltiptext {
     left: 0%;
+    top: 0%;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 10%;
+    top: 100%;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 880px) {
+@media screen and (min-width: 480px) and (max-width: 985px) {
   .container {
     grid-template-columns: 100%;
     grid-gap: 1rem;
   }
+  .main-body {
+    padding: 1rem;
+  }
   .sidebar-container {
     /* visibility: hidden; */
     display: none;
+  }
+  .code-box {
+    padding: 1rem 0rem;
   }
   .code-container {
     display: flex;
     flex-direction: column;
   }
   .copy-tooltip {
-    margin-bottom: 10px;
+    position: unset;
   }
   .copy-tooltip .tooltiptext {
-    left: 0%;
+    top: 0%;
+    left: 0;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 10%;
+    top: 100%;
+  }
+}
+@media screen and (min-width: 985px) and (max-width: 1200px) {
+  .copy-tooltip {
+    margin-bottom: 10px;
+    position: absolute;
+    float: right;
+    left: 76%;
+  }
+  .copy-tooltip .tooltiptext {
+    top: -110%;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 51%;
+    top: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .copy-tooltip {
+    margin-bottom: 10px;
+    position: absolute;
+    float: right;
+    left: 66%;
+  }
+  .copy-tooltip .tooltiptext {
+    top: -110%;
+  }
+  .copy-tooltip .tooltiptext::after {
+    left: 55%;
+    top: 100%;
   }
 }
