@@ -37,27 +37,56 @@ if (content != null) {
 // ---------------------------------------------------------------------------------------------
 
 // Making navbar responsive STEP 1
-if (
-  document.querySelector(".fas.fa-bars") != null &&
-  document.querySelector(".fas.fa-bars").style.display != "none"
-) {
-  document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector(".navbar-ul").style.display = "flex";
-    document.querySelector(".fas.fa-bars").style.display = "none";
-    document.querySelector(".close-menu").style.display = "block";
-  });
-}
 
-if (
-  document.querySelector(".close-menu") != null &&
-  document.querySelector(".close-menu").style.display != "none"
-) {
-  document.querySelector(".close-menu").addEventListener("click", () => {
-    document.querySelector(".navbar-ul").style.display = "none";
-    document.querySelector(".fas.fa-bars").style.display = "block";
-    document.querySelector(".close-menu").style.display = "none";
+const hamburgericon = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".navbar-ul");
+const links = document.querySelectorAll(".component-link-item-mobile");
+if (hamburgericon != null) {
+  hamburgericon.addEventListener("click", () => {
+    //Animate Links
+    // document.querySelector(".navbar-ul").style.display = "flex";
+    navLinks.classList.toggle("open");
+    links.forEach((link) => {
+      link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburgericon.classList.toggle("toggle");
   });
 }
+// hamburgericon.addEventListener("click", () => {
+//   document.querySelector(".navbar-ul").style.display = "flex";
+//   document.querySelector(".fas.fa-bars").style.display = "none";
+//   document.querySelector(".close-menu").style.display = "block";
+// });
+
+// let closeicon = document.querySelector(".close-menu");
+// closeicon.addEventListener("click", () => {
+//   document.querySelector(".navbar-ul").style.display = "none";
+//   document.querySelector(".fas.fa-bars").style.display = "block";
+//   document.querySelector(".close-menu").style.display = "none";
+// });
+// if (
+//   document.querySelector(".fas.fa-bars") != null &&
+//   document.querySelector(".fas.fa-bars").style.display != "none"
+// ) {
+//   document.querySelector(".fas.fa-bars").addEventListener("click", () => {
+//     document.querySelector(".navbar-ul").style.display = "flex";
+//     document.querySelector(".fas.fa-bars").style.display = "none";
+//     document.querySelector(".close-menu").style.display = "block";
+//   });
+// }
+
+// if (
+//   document.querySelector(".close-menu") != null &&
+//   document.querySelector(".close-menu").style.display != "none"
+// ) {
+//   document.querySelector(".close-menu").addEventListener("click", () => {
+//     document.querySelector(".navbar-ul").style.display = "none";
+//     document.querySelector(".fas.fa-bars").style.display = "block";
+//     document.querySelector(".close-menu").style.display = "none";
+//   });
+// }
 // ---------------------------------------------------------------------------------------------
 
 // Common Procedure to load components on mobile
@@ -214,7 +243,7 @@ if (document.querySelector("#clip-alert-danger") != null) {
         "\n\t" +
         " This is a danger alert with dismissal button." +
         "\n" +
-        '\t <span class="btn-dismiss" id="btn-danger-close">&times;</span>' +
+        '\t<span class="btn-dismiss" id="btn-danger-close">&times;</span>' +
         "\n"
     );
 
@@ -339,7 +368,7 @@ if (content != null) {
         "\n" +
         "\t\t</div>" +
         "\n" +
-        '\t\t<span class="status status-available "> </span>' +
+        '\t\t<span class="status status-available "></span>' +
         "\n" +
         "\t</div>" +
         '\t<div class="image-container">' +
@@ -350,7 +379,7 @@ if (content != null) {
         "\n" +
         "\t\t</div>" +
         "\n" +
-        '\t\t<span class="status status-do-not-disturb "> </span>' +
+        '\t\t<span class="status status-do-not-disturb "></span>' +
         "\n" +
         "\t</div>" +
         "\n" +
@@ -378,7 +407,7 @@ if (content != null) {
         "\n" +
         '\t\t<img src="/assets/images/avatar_1.jpg" alt="avatar"class="avatar avatar-sm"/>' +
         "\n" +
-        '\t\t<span class="status status-available"> </span>' +
+        '\t\t<span class="status status-available"></span>' +
         "\n" +
         "\t</div>" +
         "\n" +
@@ -386,7 +415,7 @@ if (content != null) {
         "\n" +
         '\t\t<img src="/assets/images/avatar_1.jpg" alt="avatar"class="avatar avatar-sm"/>' +
         "\n" +
-        '\t\t<span class="status status-do-not-disturb"> </span>' +
+        '\t\t<span class="status status-do-not-disturb"></span>' +
         "\n" +
         "\t</div>" +
         "\n" +
@@ -676,7 +705,7 @@ if (modalclip != null) {
         "\n" +
         "\t\t</div>" +
         "\n" +
-        '\t\t\t <div class="modal-footer">' +
+        '\t\t\t<div class="modal-footer">' +
         "\n" +
         '\t\t\t<button class="btn btn-primary"id="collection-btn-done">Done</button>' +
         "\n" +

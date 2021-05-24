@@ -264,6 +264,7 @@ hr {
 
   .main-body {
     padding-left: 1rem;
+    overflow-x: hidden;
   }
   .sidebar-container {
     /* visibility: hidden; */
