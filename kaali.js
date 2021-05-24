@@ -432,16 +432,20 @@ if (content != null) {
 
 // toast.js
 
-if (document.querySelector(".btn-primary") != null) {
-  document.querySelector(".btn-primary").addEventListener("click", () => {
-    console.log("clicked");
-    document.querySelector(".toast-primary").style.visibility = "visible";
-    setTimeout(() => {
-      document.querySelector(".toast-primary").classList.add("fade-out-bottom");
-    }, 1000);
-    resetPrimary();
-  });
-  let target = document.querySelector(".btn-primary");
+if (document.querySelector(".btn-primary.btn-toast") != null) {
+  document
+    .querySelector(".btn-primary.btn-toast")
+    .addEventListener("click", () => {
+      console.log("clicked");
+      document.querySelector(".toast-primary").style.visibility = "visible";
+      setTimeout(() => {
+        document
+          .querySelector(".toast-primary")
+          .classList.add("fade-out-bottom");
+      }, 1000);
+      resetPrimary();
+    });
+  let target = document.querySelector(".btn-primary.btn-toast");
   removeEventListeners(target, "click");
 }
 
@@ -455,27 +459,35 @@ function resetPrimary() {
   document.querySelector(".toast-primary").classList.remove("fade-out-bottom");
 }
 
-if (document.querySelector(".btn-success") != null) {
-  document.querySelector(".btn-success").addEventListener("click", () => {
-    document.querySelector(".toast-success").style.visibility = "visible";
-    setTimeout(() => {
-      document.querySelector(".toast-success").classList.add("fade-out-bottom");
-    }, 1000);
-    resetSuccess();
-  });
+if (document.querySelector(".btn-success.btn-toast") != null) {
+  document
+    .querySelector(".btn-success.btn-toast")
+    .addEventListener("click", () => {
+      document.querySelector(".toast-success").style.visibility = "visible";
+      setTimeout(() => {
+        document
+          .querySelector(".toast-success")
+          .classList.add("fade-out-bottom");
+      }, 1000);
+      resetSuccess();
+    });
 }
 
 function resetSuccess() {
   document.querySelector(".toast-success").classList.remove("fade-out-bottom");
 }
-if (document.querySelector(".btn-danger") != null) {
-  document.querySelector(".btn-danger").addEventListener("click", () => {
-    document.querySelector(".toast-failure").style.visibility = "visible";
-    setTimeout(() => {
-      document.querySelector(".toast-failure").classList.add("fade-out-bottom");
-    }, 1000);
-    resetFailure();
-  });
+if (document.querySelector(".btn-danger.btn-toast") != null) {
+  document
+    .querySelector(".btn-danger.btn-toast")
+    .addEventListener("click", () => {
+      document.querySelector(".toast-failure").style.visibility = "visible";
+      setTimeout(() => {
+        document
+          .querySelector(".toast-failure")
+          .classList.add("fade-out-bottom");
+      }, 1000);
+      resetFailure();
+    });
 }
 
 function resetFailure() {
