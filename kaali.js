@@ -585,32 +585,24 @@ if (content != null) {
 modalIsOpen = false;
 if (document.querySelector(".btn.btn-like") != null) {
   document.querySelector(".btn.btn-like").addEventListener("click", () => {
+    removeFadeOutFromModal();
+    removeFadeInFromModal();
     document.querySelector(".modal").style.display = "block";
-    document.querySelector(".modal").classList.add("fade-in");
+    // document.querySelector(".modal").classList.add("fade-in");
     modalIsOpen = true;
 
     if (modalIsOpen == true) {
       window.onclick = function (e) {
         let alertbox = document.querySelector(".modal");
-
-        // if (
-        //   e.target !== alertbox &&
-        //   e.target !== document.querySelector(".image.image-heart")
-        // ) {
-        //
-        //   alertbox.style.display = "none";
-        // }
         if (e.target == document.querySelector(".outer-modal-container")) {
           alertbox.style.display = "none";
-          document.querySelector(
-            ".outer-modal-container"
-          ).style.backgroundColor = "#2F3136";
+          document.querySelector(".container").style.backgroundColor =
+            "#2F3136";
         }
       };
     }
 
-    document.querySelector(".outer-modal-container").style.backgroundColor =
-      "#f5f5f538";
+    document.querySelector(".container").style.backgroundColor = "#f5f5f538";
   });
 }
 //
@@ -626,8 +618,7 @@ function removeFadeOutFromModal() {
 if (document.querySelector("#btn-modal-close") != null) {
   document.querySelector("#btn-modal-close").addEventListener("click", () => {
     removeFadeInFromModal();
-    document.querySelector(".outer-modal-container").style.backgroundColor =
-      "#2F3136";
+    document.querySelector(".container").style.backgroundColor = "#2F3136";
     let alertbox = document.querySelector(".modal");
     if (alertbox != null) {
       document.querySelector(".modal").classList.add("fade-out-top");
@@ -643,6 +634,11 @@ if (document.querySelector("#btn-modal-close") != null) {
   document
     .querySelector("#collection-btn-done")
     .addEventListener("click", () => {
+      Array.prototype.map.call(document.querySelector(".container"), (item) => {
+        item.addEventListener("click", () => {
+          console.log(item);
+        });
+      });
       removeFadeOutFromModal();
       removeFadeInFromModal();
       let alertbox = document.querySelector(".modal");
@@ -654,8 +650,7 @@ if (document.querySelector("#btn-modal-close") != null) {
           }
         }, 1500);
       }
-      document.querySelector(".outer-modal-container").style.backgroundColor =
-        "#2F3136";
+      document.querySelector(".container").style.backgroundColor = "#2F3136";
     });
 }
 let modalclip = document.querySelector("#clip-modal");
