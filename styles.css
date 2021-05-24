@@ -39,6 +39,8 @@
   --note-color: #ffbd2e;
   --token-tag-color: #55b5db;
   --token-attribute-color: #9fca56;
+
+  --minimumColumnWidth: 160px;
 }
 html {
   scroll-behavior: smooth;
@@ -165,7 +167,7 @@ a {
   font-weight: 600;
   margin-bottom: 1rem;
 }
-.header-primary {
+.header-main {
   font-size: var(--font-main-header);
   letter-spacing: 0px;
 }

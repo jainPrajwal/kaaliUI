@@ -25,8 +25,12 @@
   /* regular font color */
   --font-color: rgb(248, 248, 248);
 
+  /* Mobile Header */
+  --font-primary-header-mobile: 2.8rem;
+
   /* font sizes */
-  --font-primary-header: 6.625rem;
+  --font-main-header: 6.625rem;
+  --font-primary-header: 3.6rem;
   --font-secondary-header: 2rem;
   --font-tertiary-header: 1.56rem;
   --font-regular: 1rem;
@@ -51,6 +55,9 @@
   --note-color: #ffbd2e;
   --token-tag-color: #55b5db;
   --token-attribute-color: #9fca56;
+
+  /* card grid width */
+  --minimumColumnWidth: 160px;
 }
 body {
   overflow: hidden;
