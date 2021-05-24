@@ -35,7 +35,13 @@ if (content != null) {
   });
 }
 // ---------------------------------------------------------------------------------------------
+function removeActiveClass() {
+  let activeclass = document.querySelector(".active");
 
+  if (activeclass != null) {
+    activeclass.classList.remove("active");
+  }
+}
 // Making navbar responsive STEP 1
 
 const hamburgericon = document.querySelector(".hamburger");
@@ -47,9 +53,12 @@ if (hamburgericon != null) {
     // document.querySelector(".navbar-ul").style.display = "flex";
     navLinks.classList.toggle("open");
     links.forEach((link) => {
-      link.classList.toggle("fade");
+      link.classList.add("fade");
       link.addEventListener("click", () => {
+        removeActiveClass();
         link.classList.add("active");
+        navLinks.classList.remove("open");
+        hamburgericon.classList.remove("toggle");
       });
     });
 
