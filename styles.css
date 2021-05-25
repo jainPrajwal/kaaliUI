@@ -419,7 +419,7 @@ a {
     transition: all 1s ease-out;
     pointer-events: none;
     margin-top: 60px;
-    padding-top: 2.8rem;
+    padding-top: 300px;
     overflow-y: scroll;
     align-items: flex-start;
   }
