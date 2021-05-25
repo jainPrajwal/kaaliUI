@@ -326,18 +326,19 @@ copyText(id, text, tooltipId);
 //_______________________________________________________________________________________________________________
 
 // toast.js
+function resetToast(className) {
+  let element = document.querySelector(`.${className}`);
+  element.style.visibility = "visible";
+  setTimeout(() => {
+    document.querySelector(".toast-primary").classList.add("fade-out-bottom");
+  }, 1000);
+  element.classList.remove("fade-out-bottom");
+}
 if (document.querySelector(".btn-primary.btn-toast") != null) {
   document
     .querySelector(".btn-primary.btn-toast")
     .addEventListener("click", () => {
-      console.log("clicked");
-      document.querySelector(".toast-primary").style.visibility = "visible";
-      setTimeout(() => {
-        document
-          .querySelector(".toast-primary")
-          .classList.add("fade-out-bottom");
-      }, 1000);
-      resetPrimary();
+      resetToast("toast-primary");
     });
   let target = document.querySelector(".btn-primary.btn-toast");
   removeEventListeners(target, "click");
@@ -349,43 +350,20 @@ function removeEventListeners(target, event) {
   });
 }
 
-function resetPrimary() {
-  document.querySelector(".toast-primary").classList.remove("fade-out-bottom");
-}
-
 if (document.querySelector(".btn-success.btn-toast") != null) {
   document
     .querySelector(".btn-success.btn-toast")
     .addEventListener("click", () => {
-      document.querySelector(".toast-success").style.visibility = "visible";
-      setTimeout(() => {
-        document
-          .querySelector(".toast-success")
-          .classList.add("fade-out-bottom");
-      }, 1000);
-      resetSuccess();
+      resetToast("toast-success");
     });
 }
 
-function resetSuccess() {
-  document.querySelector(".toast-success").classList.remove("fade-out-bottom");
-}
 if (document.querySelector(".btn-danger.btn-toast") != null) {
   document
     .querySelector(".btn-danger.btn-toast")
     .addEventListener("click", () => {
-      document.querySelector(".toast-failure").style.visibility = "visible";
-      setTimeout(() => {
-        document
-          .querySelector(".toast-failure")
-          .classList.add("fade-out-bottom");
-      }, 1000);
-      resetFailure();
+      resetToast("toast-failure");
     });
-}
-
-function resetFailure() {
-  document.querySelector(".toast-failure").classList.remove("fade-out-bottom");
 }
 
 id = "clip-toast";
