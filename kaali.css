@@ -10,11 +10,13 @@
 @import url("./components/toast/toast.css");
 @import url("./components/tooltip/tooltip.css");
 @import url("./components/typography/typography.css");
+@import url("./components/checkbox/checkbox.css");
 @import url("./styles.css");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --red: #ff0044;
@@ -24,8 +26,12 @@
   /* regular font color */
   --font-color: rgb(248, 248, 248);
 
+  /* Mobile Header */
+  --font-primary-header-mobile: 2.8rem;
+
   /* font sizes */
-  --font-primary-header: 6.625rem;
+  --font-main-header: 6.625rem;
+  --font-primary-header: 3.6rem;
   --font-secondary-header: 2rem;
   --font-tertiary-header: 1.56rem;
   --font-regular: 1rem;
@@ -50,6 +56,9 @@
   --note-color: #ffbd2e;
   --token-tag-color: #55b5db;
   --token-attribute-color: #9fca56;
+
+  /* card grid width */
+  --minimumColumnWidth: 160px;
 }
 body {
   overflow: hidden;
@@ -61,7 +70,9 @@ li {
 a {
   text-decoration: none;
 }
-
+.main-container {
+  margin-top: 1.6rem;
+}
 .hr-sidebar {
   width: 60%;
   margin: auto;
@@ -96,6 +107,7 @@ a {
   margin-top: 60px;
   background-color: var(--sidebar-background);
   padding: 1rem 0rem;
+  text-transform: capitalize;
 }
 
 .sidebar-list::-webkit-scrollbar {
@@ -139,13 +151,12 @@ hr {
   width: 100%;
   /* border-top: 1px solid white; */
 }
-.outer-get-started-container {
+/* .outer-get-started-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  /* border: 1px solid gray; */
   min-height: 100vh;
-}
+} */
 .note {
   color: #ffbd2e;
   font-size: 1rem;
@@ -210,9 +221,10 @@ hr {
   color: gray;
 }
 .copy-tooltip {
-  /* float: right; */
   position: absolute;
-  left: 60%;
+
+  right: 510px;
+  z-index: 2;
 }
 /* copy-tooltip for Copy Text */
 .copy-tooltip .tooltiptext {
@@ -256,9 +268,9 @@ hr {
 
   .main-body {
     padding-left: 1rem;
+    overflow-x: hidden;
   }
   .sidebar-container {
-    /* visibility: hidden; */
     display: none;
   }
 
@@ -289,7 +301,6 @@ hr {
     padding: 1rem;
   }
   .sidebar-container {
-    /* visibility: hidden; */
     display: none;
   }
   .code-box {
@@ -316,10 +327,11 @@ hr {
     margin-bottom: 10px;
     position: absolute;
     float: right;
-    left: 76%;
+    left: 720px;
   }
   .copy-tooltip .tooltiptext {
     top: -110%;
+    left: -75px;
   }
   .copy-tooltip .tooltiptext::after {
     left: 51%;
@@ -332,10 +344,11 @@ hr {
     margin-bottom: 10px;
     position: absolute;
     float: right;
-    left: 66%;
+    left: 720px;
   }
   .copy-tooltip .tooltiptext {
     top: -110%;
+    left: -82px;
   }
   .copy-tooltip .tooltiptext::after {
     left: 55%;
