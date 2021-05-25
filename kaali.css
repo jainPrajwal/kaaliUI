@@ -226,7 +226,7 @@ hr {
   position: absolute;
   /* left: 60%; */
   right: 510px;
-  z-index: 10;
+  z-index: 2;
 }
 /* copy-tooltip for Copy Text */
 .copy-tooltip .tooltiptext {

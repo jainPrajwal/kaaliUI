@@ -1173,3 +1173,29 @@ if (tooltipclip != null) {
     tooltip.innerHTML = "Copy to Clipboard";
   });
 }
+// _______________________________________________________________________________________________________________
+// checkbox.js
+let checkboxclip = document.querySelector("#clip-checkbox");
+if (checkboxclip != null) {
+  checkboxclip.addEventListener("click", () => {
+    navigator.clipboard.writeText(
+      '<label class="checkbox-label">One' +
+        "\n" +
+        '\t<input type="checkbox"> checked="checked">' +
+        "\n" +
+        '\t<span class="checkmark"> </span>' +
+        "\n" +
+        '\t<button class="btn btn-success">success button</button>' +
+        "\n" +
+        "</label>"
+    );
+
+    let tooltip = document.querySelector("#checkbox-tooltip");
+
+    tooltip.innerHTML = "Copied";
+  });
+  checkboxclip.addEventListener("mouseout", () => {
+    let tooltip = document.querySelector("#checkbox-tooltip");
+    tooltip.innerHTML = "Copy to Clipboard";
+  });
+}
