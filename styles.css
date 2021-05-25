@@ -419,7 +419,7 @@ a {
     transition: all 1s ease-out;
     pointer-events: none;
     margin-top: 60px;
-    padding-top: 300px;
+    padding-top: 2.8rem;
     overflow-y: scroll;
     align-items: flex-start;
   }
@@ -551,5 +551,12 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .navbar-ul {
+    height: calc(100vh - 60px);
+    padding-top: 15rem;
   }
 }
