@@ -19,8 +19,7 @@
 
 .alert-danger {
   color: #ff0c00;
-  /* background-image: linear-gradient(rgb(96 0 0 / 40%), rgb(179 0 0 / 51%)); */
-  /* background-image: linear-gradient(rgb(71 16 0), rgb(35 0 0)); */
+
   background-image: linear-gradient(
     269deg,
     rgb(142 0 0 / 32%),

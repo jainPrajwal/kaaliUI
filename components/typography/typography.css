@@ -44,7 +44,6 @@
   font-weight: 600;
   margin-bottom: 1rem;
   white-space: nowrap;
-  /* padding: 1rem; */
 }
 .header-main {
   font-size: var(--font-main-header);
@@ -52,7 +51,6 @@
 }
 .header-primary {
   font-size: var(--font-primary-header);
-  /* letter-spacing: -3px; */
 }
 .header-secondary {
   font-size: var(--font-secondary-header);

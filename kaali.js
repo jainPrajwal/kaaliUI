@@ -49,8 +49,6 @@ const navLinks = document.querySelector(".navbar-ul");
 const links = document.querySelectorAll(".component-link-item-mobile");
 if (hamburgericon != null) {
   hamburgericon.addEventListener("click", () => {
-    //Animate Links
-    // document.querySelector(".navbar-ul").style.display = "flex";
     navLinks.classList.toggle("open");
     links.forEach((link) => {
       link.classList.add("fade");
@@ -66,85 +64,6 @@ if (hamburgericon != null) {
     hamburgericon.classList.toggle("toggle");
   });
 }
-// hamburgericon.addEventListener("click", () => {
-//   document.querySelector(".navbar-ul").style.display = "flex";
-//   document.querySelector(".fas.fa-bars").style.display = "none";
-//   document.querySelector(".close-menu").style.display = "block";
-// });
-
-// let closeicon = document.querySelector(".close-menu");
-// closeicon.addEventListener("click", () => {
-//   document.querySelector(".navbar-ul").style.display = "none";
-//   document.querySelector(".fas.fa-bars").style.display = "block";
-//   document.querySelector(".close-menu").style.display = "none";
-// });
-// if (
-//   document.querySelector(".fas.fa-bars") != null &&
-//   document.querySelector(".fas.fa-bars").style.display != "none"
-// ) {
-//   document.querySelector(".fas.fa-bars").addEventListener("click", () => {
-//     document.querySelector(".navbar-ul").style.display = "flex";
-//     document.querySelector(".fas.fa-bars").style.display = "none";
-//     document.querySelector(".close-menu").style.display = "block";
-//   });
-// }
-
-// if (
-//   document.querySelector(".close-menu") != null &&
-//   document.querySelector(".close-menu").style.display != "none"
-// ) {
-//   document.querySelector(".close-menu").addEventListener("click", () => {
-//     document.querySelector(".navbar-ul").style.display = "none";
-//     document.querySelector(".fas.fa-bars").style.display = "block";
-//     document.querySelector(".close-menu").style.display = "none";
-//   });
-// }
-// ---------------------------------------------------------------------------------------------
-
-// Common Procedure to load components on mobile
-function displayProcedure() {
-  document.querySelector(".navbar-ul").style.display = "none";
-  document.querySelector(".close-menu").style.display = "none";
-  document.querySelector(".fas.fa-bars").style.display = "block";
-}
-// ---------------------------------------------------------------------------------------------
-// Making navbar responsive STEP 2
-// $(window).resize((e) => {
-//   if (parseInt(window.innerWidth) <= 985) {
-//     document.querySelector(".navbar-ul").style.display = "none";
-//     document.querySelector(".close-menu").style.display = "none";
-//     document.querySelector(".fa-bars").style.display = "block";
-//   } else {
-//     document.querySelector(".navbar-ul").style.display = "flex";
-//     document.querySelector(".fa-bars").style.display = "none";
-//     document.querySelector(".close-menu").style.display = "none";
-//   }
-
-//   document.querySelector(".fa-bars").addEventListener("click", () => {
-//     if (document.querySelector(".navbar-ul").style.display === "none") {
-//       document.querySelector(".navbar-ul").style.display = "block";
-//       document.querySelector(".navbar-ul").classList.add("slide-in-top");
-
-//       // Hide hamburger
-//       document.querySelector(".fa-bars").style.display = "none";
-
-//       // Show Close Button
-//       document.querySelector(".close-menu").style.display = "block";
-//     }
-//   });
-
-//   document.querySelector(".close-menu").addEventListener("click", () => {
-//     if (document.querySelector(".close-menu").style.display == "none") {
-//       // document.querySelector(".close-menu").style.display = "block";
-//     } else {
-//       document.querySelector(".navbar-ul").classList.add("slide-out-top");
-//       document.querySelector(".close-menu").style.display = "none";
-//       document.querySelector(".fa-bars").style.display = "block";
-
-//       document.querySelector(".navbar-ul").style.display = "none";
-//     }
-//   });
-// });
 
 //_______________________________________________________________________________________________________________
 
@@ -163,7 +82,6 @@ if (document.querySelector("#btn-danger-close") != null) {
     }, 1000);
 
     // resetDangerAlert();
-    // alertbox.style.display = "none";
   });
 }
 
@@ -183,8 +101,6 @@ if (document.querySelector("#btn-success-close") != null) {
           "none";
       }
     }, 1000);
-
-    // resetSuccessAlert();
   });
 }
 
@@ -204,8 +120,6 @@ if (document.querySelector("#btn-info-close") != null) {
           "none";
       }
     }, 1000);
-
-    // resetInfoALert();
   });
 }
 
@@ -225,8 +139,6 @@ if (document.querySelector("#btn-warning-close") != null) {
           "none";
       }
     }, 1000);
-
-    // resetWarningAlert();
   });
 }
 
@@ -588,7 +500,7 @@ if (document.querySelector(".btn.btn-like") != null) {
     removeFadeOutFromModal();
     removeFadeInFromModal();
     document.querySelector(".modal").style.display = "block";
-    // document.querySelector(".modal").classList.add("fade-in");
+
     modalIsOpen = true;
 
     if (modalIsOpen == true) {

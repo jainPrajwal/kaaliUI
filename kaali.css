@@ -221,10 +221,8 @@ hr {
   color: gray;
 }
 .copy-tooltip {
-  /* float: right; */
-  /* float: right; */
   position: absolute;
-  /* left: 60%; */
+
   right: 510px;
   z-index: 2;
 }
@@ -273,7 +271,6 @@ hr {
     overflow-x: hidden;
   }
   .sidebar-container {
-    /* visibility: hidden; */
     display: none;
   }
 
@@ -304,7 +301,6 @@ hr {
     padding: 1rem;
   }
   .sidebar-container {
-    /* visibility: hidden; */
     display: none;
   }
   .code-box {
