@@ -80,6 +80,12 @@ if (document.querySelector("#btn-danger-close") != null) {
           "none";
       }
     }, 1000);
+    setTimeout(() => {
+      resetDangerAlert();
+      document.querySelector(
+        ".alert-content.alert-danger.alert-style-development-purpose"
+      ).style.display = "flex";
+    }, 5000);
 
     // resetDangerAlert();
   });
@@ -88,10 +94,12 @@ if (document.querySelector("#btn-danger-close") != null) {
 // Close Success Alert
 if (document.querySelector("#btn-success-close") != null) {
   document.querySelector("#btn-success-close").addEventListener("click", () => {
+    resetSuccessAlert();
     document
       .querySelector(".alert-content.alert-success")
       .classList.add("fade-out-top");
     setTimeout(() => {
+      // resetSuccessAlert();
       if (
         document
           .querySelector(".alert-content.alert-success")
@@ -101,6 +109,13 @@ if (document.querySelector("#btn-success-close") != null) {
           "none";
       }
     }, 1000);
+
+    setTimeout(() => {
+      resetSuccessAlert();
+      document.querySelector(
+        ".alert-content.alert-success.alert-style-development-purpose"
+      ).style.display = "flex";
+    }, 5000);
   });
 }
 
@@ -120,6 +135,13 @@ if (document.querySelector("#btn-info-close") != null) {
           "none";
       }
     }, 1000);
+
+    setTimeout(() => {
+      resetInfoALert();
+      document.querySelector(
+        ".alert-content.alert-info.alert-style-development-purpose"
+      ).style.display = "flex";
+    }, 5000);
   });
 }
 
@@ -139,6 +161,13 @@ if (document.querySelector("#btn-warning-close") != null) {
           "none";
       }
     }, 1000);
+
+    setTimeout(() => {
+      resetWarningAlert();
+      document.querySelector(
+        ".alert-content.alert-warning.alert-style-development-purpose"
+      ).style.display = "flex";
+    }, 5000);
   });
 }
 
