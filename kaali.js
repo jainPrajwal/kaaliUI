@@ -330,7 +330,7 @@ function resetToast(className) {
   let element = document.querySelector(`.${className}`);
   element.style.visibility = "visible";
   setTimeout(() => {
-    document.querySelector(".toast-primary").classList.add("fade-out-bottom");
+    document.querySelector(`.${className}`).classList.add("fade-out-bottom");
   }, 1000);
   element.classList.remove("fade-out-bottom");
 }

@@ -46,6 +46,7 @@
 .checkmark::after {
   position: absolute;
   content: "";
+  display: none;
 }
 
 .checkbox-label .checkmark::after {
@@ -59,4 +60,8 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.checkbox-label input:checked ~ .checkmark::after {
+  display: block;
 }

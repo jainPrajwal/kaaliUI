@@ -19,6 +19,10 @@
   transition: background-color 200ms ease-in-out;
   border-radius: 0.2rem;
 }
+
+.card-ecommerce-item {
+  width: 100%;
+}
 .card-image-container {
   margin-bottom: 2rem;
   display: flex;
@@ -173,7 +177,7 @@
 /* Card Ecommerce */
 .card-ecommerce-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
   gap: 24px;
   grid-template-rows: minmax(180px, auto);
   grid-auto-rows: minmax(180px, auto);
@@ -192,8 +196,8 @@
   width: 180px;
   height: 180px;
   position: relative;
-
-  margin-left: 1.8rem;
+  margin: auto;
+  /* margin-left: 1.8rem; */
 }
 .card-ecommerce-image {
   position: absolute;
@@ -208,7 +212,7 @@
 }
 
 .card-ecommerce-content {
-  padding: 1rem;
+  padding: 1rem 0rem;
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -244,11 +248,11 @@
 
 .item-assured {
   width: 75px;
-  height: 80px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 16px;
+  margin-left: 6px;
 }
 
 .flipkart-assured {
@@ -298,12 +302,57 @@
     transform: translateY(0px);
   }
 }
-
-@media only screen and (max-width: 480px) {
-  .card-body,
-  .card-ecommerce-body {
+@media only screen and (max-width: 414px) {
+  .card-ecommerce-body,
+  .card-body {
     margin: 0rem 1rem;
   }
+  .card-ecommerce-content {
+    padding: 0rem;
+    padding-top: 1rem;
+  }
+  .card-ecommerce-image-container {
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 416px) and (max-width: 496px) {
+  .card-ecommerce-item {
+    width: 100%;
+  }
+  .card-ecommerce-content {
+    padding: 0rem;
+    padding-top: 1rem;
+  }
+  .product-details {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .product-price-details {
+    flex-wrap: wrap;
+  }
+  .card-ecommerce-image-container {
+    height: 110px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-ecommerce-container {
+    grid-template-columns: 50% 50%;
+
+    grid-template-rows: minmax(160px, auto);
+    gap: 12px;
+    justify-content: center;
+  }
+  .item-assured {
+    margin-left: 4px;
+  }
+  .ratings-count {
+    margin-left: 4px;
+  }
+}
+@media only screen and (max-width: 480px) {
 }
 
 @media only screen and (max-width: 768px) {
