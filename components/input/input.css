@@ -1,0 +1,97 @@
+.form {
+  margin: 0 auto;
+  width: 60%;
+  padding: 1rem;
+}
+
+.form-container {
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 11rem;
+}
+
+.form-row {
+  margin-bottom: 2rem;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+.form .input {
+  font-size: var(--font-regular);
+  padding-top: 1rem;
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  height: 100%;
+  width: 100%;
+}
+
+.form label {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  border-bottom: 1px solid var(--font-color);
+  color: var(--font-color);
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid var(--blue);
+  left: 0;
+  bottom: -2px;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: all 0.3s ease;
+  padding-top: 0.8rem;
+}
+
+.form .input:focus + .label-name .content-name,
+.form .input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+}
+.btn.btn-primary.btn-input {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+.form .input:focus + .label-name::after,
+.form .input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.input::placeholder {
+  font-size: var(--font-regular);
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+  .form-container {
+    padding: 1rem;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .form-container {
+    padding: 1rem;
+  }
+}

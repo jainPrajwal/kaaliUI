@@ -1,0 +1,62 @@
+.badge-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.badge {
+  margin: 1rem 3rem;
+}
+
+.fas.fa-bell {
+  font-size: 1.7rem;
+  position: relative;
+}
+
+.notification-count {
+  height: 17px;
+  width: 38px;
+  position: absolute;
+  background-color: var(--blue);
+  color: var(--font-color);
+  border-radius: 30%;
+  font-size: small;
+  text-align: center;
+  top: -16%;
+  left: 51.5%;
+  line-height: 16.6px;
+}
+
+.fas.fa-shopping-cart {
+  font-size: 1.7rem;
+  position: relative;
+}
+
+.cart-count {
+  height: 16px;
+  width: 28px;
+  position: absolute;
+  background-color: var(--red);
+  color: var(--font-color);
+  border-radius: 30%;
+  font-size: small;
+  text-align: center;
+  top: -16%;
+  left: 51.5%;
+  line-height: 16.6px;
+}
+.rating {
+  margin-right: 0.5rem;
+}
+.badge-rating {
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  padding: 0rem 0.3rem;
+  font-size: x-small;
+  height: 20px;
+  font-weight: bold;
+}

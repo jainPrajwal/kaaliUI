@@ -1,0 +1,90 @@
+:root {
+  --red: #ff0044;
+  --blue: #1654ff;
+  /* --green: #098a67;
+     */
+  --green: forestgreen;
+  --yellow: #ffae00a4;
+  /* regular font color */
+  --font-color: rgb(248, 248, 248);
+
+  /* font sizes */
+  --font-main-header: 6.625rem;
+  --font-primary-header: 3.3rem;
+  --font-secondary-header: 2rem;
+  --font-tertiary-header: 1.56rem;
+  --font-regular: 1rem;
+  --font-sm: 13px;
+
+  /* Mobile headers */
+  --font-primary-header-mobile: 2.4rem;
+  /* Backgrounds */
+  --sidebar-background: #0d1117;
+  --navbar-background: #0d1117;
+  --main-background: #2f3136;
+  --card-background: #191919;
+  --plain-card-body-background: #2b2a2a;
+  --plain-card-fallback-image: #7f7f7f;
+  --card-ecommerce-bod-background: whitesmoke;
+  --status-available-background: #09ff00;
+  /* Border */
+  --border-color: gray;
+
+  /* status */
+  --status-do-not-disturb: var(--red);
+
+  /* codebox colors */
+  --note-color: #ffbd2e;
+  --token-tag-color: #55b5db;
+  --token-attribute-color: #9fca56;
+}
+
+.header {
+  color: rgb(248, 248, 248);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+.header-main {
+  font-size: var(--font-main-header);
+  letter-spacing: -3px;
+}
+.header-primary {
+  font-size: var(--font-primary-header);
+}
+.header-secondary {
+  font-size: var(--font-secondary-header);
+}
+
+.header-tertiary {
+  font-size: var(--font-tertiary-header);
+}
+
+.text {
+  font-size: var(--font-regular);
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.text-primary {
+  font-weight: 600;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-small {
+  font-size: var(--font-sm);
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .header-primary {
+    font-size: var(--font-primary-header-mobile);
+  }
+}

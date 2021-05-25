@@ -1,0 +1,86 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  width: 170px;
+}
+
+.btn-primary {
+  background-color: var(--blue);
+  color: var(--font-color);
+}
+.btn-primary:focus {
+  border: 1px solid skyblue;
+}
+.btn-success {
+  background-color: var(--green);
+  color: var(--font-color);
+}
+.btn-success:focus {
+  border: 1px solid yellowgreen;
+}
+
+.btn-warning {
+  background-color: #ffae00a4;
+  color: var(--font-color);
+}
+
+.btn-warning:focus {
+  border: 1px solid yellow;
+}
+
+.btn-danger {
+  background-color: var(--red);
+  color: var(--font-color);
+}
+
+.btn-danger:focus {
+  border: 1px solid pink;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--font-color);
+  border: 1px solid gray;
+}
+.btn-secondary:focus {
+  border: 1px solid rgb(248, 248, 248);
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .btn {
+    max-width: 180px;
+    white-space: nowrap;
+  }
+}
