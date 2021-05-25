@@ -1353,52 +1353,55 @@
               />
             </button>
             <div class="some-text">Click on the button to view modal</div>
-            <div class="modal">
-              <div class="modal-container">
-                <div class="modal-header">
-                  <div class="header header-tertiary" style="margin-bottom: 0">
-                    Save item to
+            <div class="modal-bg">
+              <div class="modal">
+                <div class="modal-container">
+                  <div class="modal-header">
+                    <div class="header header-tertiary" style="margin-bottom: 0">
+                      Save item to
+                    </div>
+                    <span id="btn-modal-close">×</span>
                   </div>
-                  <span id="btn-modal-close">×</span>
-                </div>
-                <hr class="modal-hr" />
-                <div class="modal-body">
-                  <div class="row">
-                    <a href="#" class="collection create-new-collection">
-                      <div class="modal-save-item-to-icon create-symbol">+</div>
-                      <div class="create-text heading">create a new collection</div>
-                    </a>
+                  <hr class="modal-hr" />
+                  <div class="modal-body">
+                    <div class="row">
+                      <a href="#" class="collection create-new-collection">
+                        <div class="modal-save-item-to-icon create-symbol">+</div>
+                        <div class="create-text heading">create a new collection</div>
+                      </a>
+                    </div>
+                    <div class="row row-saved-collection">
+                      <a href="#" class="collection saved-collection">
+                        <div class="modal-save-item-to-icon save-symbol">
+                          <img
+                            src="/assets/images/heart.png"
+                            alt="add to cart"
+                            class="image image-heart"
+                          />
+                        </div>
+                        <div class="create-text">
+                          <span class="heading">my wishlist </span>
+                          <span class="secondary-text">Private: 9 items </span>
+                        </div>
+                      </a>
+                      <label class="checkbox-label">
+                        <input type="checkbox" checked="checked"/>
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
                   </div>
-                  <div class="row row-saved-collection">
-                    <a href="#" class="collection saved-collection">
-                      <div class="modal-save-item-to-icon save-symbol">
-                        <img
-                          src="/assets/images/heart.png"
-                          alt="add to cart"
-                          class="image image-heart"
-                        />
-                      </div>
-                      <div class="create-text">
-                        <span class="heading">my wishlist </span>
-                        <span class="secondary-text">Private: 9 items </span>
-                      </div>
-                    </a>
-                    <label class="checkbox-label">
-                      <input type="checkbox" checked="checked"/>
-                      <span class="checkmark"></span>
-                    </label>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-primary btn-modal"
+                      id="collection-btn-done"
+                    >
+                      Done
+                    </button>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    class="btn btn-primary btn-modal"
-                    id="collection-btn-done"
-                  >
-                    Done
-                  </button>
                 </div>
               </div>
             </div>
+            
             <!-- Code Box for modal -->
             <div class="code-box">
               <div class="code-container">
