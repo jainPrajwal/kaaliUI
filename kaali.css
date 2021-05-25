@@ -10,6 +10,7 @@
 @import url("./components/toast/toast.css");
 @import url("./components/tooltip/tooltip.css");
 @import url("./components/typography/typography.css");
+@import url("./components/checkbox/checkbox.css");
 @import url("./styles.css");
 * {
   padding: 0;
@@ -69,7 +70,9 @@ li {
 a {
   text-decoration: none;
 }
-
+.main-container {
+  margin-top: 1.6rem;
+}
 .hr-sidebar {
   width: 60%;
   margin: auto;
@@ -148,13 +151,12 @@ hr {
   width: 100%;
   /* border-top: 1px solid white; */
 }
-.outer-get-started-container {
+/* .outer-get-started-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  /* border: 1px solid gray; */
   min-height: 100vh;
-}
+} */
 .note {
   color: #ffbd2e;
   font-size: 1rem;
@@ -220,8 +222,11 @@ hr {
 }
 .copy-tooltip {
   /* float: right; */
+  /* float: right; */
   position: absolute;
-  left: 60%;
+  /* left: 60%; */
+  right: 510px;
+  z-index: 10;
 }
 /* copy-tooltip for Copy Text */
 .copy-tooltip .tooltiptext {
@@ -326,10 +331,11 @@ hr {
     margin-bottom: 10px;
     position: absolute;
     float: right;
-    left: 76%;
+    left: 720px;
   }
   .copy-tooltip .tooltiptext {
     top: -110%;
+    left: -75px;
   }
   .copy-tooltip .tooltiptext::after {
     left: 51%;
@@ -342,10 +348,11 @@ hr {
     margin-bottom: 10px;
     position: absolute;
     float: right;
-    left: 66%;
+    left: 720px;
   }
   .copy-tooltip .tooltiptext {
     top: -110%;
+    left: -82px;
   }
   .copy-tooltip .tooltiptext::after {
     left: 55%;

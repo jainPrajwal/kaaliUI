@@ -1,11 +1,3 @@
-.outer-modal-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  /* border: 1px solid gray; */
-  min-height: 100vh;
-}
-
 .image-heart {
   width: 24px;
   height: 24px;
@@ -100,11 +92,11 @@
   color: gray;
   font-size: var(--font-sm);
 }
-.checkbox {
+/* .checkbox {
   height: 28px;
   width: 28px;
   padding: 0.2rem;
-}
+} */
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -200,9 +192,17 @@
 
 @media only screen and (max-width: 480px) {
   .modal {
-    left: 10%;
-    max-width: 80%;
+    left: 4%;
+    max-width: 90%;
     /* top: 10%; */
     transform: translateY(-50%, 50%);
+  }
+  .modal-save-item-to-icon {
+    height: 40px;
+    min-width: 40px;
+  }
+  .checkbox {
+    height: initial;
+    width: initial;
   }
 }

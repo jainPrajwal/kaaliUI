@@ -1377,12 +1377,10 @@
                         <span class="secondary-text">Private: 9 items </span>
                       </div>
                     </a>
-                    <input
-                      type="checkbox"
-                      class="checkbox checkbox-mywishlist"
-                      id="username"
-                      checked
-                    />
+                    <label class="checkbox-label">
+                      <input type="checkbox" checked="checked"/>
+                      <span class="checkmark"></span>
+                    </label>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -1541,7 +1539,7 @@
         <div class="main-container" id="typolink">
           <div class="header header-secondary">typography</div>
           <hr class="alert-hr" />
-          <div class="outer-typo-container">
+          <div class="wrapper">
             <!-- <hr style="margin-bottom: 1rem" /> -->
             <div class="header header-primary">primary header</div>
             <div class="header header-secondary">secondary header</div>
@@ -1574,6 +1572,17 @@
         </div>
 
         <!-- -------------------------------------------------------------------------------------------------- -->
+        <div class="main-container" id="checkboxlink">
+          <div class="header header-secondary">checkbox</div>
+          <hr class="alert-hr" />
+          <div class="wrapper">
+          <label class="checkbox-label">One
+            <input type="checkbox" checked="checked"/>
+            <span class="checkmark"></span>
+          </label>  
+          
+          </div>
+      
       </div>
     </div>
   </body>

@@ -4,13 +4,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
-.outer-tooltip-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  /* border: 1px solid gray; */
-  min-height: 100vh;
-}
+
 .btn-demo {
   width: 70px;
   margin: 1rem;
