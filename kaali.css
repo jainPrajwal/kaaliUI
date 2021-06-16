@@ -77,7 +77,7 @@ a {
   width: 60%;
   margin: auto;
 }
-.container {
+.container-style-development-purpose {
   display: grid;
   grid-template-columns: 0.8fr 4fr;
   grid-template-rows: 50px 1fr;
