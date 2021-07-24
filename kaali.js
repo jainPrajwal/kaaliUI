@@ -878,3 +878,43 @@ text =
   "</label>";
 tooltipId = "checkbox-tooltip";
 copyText(id, text, tooltipId);
+
+// card ecommerce
+const cardImage = document.querySelector(".card-image-ecommerce");
+const concatLikeClassToHeartIcon = (heartIcon) => {
+  heartIcon.classList.add("like");
+};
+const getHeartIcon = () => {
+  const heartIcon = document.querySelector(".icon");
+  return heartIcon;
+};
+const getWishList = () => {
+  const wishList = document.querySelector(".fa-heart");
+  return wishList;
+};
+
+const removeLikeClass = (heartIcon) => {
+  heartIcon.classList.remove("like");
+};
+
+const wishList = getWishList();
+
+cardImage.addEventListener("dblclick", () => {
+  const heartIcon = getHeartIcon();
+  concatLikeClassToHeartIcon(heartIcon);
+  wishList.classList.toggle("red");
+  setTimeout(() => {
+    removeLikeClass(heartIcon);
+  }, 1200);
+});
+
+wishList.addEventListener("click", () => {
+  if (!wishList.classList.contains("red")) {
+    const heartIcon = document.querySelector(".icon");
+    heartIcon.classList.add("like");
+    setTimeout(() => {
+      removeLikeClass(heartIcon);
+    }, 1200);
+  }
+  wishList.classList.toggle("red");
+});

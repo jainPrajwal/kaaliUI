@@ -175,113 +175,313 @@
 }
 
 /* Card Ecommerce */
-.card-ecommerce-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-  gap: 24px;
-  grid-template-rows: minmax(180px, auto);
-  grid-auto-rows: minmax(180px, auto);
-  padding: 1rem;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
-.card-ecommerce-body {
-  background-color: var(--card-ecommerce-body-background);
-  color: black;
+.floating-btn {
+  font-size: 1rem;
+  height: 24px;
+  width: 24px;
+  position: fixed;
+  background-color: #111827;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
-  border-radius: 0.2rem;
-  padding: 1rem;
-}
-.card-ecommerce-image-container {
-  width: 180px;
-  height: 180px;
-  position: relative;
-  margin: auto;
-  /* margin-left: 1.8rem; */
-}
-.card-ecommerce-image {
-  position: absolute;
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* if we dont give top left rigth and bottom and use margin auto it does not work!!!!!!! */
+  align-items: center;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
 }
 
-.card-ecommerce-content {
-  padding: 1rem 0rem;
+.floating-btn::before {
+  content: "^";
+  position: absolute;
+}
+.container.container-ecommerce {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+  border: 1px solid red;
+  gap: 10px;
+  margin: 1rem auto;
+}
+.card.card-ecommerce {
+  max-width: 280px;
   display: flex;
   flex-direction: column;
-  font-weight: 400;
-  font-size: small;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  padding-bottom: 1rem;
+  position: relative;
 }
 
-.product-details {
-  text-align: center;
+.card-image-wrapper {
+  width: 100%;
 }
-.product-details:hover {
-  color: var(--blue);
+.card-image-ecommerce {
+  width: 280px;
+  height: 350px;
 }
-.product-name {
-  text-transform: uppercase;
-}
-.badge {
-  margin: 0;
-}
-.badge-rating {
-  color: var(--font-color);
-}
-.ratings-count {
-  margin-left: 8px;
-}
-.rating-details {
+.card-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-
-  height: 44px;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem 1rem 0rem 1rem;
 }
-
-.item-assured {
-  width: 75px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 6px;
+hr {
+  margin: 0.2rem;
 }
-
-.flipkart-assured {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+.card-subtitle {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-price-details {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-around;
 }
 
-.discounted-price {
-  font-size: 0.9rem;
-  font-weight: bold;
+.product-mrp {
+  text-decoration: line-through;
 }
 
-.original-price {
-  font-size: 0.8rem;
-  text-decoration-line: line-through;
-  color: gray;
+.product-discount {
+  font-weight: 600;
+  color: red;
 }
 
-.discount-price {
-  color: var(--green);
+.badge-bestSeller {
+  position: absolute;
+  top: 15px;
+  background-color: #111827;
+  color: white;
+  padding: 0rem 1rem;
 }
+.glow {
+  background: #fff;
+  width: 15px;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  -webkit-animation: flow 1.5s linear infinite;
+  -moz-animation: flow 1.5s linear infinite;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg); /*for mozilla browsers*/
+
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 1%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-left: 1px solid #fff;
+}
+
+@-webkit-keyframes flow {
+  0% {
+    left: -20px;
+    opacity: 0;
+  }
+  50% {
+    left: 60%;
+    opacity: 0.3;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
+@keyframes flow {
+  0% {
+    left: -20px;
+    opacity: 0;
+  }
+  50% {
+    left: 60%;
+    opacity: 0.3;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
+
+.icon {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  opacity: 0;
+  fill: red;
+}
+.icon-heart {
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -50%;
+}
+
+.icon.like {
+  animation: 2s like-heart-animation ease-in-out forwards;
+}
+
+@keyframes like-heart-animation {
+  0%,
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  15% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  30% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  45%,
+  80% {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.fa-heart {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  /*   background-color:#ccc; */
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  cursor: pointer;
+  color: #bbb;
+}
+
+.fa-heart.red {
+  -webkit-animation: heartbeat 1.5s ease-in-out 1 both;
+  animation: heartbeat 1.5s ease-in-out 1 both;
+  color: red;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-6-13 12:2:10
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+  .container.container-ecommerce {
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    gap: 1px;
+  }
+  .card.card-ecommerce {
+    width: 100%;
+  }
+  .card-content {
+    flex-wrap: wrap;
+    padding: 0.2rem 0.2rem 0rem 0.5rem;
+  }
+  .product-price-details {
+    flex-wrap: wrap;
+  }
+
+  .card-image-ecommerce {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);
@@ -300,66 +500,5 @@
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
-  }
-}
-@media only screen and (max-width: 414px) {
-  .card-ecommerce-body,
-  .card-body {
-    margin: 0rem 1rem;
-  }
-  .card-ecommerce-content {
-    padding: 0rem;
-    padding-top: 1rem;
-  }
-  .card-ecommerce-image-container {
-    margin: auto;
-  }
-}
-@media only screen and (min-width: 416px) and (max-width: 496px) {
-  .card-ecommerce-item {
-    width: 100%;
-  }
-  .card-ecommerce-content {
-    padding: 0rem;
-    padding-top: 1rem;
-  }
-  .product-details {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .product-price-details {
-    flex-wrap: wrap;
-  }
-  .card-ecommerce-image-container {
-    height: 110px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .card-ecommerce-container {
-    grid-template-columns: 50% 50%;
-
-    grid-template-rows: minmax(160px, auto);
-    gap: 12px;
-    justify-content: center;
-  }
-  .item-assured {
-    margin-left: 4px;
-  }
-  .ratings-count {
-    margin-left: 4px;
-  }
-}
-@media only screen and (max-width: 480px) {
-}
-
-@media only screen and (max-width: 768px) {
-  .card-image {
-    max-width: 100%;
-  }
-  .plain-card-fallback-image {
-    transform: rotate(15deg) translate(61px, 4px);
   }
 }
