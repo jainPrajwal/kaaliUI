@@ -258,12 +258,11 @@ hr {
   opacity: 1;
 }
 @media only screen and (max-width: 480px) {
+  .container-style-development-purpose {
+    display: block;
+  }
   .code-box {
     padding: 1rem 0;
-  }
-  .container {
-    grid-template-columns: 100%;
-    grid-gap: 1rem;
   }
 
   .main-body {
@@ -293,9 +292,8 @@ hr {
 }
 
 @media screen and (min-width: 480px) and (max-width: 985px) {
-  .container {
-    grid-template-columns: 100%;
-    grid-gap: 1rem;
+  .container-style-development-purpose {
+    display: block;
   }
   .main-body {
     padding: 1rem;
