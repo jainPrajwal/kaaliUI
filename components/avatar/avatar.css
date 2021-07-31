@@ -58,6 +58,7 @@
   justify-content: center;
   font-size: larger;
   letter-spacing: 1.5px;
+  color: var(--font-color);
 }
 
 #shade-pink {

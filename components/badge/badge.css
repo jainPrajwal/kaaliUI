@@ -48,10 +48,12 @@
 }
 .rating {
   margin-right: 0.5rem;
+  color: var(--font-color);
 }
 .badge-rating {
   background-color: var(--green);
   display: flex;
+  color: var(--font-color);
   justify-content: center;
   align-items: center;
   border-radius: 10%;
