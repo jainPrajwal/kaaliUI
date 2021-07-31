@@ -15,9 +15,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .alert-danger {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+
+.alert-danger-kaali {
   color: #ff0c00;
 
   background-image: linear-gradient(
@@ -29,18 +35,28 @@
 }
 
 .alert-success {
+  background-color: #064e3b;
+}
+
+.alert-success-kaali {
   color: lawngreen;
   background-image: linear-gradient(#34690170, #3e7f008a);
   border: 1px solid lawngreen;
 }
 
 .alert-info {
+  background-color: #1e3a8a;
+}
+.alert-info-kaali {
   color: #01ffeb;
   background-image: linear-gradient(rgb(0 0 212 / 41%), rgb(0 0 212 / 41%));
   border: 1px solid #01ffeb;
 }
 
 .alert-warning {
+  background-color: #78350f;
+}
+.alert-warning-kaali {
   color: yellow;
   background-image: linear-gradient(#bfbf0045, #bfbf0045);
   border: 1px solid yellow;
