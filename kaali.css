@@ -60,9 +60,9 @@
   /* card grid width */
   --minimumColumnWidth: 160px;
 }
-body {
+/* body {
   overflow: hidden;
-}
+} */
 li {
   list-style: none;
 }

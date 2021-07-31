@@ -92,14 +92,15 @@
   position: absolute;
   width: 95px;
   height: 95px;
-  top: 40%;
-  left: 40%;
+  bottom: 20px;
+  right: 20px;
   transform: rotate(25deg) translate(31px, 14px);
   background-color: var(--plain-card-fallback-image);
 }
 
 .plain-card-title {
   padding: 1rem;
+  color: var(--font-color);
 }
 
 /* Horizontal Card */
@@ -185,25 +186,32 @@
 }
 
 .floating-btn {
-  font-size: 1rem;
-  height: 24px;
-  width: 24px;
+  font-size: 1.3rem;
+  height: 32px;
+  width: 32px;
   position: fixed;
   background-color: #111827;
   color: white;
   padding: 1.2rem;
   border-radius: 50%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  right: 20px;
-  bottom: 20px;
+  right: 30px;
+  bottom: 30px;
   cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  line-height: 30px;
 }
 
 .floating-btn::before {
   content: "^";
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }
 .container.container-ecommerce {
   display: grid;
@@ -258,7 +266,7 @@ hr {
   color: red;
 }
 
-.badge-bestSeller {
+.tag.tag-bestSeller {
   position: absolute;
   top: 15px;
   background-color: #111827;

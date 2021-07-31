@@ -918,3 +918,31 @@ wishList.addEventListener("click", () => {
   }
   wishList.classList.toggle("red");
 });
+// _____________________________________________________________________________________________________________
+// floating Button
+
+const floatingButton = document.querySelector(".floating-btn");
+console.log("floating button", floatingButton);
+
+const mainBody = document.querySelector(".main-body");
+
+const scrollFunction = () => {
+  if (mainBody.scrollTop > 300) {
+    floatingButton.style.display = "flex";
+  } else {
+    floatingButton.style.display = "none";
+  }
+};
+
+mainBody.addEventListener("scroll", () => {
+  scrollFunction();
+});
+
+const scrollToTop = () => {
+  mainBody.scrollTop = 0;
+  setTimeout(() => {
+    mainBody.removeEventListener("scroll", scrollFunction);
+  }, 1000);
+};
+
+floatingButton.addEventListener("click", () => scrollToTop());

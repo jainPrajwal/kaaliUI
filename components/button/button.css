@@ -48,9 +48,11 @@
 
 .btn-warning {
   background-color: #d97706;
+  color: var(--font-color);
 }
 
-.btn-warning:focus {
+.btn-warning:focus,
+.btn-warning-kaali:focus {
   border: 1px solid yellow;
 }
 
@@ -73,8 +75,11 @@
   border: 1px solid black;
   color: black;
 }
-.btn-secondary:focus {
+.btn-secondary-kaali:focus {
   border: 1px solid rgb(248, 248, 248);
+}
+.btn-secondary:focus {
+  border: 1px solid black;
 }
 
 .btn:hover {
