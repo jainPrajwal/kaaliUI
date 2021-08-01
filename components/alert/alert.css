@@ -35,7 +35,10 @@
 }
 
 .alert-success {
-  background-color: #064e3b;
+  /* background-color: #064e3b; */
+  background-image: linear-gradient(#34690170, #3e7f008a);
+  color: lawngreen;
+  border: 1px solid lawngreen;
 }
 
 .alert-success-kaali {
@@ -46,6 +49,8 @@
 
 .alert-info {
   background-color: #1e3a8a;
+  color: #01ffeb;
+  border: 1px solid #01ffeb;
 }
 .alert-info-kaali {
   color: #01ffeb;
@@ -54,7 +59,9 @@
 }
 
 .alert-warning {
-  background-color: #78350f;
+  background-color: #d97706;
+  color: yellow;
+  border: 1px solid yellow;
 }
 .alert-warning-kaali {
   color: yellow;
