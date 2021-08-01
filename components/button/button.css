@@ -41,7 +41,7 @@
   border: 1px solid yellowgreen;
 }
 
-.btn-warning-kaali {
+.btn-warning-dark {
   background-color: #ffae00a4;
   color: var(--font-color);
 }
@@ -52,7 +52,7 @@
 }
 
 .btn-warning:focus,
-.btn-warning-kaali:focus {
+.btn-warning-dark:focus {
   border: 1px solid yellow;
 }
 
@@ -65,7 +65,7 @@
   border: 1px solid pink;
 }
 
-.btn-secondary-kaali {
+.btn-secondary-dark {
   background-color: transparent;
   color: var(--font-color);
   border: 1px solid gray;
@@ -75,7 +75,7 @@
   border: 1px solid black;
   color: black;
 }
-.btn-secondary-kaali:focus {
+.btn-secondary-dark:focus {
   border: 1px solid rgb(248, 248, 248);
 }
 .btn-secondary:focus {
