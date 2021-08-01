@@ -92,9 +92,6 @@ a {
   margin-left: 10px;
 }
 .navbar-ul-kaali {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center; */
   display: flex;
   list-style: none;
   padding: 0 0.7vw;
@@ -135,7 +132,10 @@ a {
 .close-menu {
   display: none;
 }
-.navbar-ul-kaali .component-link-item-desktop:hover {
+.navbar-ul-kaali li.component-link-item-desktop:hover a {
+  color: var(--status-available-background);
+}
+.navbar-ul-kaali li.component-link-item-mobile:hover a {
   color: var(--status-available-background);
 }
 .navbar-ul-kaali .component-link-item-mobile {
