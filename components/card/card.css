@@ -285,6 +285,9 @@ hr {
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg); /*for mozilla browsers*/
 
+  animation: flow 1.5s linear infinite;
+  transform: skew(20deg);
+
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
