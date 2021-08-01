@@ -16,7 +16,7 @@
   --font-primary-header: 3.6rem;
   --font-secondary-header: 2rem;
   --font-tertiary-header: 1.56rem;
-  --font-regular: 1rem;
+  --font-regular: 1.2rem;
   --font-sm: 13px;
 
   /* Backgrounds */
@@ -268,7 +268,7 @@ a {
 /* Media Queries */
 @media only screen and (max-width: 480px) {
   body {
-    overflow: scroll;
+    /* overflow: scroll; */
     overflow-x: hidden;
   }
   .navbar-ul-kaali .component-link-item-mobile {
@@ -336,6 +336,7 @@ a {
   .fas.fa-bars {
     display: inline-block;
     padding-right: 1rem;
+    font-size: small;
     color: var(--status-available-background);
   }
 
@@ -490,10 +491,17 @@ a {
   .header-section {
     padding: 1rem;
   }
-  .primary-header {
-    font-size: var(--font-primary-header-mobile);
+  /* .primary-header {
+      font-size: var(--font-primary-header-mobile);
+    } */
+}
+@media only screen and (max-height: 500px) {
+  .navbar-ul {
+    height: calc(100vh - 60px);
+    padding-top: 15rem;
   }
 }
+
 /* Animations */
 .slide-out-top {
   -webkit-animation: slide-out-top 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -552,12 +560,5 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@media only screen and (max-height: 500px) {
-  .navbar-ul {
-    height: calc(100vh - 60px);
-    padding-top: 15rem;
   }
 }
