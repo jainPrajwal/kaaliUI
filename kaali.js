@@ -34,8 +34,8 @@ function removeActiveClass() {
 }
 // Making navbar responsive STEP 1
 
-const hamburgericon = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".navbar-ul");
+const hamburgericon = document.querySelector(".hamburger-kaali");
+const navLinks = document.querySelector(".navbar-ul-kaali");
 const links = document.querySelectorAll(".component-link-item-mobile");
 if (hamburgericon != null) {
   hamburgericon.addEventListener("click", () => {
@@ -924,25 +924,26 @@ wishList.addEventListener("click", () => {
 const floatingButton = document.querySelector(".floating-btn");
 console.log("floating button", floatingButton);
 
-const mainBody = document.querySelector(".main-body");
+const mainBody = document.querySelector(".main-body-kaali");
 
-const scrollFunction = () => {
-  if (mainBody.scrollTop > 300) {
-    floatingButton.style.display = "flex";
-  } else {
-    floatingButton.style.display = "none";
-  }
-};
+if (mainBody !== null) {
+  const scrollFunction = () => {
+    if (mainBody.scrollTop > 300) {
+      floatingButton.style.display = "flex";
+    } else {
+      floatingButton.style.display = "none";
+    }
+  };
+  mainBody.addEventListener("scroll", () => {
+    scrollFunction();
+  });
 
-mainBody.addEventListener("scroll", () => {
-  scrollFunction();
-});
+  const scrollToTop = () => {
+    mainBody.scrollTop = 0;
+    setTimeout(() => {
+      mainBody.removeEventListener("scroll", scrollFunction);
+    }, 1000);
+  };
 
-const scrollToTop = () => {
-  mainBody.scrollTop = 0;
-  setTimeout(() => {
-    mainBody.removeEventListener("scroll", scrollFunction);
-  }, 1000);
-};
-
-floatingButton.addEventListener("click", () => scrollToTop());
+  floatingButton.addEventListener("click", () => scrollToTop());
+}

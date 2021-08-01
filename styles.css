@@ -69,7 +69,7 @@ a {
 }
 
 /* Navigation bar */
-.navbar {
+.navbar-kaali {
   height: 4rem;
   width: 100%;
   background-color: var(--navbar-background);
@@ -78,20 +78,20 @@ a {
   position: fixed;
   z-index: 10;
 }
-.brand {
+.brand-kaali {
   margin-right: auto;
   padding-left: 1rem;
   display: flex;
   align-items: center;
 }
-.brand-logo {
+.brand-logo-kaali {
   width: 40px;
   height: 40px;
 }
-.brand-name {
+.brand-name-kaali {
   margin-left: 10px;
 }
-.navbar-ul {
+.navbar-ul-kaali {
   /* display: flex;
   justify-content: space-around;
   align-items: center; */
@@ -103,26 +103,26 @@ a {
   text-transform: capitalize;
 }
 
-.navbar-ul li {
+.navbar-ul-kaali li {
   display: flex;
   margin: 0rem 5rem;
   align-items: center;
 }
-.navbar-ul li:hover {
+.navbar-ul-kaali li:hover {
   color: var(--status-available-background);
 }
-.navbar-ul li a {
+.navbar-ul-kaali li a {
   text-decoration: none;
-  color: inherit;
+  color: var(--font-color);
 }
-.hamburger div {
+.hamburger-kaali div {
   width: 30px;
   height: 3px;
   background: var(--status-available-background);
   margin: 5px;
   transition: all 0.3s ease;
 }
-.hamburger {
+.hamburger-kaali {
   display: none;
 }
 .fas.fa-bars {
@@ -135,8 +135,10 @@ a {
 .close-menu {
   display: none;
 }
-
-.navbar-ul .component-link-item-mobile {
+.navbar-ul-kaali .component-link-item-desktop:hover {
+  color: var(--status-available-background);
+}
+.navbar-ul-kaali .component-link-item-mobile {
   display: none;
 }
 .component-link-item-desktop {
@@ -146,9 +148,6 @@ a {
   transition: all 500ms ease-out;
 }
 .navbar-item-link:hover {
-  color: var(--status-available-background);
-}
-.navbar-ul .component-link-item-desktop:hover {
   color: var(--status-available-background);
 }
 
@@ -272,14 +271,14 @@ a {
     overflow: scroll;
     overflow-x: hidden;
   }
-  .navbar-ul .component-link-item-mobile {
+  .navbar-ul-kaali .component-link-item-mobile {
     display: block;
   }
-  .navbar {
+  .navbar-kaali {
     position: fixed;
     z-index: 3;
   }
-  .hamburger {
+  .hamburger-kaali {
     display: block;
     position: absolute;
     cursor: pointer;
@@ -289,7 +288,7 @@ a {
     z-index: 2;
     transition: all 0.7s ease;
   }
-  .navbar-ul {
+  .navbar-ul-kaali {
     position: fixed;
     background: var(--navbar-background);
     height: calc(100vh - 60px);
@@ -305,12 +304,12 @@ a {
     overflow-y: scroll;
     align-items: flex-start;
   }
-  .navbar-ul.open {
+  .navbar-ul-kaali.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
-  .navbar-ul li {
+  .navbar-ul-kaali li {
     margin: 0;
     padding: 1rem;
     transition: opacity 0.5s ease 0.2s;
@@ -349,19 +348,19 @@ a {
     display: none;
     cursor: pointer;
   }
-  .navbar-ul::-webkit-scrollbar {
+  .navbar-ul-kaali::-webkit-scrollbar {
     width: 4px;
     height: 4px;
   }
-  .navbar-ul:-webkit-scrollbar-track {
+  .navbar-ul-kaali:-webkit-scrollbar-track {
     background: transparent;
   }
-  .navbar-ul::-webkit-scrollbar-thumb {
+  .navbar-ul-kaali::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #ffc72c;
   }
 
-  .navbar-ul .component-link-item-desktop {
+  .navbar-ul-kaali .component-link-item-desktop {
     display: none;
   }
 
@@ -393,14 +392,14 @@ a {
     /* overflow: scroll; */
     overflow-x: hidden;
   }
-  .navbar-ul .component-link-item-mobile {
+  .navbar-ul-kaali .component-link-item-mobile {
     display: block;
   }
-  .navbar {
+  .navbar-kaali {
     position: fixed;
     z-index: 3;
   }
-  .hamburger {
+  .hamburger-kaali {
     display: block;
     position: absolute;
     cursor: pointer;
@@ -410,7 +409,7 @@ a {
     z-index: 2;
     transition: all 0.7s ease;
   }
-  .navbar-ul {
+  .navbar-ul-kaali {
     position: fixed;
     background: var(--navbar-background);
     height: calc(100vh - 60px);
@@ -425,12 +424,12 @@ a {
     overflow-y: scroll;
     align-items: flex-start;
   }
-  .navbar-ul.open {
+  .navbar-ul-kaali.open {
     clip-path: circle(1200px at 90% -10%);
     -webkit-clip-path: circle(1200px at 90% -10%);
     pointer-events: all;
   }
-  .navbar-ul li {
+  .navbar-ul-kaali li {
     margin: 0;
     padding: 1rem;
     transition: opacity 0.5s ease 0.2s;
@@ -470,21 +469,21 @@ a {
     display: none;
     cursor: pointer;
   }
-  .navbar-ul::-webkit-scrollbar {
+  .navbar-ul-kaali::-webkit-scrollbar {
     width: 4px;
     height: 4px;
   }
-  .navbar-ul:-webkit-scrollbar-track {
+  .navbar-ul-kaali:-webkit-scrollbar-track {
     background: transparent;
   }
-  .navbar-ul::-webkit-scrollbar-thumb {
+  .navbar-ul-kaali::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #ffc72c;
   }
-  .navbar-ul .component-link-item-mobile {
+  .navbar-ul-kaali .component-link-item-mobile {
     display: block;
   }
-  .navbar-ul .component-link-item-desktop {
+  .navbar-ul-kaali .component-link-item-desktop {
     display: none;
   }
 

@@ -85,10 +85,10 @@ a {
   overflow: hidden;
 }
 
-.navbar {
+.navbar-kaali {
   grid-column: 1/3;
 }
-.main-body {
+.main-body-kaali {
   margin-top: 60px;
   overflow: auto;
   height: calc(100vh - 70px);
@@ -96,7 +96,7 @@ a {
   padding-left: 0;
 }
 
-.sidebar-list {
+.sidebar-list-kaali {
   display: flex;
   justify-self: center;
   list-style: none;
@@ -110,16 +110,16 @@ a {
   text-transform: capitalize;
 }
 
-.sidebar-list::-webkit-scrollbar {
+.sidebar-list-kaali::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
 
-.sidebar-list:-webkit-scrollbar-track {
+.sidebar-list-kaali:-webkit-scrollbar-track {
   background: transparent;
 }
 
-.sidebar-list::-webkit-scrollbar-thumb {
+.sidebar-list-kaali::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #ffc72c;
 }
@@ -257,6 +257,226 @@ hr {
   visibility: visible;
   opacity: 1;
 }
+
+/* utility Classes */
+
+/* display related */
+.d-flex {
+  display: flex;
+}
+
+.d-flex.jc-center.f-direction-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.d-flex.ai-center.f-direction-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.d-flex.jc-center {
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex.ai-center {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex.f-direction-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex.jc-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.d-none,
+.hide {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-grid.repeat.auto-fill.min-280.max-auto.gap-10 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+  gap: 10px;
+}
+
+/* --------------------------------------------------- */
+
+/* Margin */
+.m-small {
+  margin: 0.2rem;
+}
+
+.m-medium {
+  margin: 0.5rem;
+}
+
+.m-large {
+  margin: 1rem;
+}
+
+.m-extra-large {
+  margin: 1.5rem;
+}
+
+/* margin-top */
+
+.m-t-small {
+  margin-top: 0.2rem;
+}
+
+.m-t-medium {
+  margin-top: 0.5rem;
+}
+
+.m-t-large {
+  margin-top: 1rem;
+}
+
+.m-t-extra-large {
+  margin-top: 1.5rem;
+}
+
+/* margin-left */
+.m-l-small {
+  margin-left: 0.2rem;
+}
+
+.m-l-medium {
+  margin-left: 0.5rem;
+}
+
+.m-l-large {
+  margin-left: 1rem;
+}
+
+.m-l-extra-large {
+  margin-left: 1.5rem;
+}
+
+/* margin-bottom */
+.m-b-small {
+  margin-bottom: 0.2rem;
+}
+
+.m-b-medium {
+  margin-bottom: 0.5rem;
+}
+
+.m-b-large {
+  margin-bottom: 1rem;
+}
+
+.m-b-extra-large {
+  margin-bottom: 1.5rem;
+}
+
+/* margin-right*/
+.m-r-small {
+  margin-right: 0.2rem;
+}
+
+.m-r-medium {
+  margin-right: 0.5rem;
+}
+
+.m-r-large {
+  margin-right: 1rem;
+}
+
+.m-r-extra-large {
+  margin-right: 1.5rem;
+}
+
+/* --------------------------------------------------------------- */
+/* Padding */
+
+.p-extra-large {
+  padding: 1.5rem;
+}
+
+.p-small {
+  padding: 0.2rem;
+}
+
+.p-medium {
+  padding: 0.5rem;
+}
+
+.p-large {
+  padding: 1rem;
+}
+
+.p-extra-large {
+  padding: 1.5rem;
+}
+
+/* padding-left */
+.p-l-small {
+  padding-left: 0.2rem;
+}
+
+.p-l-medium {
+  padding-left: 0.5rem;
+}
+
+.p-l-large {
+  padding-left: 1rem;
+}
+
+.p-l-extra-large {
+  padding-left: 1.5rem;
+}
+
+/* padding-bottom */
+.p-b-small {
+  padding-bottom: 0.2rem;
+}
+
+.p-b-medium {
+  padding-bottom: 0.5rem;
+}
+
+.p-b-large {
+  padding-bottom: 1rem;
+}
+
+.p-b-extra-large {
+  padding-bottom: 1.5rem;
+}
+
+/* padding-right*/
+.p-r-small {
+  padding-right: 0.2rem;
+}
+
+.p-r-medium {
+  padding-right: 0.5rem;
+}
+
+.p-r-large {
+  padding-right: 1rem;
+}
+
+.p-r-extra-large {
+  padding-right: 1.5rem;
+}
+
 @media only screen and (max-width: 480px) {
   .container-style-development-purpose {
     display: block;
@@ -265,11 +485,11 @@ hr {
     padding: 1rem 0;
   }
 
-  .main-body {
+  .main-body-kaali {
     padding-left: 1rem;
     overflow-x: hidden;
   }
-  .sidebar-container {
+  .sidebar-container-kaali {
     display: none;
   }
 
@@ -295,10 +515,10 @@ hr {
   .container-style-development-purpose {
     display: block;
   }
-  .main-body {
+  .main-body-kaali {
     padding: 1rem;
   }
-  .sidebar-container {
+  .sidebar-container-kaali {
     display: none;
   }
   .code-box {
