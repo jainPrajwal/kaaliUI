@@ -390,7 +390,7 @@ a {
 }
 @media screen and (min-width: 480px) and (max-width: 985px) {
   body {
-    overflow: scroll;
+    /* overflow: scroll; */
     overflow-x: hidden;
   }
   .navbar-ul .component-link-item-mobile {
