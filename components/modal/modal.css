@@ -185,7 +185,6 @@
 
 @media only screen and (max-width: 480px) {
   .modal {
-    /* left: 4%; */
     max-width: 90%;
   }
   .modal-save-item-to-icon {
