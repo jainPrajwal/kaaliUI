@@ -25,8 +25,9 @@
   position: fixed;
   z-index: 2;
   width: 100%;
-  left: 30%;
-  top: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal-container {
   position: relative;
@@ -184,10 +185,8 @@
 
 @media only screen and (max-width: 480px) {
   .modal {
-    left: 4%;
+    /* left: 4%; */
     max-width: 90%;
-
-    transform: translateY(-50%, 50%);
   }
   .modal-save-item-to-icon {
     height: 40px;
