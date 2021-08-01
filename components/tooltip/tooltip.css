@@ -50,18 +50,34 @@
   border-width: 5px;
   border-style: solid;
 }
-.tooltip-light.tooltip-top::after,
-.tooltip-light.tooltip-bottom::after,
-.tooltip-light.tooltip-left::after,
-.tooltip-light.tooltip-right::after {
+.tooltip-light.tooltip-top::after {
   border-color: rgb(248, 248, 248) transparent transparent transparent;
 }
+.tooltip-light.tooltip-left::after {
+  border-color: transparent rgb(248, 248, 248) transparent transparent;
+}
 
-.tooltip-dark.tooltip-top::after,
-.tooltip-dark.tooltip-bottom::after,
-.tooltip-dark.tooltip-left::after,
-.tooltip-dark.tooltip-right::after {
+.tooltip-light.tooltip-right::after {
+  border-color: transparent transparent transparent rgb(248, 248, 248);
+}
+
+.tooltip-light.tooltip-bottom::after {
+  border-color: transparent transparent rgb(248, 248, 248) transparent;
+}
+
+.tooltip-dark.tooltip-top::after {
   border-color: black transparent transparent transparent;
+}
+.tooltip-dark.tooltip-left::after {
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip-dark.tooltip-right::after {
+  border-color: transparent transparent transparent black;
+}
+
+.tooltip-dark.tooltip-bottom::after {
+  border-color: transparent transparent black transparent;
 }
 
 .btn-demo:hover .tooltip {
@@ -89,7 +105,7 @@
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent rgb(248, 248, 248) transparent transparent;
+
   z-index: 1;
 }
 
