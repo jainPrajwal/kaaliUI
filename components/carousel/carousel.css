@@ -8,13 +8,13 @@
 
 .carousel-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   /* very useful and crops the image as we want */
 }
 
 .carousel-track-container {
-  background: lightblue;
+  background: transparent;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -43,6 +43,7 @@
   background: transparent;
   border: 0;
   cursor: pointer;
+  z-index: 999;
 }
 
 .carousel-button img {
@@ -80,21 +81,32 @@
 
 @media only screen and (max-width: 480px) {
   .carousel {
-    height: 70px;
-  }
-  .carousel-image {
     width: 100%;
-    height: auto;
-
-    /* very useful and crops the image as we want */
+    height: 80px;
   }
-
   .carousel-button-left {
     left: -20px;
   }
 
   .carousel-button-right {
     right: -20px;
+  }
+  .carousel-indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    height: 150px;
+  }
+  .carousel-button-left {
+    left: -10px;
+  }
+  .carousel-button-right {
+    right: -10px;
   }
   .carousel-indicator {
     width: 8px;
