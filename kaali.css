@@ -11,6 +11,7 @@
 @import url("./components/tooltip/tooltip.css");
 @import url("./components/typography/typography.css");
 @import url("./components/checkbox/checkbox.css");
+@import url("./components/carousel/carousel.css");
 @import url("./styles.css");
 * {
   padding: 0;

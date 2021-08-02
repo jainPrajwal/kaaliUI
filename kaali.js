@@ -948,3 +948,102 @@ if (mainBody !== null) {
 
   floatingButton.addEventListener("click", () => scrollToTop());
 }
+
+// --------------------------------------------------------
+// Carousel
+
+const track = document.querySelector(".carousel-track");
+
+const slides = Array.from(track.children);
+
+const nextButton = document.querySelector(".carousel-button-right");
+
+const prevButton = document.querySelector(".carousel-button-left");
+
+const dotsNav = document.querySelector(".carousel-nav");
+
+const dots = Array.from(dotsNav.children);
+
+const slideSize = slides[0].getBoundingClientRect();
+
+const slideWidth = slideSize.width;
+
+// slides[0].style.left = slideWidth + "px";
+// slides[1].style.left = slideWidth * 2 + "px";
+
+const setSlidePosition = (slide, index) => {
+  slide.style.left = slideWidth * index + "px";
+};
+slides.forEach(setSlidePosition);
+console.log(slides[0].style.left, "here");
+
+const moveToSlide = (track, currentSlide, targetSlide) => {
+  const amountToMove = targetSlide.style.left;
+  track.style.transform = "translateX(-" + amountToMove + ")";
+  currentSlide.classList.remove("current-slide");
+  targetSlide.classList.add("current-slide");
+};
+
+const updateDots = (currentDot, targetDot) => {
+  currentDot.classList.remove("current-slide");
+  targetDot.classList.add("current-slide");
+};
+
+const toggleArrows = (targetIndex, prevButton, nextButton, slides) => {
+  if (targetIndex === 0) {
+    prevButton.classList.add("hide");
+    nextButton.classList.remove("hide");
+  } else if (targetIndex === slides.length - 1) {
+    nextButton.classList.add("hide");
+    prevButton.classList.remove("hide");
+  } else {
+    nextButton.classList.remove("hide");
+    prevButton.classList.remove("hide");
+  }
+};
+
+nextButton.addEventListener("click", () => {
+  const currentSlide = track.querySelector(".current-slide");
+  const nextSlide = currentSlide.nextElementSibling;
+  if (nextSlide !== null) {
+    moveToSlide(track, currentSlide, nextSlide);
+    const currentDot = dotsNav.querySelector(".current-slide");
+    const nextDot = currentDot.nextElementSibling;
+    updateDots(currentDot, nextDot);
+    const targetIndex = dots.findIndex((dot) => nextDot === dot);
+    toggleArrows(targetIndex, prevButton, nextButton, slides);
+  }
+});
+
+prevButton.addEventListener("click", () => {
+  const currentSlide = track.querySelector(".current-slide");
+  const prevSlide = currentSlide.previousElementSibling;
+
+  if (prevSlide !== null) {
+    moveToSlide(track, currentSlide, prevSlide);
+    const currentDot = dotsNav.querySelector(".current-slide");
+    const prevDot = currentDot.previousElementSibling;
+    updateDots(currentDot, prevDot);
+
+    const targetIndex = dots.findIndex((dot) => prevDot === dot);
+    toggleArrows(targetIndex, prevButton, nextButton, slides);
+  }
+});
+
+dotsNav.addEventListener("click", (event) => {
+  const currentSlide = track.querySelector(".current-slide");
+  const currentDot = dotsNav.querySelector(".current-slide");
+  const targetDot = event.target.closest("button");
+  //on complete dotsNav wherever I click except buttons(specific dots) it will return null.
+
+  const targetIndex = dots.findIndex((dot) => dot === targetDot);
+
+  const targetSlide = slides[targetIndex];
+
+  moveToSlide(track, currentSlide, targetSlide);
+
+  updateDots(currentDot, targetDot);
+
+  toggleArrows(targetIndex, prevButton, nextButton, slides);
+  console.log("slides", slides);
+});
