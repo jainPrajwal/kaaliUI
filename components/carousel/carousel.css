@@ -50,11 +50,11 @@
 }
 
 .carousel-button-left {
-  left: -40px;
+  left: -30px;
 }
 
 .carousel-button-right {
-  right: -40px;
+  right: -30px;
 }
 
 .carousel-nav {
@@ -76,4 +76,24 @@
 
 .carousel-indicator.current-slide {
   background-color: rgb(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    height: 100px;
+  }
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+
+    /* very useful and crops the image as we want */
+  }
+
+  .carousel-button-left {
+    left: -20px;
+  }
+
+  .carousel-button-right {
+    right: -20px;
+  }
 }
