@@ -213,7 +213,7 @@
   left: 50%;
   transform: translate(-50%, -30%);
 }
-.container.container-ecommerce {
+.container-ecommerce {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, auto));
 
