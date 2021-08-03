@@ -497,7 +497,7 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
-  .container.container-ecommerce {
+  .container-ecommerce {
     grid-template-columns: 50% 50%;
     width: 100%;
     gap: 1px;
