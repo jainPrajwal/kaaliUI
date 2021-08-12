@@ -26,6 +26,7 @@ tooltipId = "mytooltip";
 copyText(id, text, tooltipId);
 // ---------------------------------------------------------------------------------------------
 function removeActiveClass() {
+  console.log("active class removing");
   let activeclass = document.querySelector(".active");
 
   if (activeclass != null) {
@@ -37,6 +38,13 @@ function removeActiveClass() {
 const hamburgericon = document.querySelector(".hamburger-kaali");
 const navLinks = document.querySelector(".navbar-ul-kaali");
 const links = document.querySelectorAll(".component-link-item-mobile");
+const sidebarlinks = document.querySelectorAll(".sidebar-list-items");
+sidebarlinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    removeActiveClass();
+    link.classList.add("active");
+  });
+});
 if (hamburgericon != null) {
   hamburgericon.addEventListener("click", () => {
     navLinks.classList.toggle("open");
@@ -44,6 +52,7 @@ if (hamburgericon != null) {
       link.classList.add("fade");
       link.addEventListener("click", () => {
         removeActiveClass();
+        console.log("adding active class");
         link.classList.add("active");
         navLinks.classList.remove("open");
         hamburgericon.classList.remove("toggle");

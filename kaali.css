@@ -71,17 +71,13 @@
   background: #ffc72c;
 }
 
-.active {
-  color: var(--status-available-background);
-}
-
-.sidebar-list-items {
+.sidebar-list-kaali .sidebar-list-items {
   padding: 1rem;
   text-align: center;
   cursor: pointer;
 }
 
-.sidebar-list-items:hover {
+.sidebar-list-kaali .sidebar-list-items:hover {
   color: var(--status-available-background);
 }
 
@@ -210,6 +206,10 @@ hr {
 /* display related */
 .d-flex {
   display: flex;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
 }
 
 .ai-center {
@@ -473,6 +473,39 @@ hr {
 
 .pr-extra-large {
   padding-right: 1.5rem;
+}
+
+/* colors */
+.green {
+  color: var(--green);
+}
+.red {
+  color: var(--red);
+}
+
+/* text colors */
+.text-white {
+  color: var(--font-color);
+}
+
+.text-black {
+  color: black;
+}
+
+/* font sizes */
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 1.2rem;
+}
+.fs-3 {
+  font-size: 1.5rem;
+}
+/* width 100% */
+.w-100 {
+  width: 100%;
 }
 
 @media only screen and (max-width: 480px) {

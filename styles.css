@@ -108,10 +108,10 @@ a {
 .navbar-ul-kaali li:hover {
   color: var(--status-available-background);
 }
-.navbar-ul-kaali li a {
+/* .navbar-ul-kaali .component-link-item-mobile .component-link-mobile {
   text-decoration: none;
   color: var(--font-color);
-}
+} */
 .hamburger-kaali div {
   width: 30px;
   height: 3px;
@@ -153,6 +153,9 @@ a {
 
 .navbar-active {
   display: flex;
+}
+.active {
+  color: var(--status-available-background);
 }
 /* Header */
 
