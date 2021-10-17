@@ -61,8 +61,9 @@
   padding-top: 0.8rem;
 }
 
-.form .input:focus + .label-name .content-name
-/* .form .input:valid + .label-name .content-name  */ {
+.form .input:focus + .label-name .content-name,
+.form .input:valid + .label-name .content-name,
+.form .input:invalid + .label-name .content-name {
   transform: translateY(-100%);
 }
 .btn.btn-primary.btn-input {
