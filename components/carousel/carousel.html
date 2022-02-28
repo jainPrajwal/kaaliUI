@@ -10,7 +10,7 @@
       type="image/ico"
       href="../../assets/images/kali-icon.ico"
     />
-    <link rel="stylesheet" href="./components/typography/typography.css" />
+    <link rel="stylesheet" href="../typography/typography.css" />
     <link href="../../styles.css" rel="stylesheet" />
     <link href="../../kaali.css" rel="stylesheet" />
     <link
@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     />
 
-    <title>kaali UI | Button</title>
+    <title>kaali UI | Carousel</title>
   </head>
   <body class="body-style-development-purpose">
     <div class="container-style-development-purpose">
@@ -170,7 +170,7 @@
             <a href="../tooltip/tooltip.html">tooltip</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items active">
+          <li class="sidebar-list-items">
             <a href="../button/button.html">button</a>
           </li>
           <hr class="hr-sidebar" />
@@ -198,41 +198,53 @@
             <a href="../checkbox/checkbox.html">checkbox</a>
           </li>
           <hr class="hr-sidebar" />
-          <li class="sidebar-list-items">
+          <li class="sidebar-list-items active">
             <a href="../carousel/carousel.html">carousel</a>
           </li>
         </ul>
       </div>
 
       <div class="main-body-kaali">
-        <div class="main-container" id="buttonlink">
-          <div class="header header-secondary">button</div>
+        <div class="main-container" id="carousellink">
+          <div class="header header-secondary">Carousel</div>
           <hr class="alert-hr" />
-          <div class="outer-button-container">
-            <div class="btn-container">
-              <button class="btn btn-primary">primary button</button>
-              <button class="btn btn-secondary-dark">secondary button</button>
-              <button class="btn btn-success">success button</button>
-              <button class="btn btn-danger">danger button</button>
-              <button class="btn btn-warning-dark">warning button</button>
+          <div class="carousel">
+            <button class="carousel-button carousel-button-left hide">
+              <img src="../../assets/images/left-arrow.png" alt="" />
+            </button>
+            <div class="carousel-track-container">
+              <ul class="carousel-track">
+                <li class="carousel-slide current-slide">
+                  <img
+                    class="carousel-image"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/7/31/343e5ef4-269c-40a4-baea-a30c0200caeb1627723487050-KidsFest_DK.jpg"
+                    alt=""
+                  />
+                </li>
+                <li class="carousel-slide">
+                  <img
+                    class="carousel-image"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/7/31/39966faa-ce1b-408b-9e97-5757f76b38501627723755311-Maxessorize-Desktop-Banner_Day3.gif"
+                    alt=""
+                  />
+                </li>
+                <li class="carousel-slide">
+                  <img
+                    class="carousel-image"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/7/29/70c732e8-040b-409e-a52e-81c232ee34991627571493519-Weekend-sale_DK-2.jpg"
+                    alt=""
+                  />
+                </li>
+              </ul>
             </div>
-            <!-- Code Box for all badges -->
-            <div class="code-box">
-              <div class="code-container">
-                <div class="copy-tooltip">
-                  <i class="fas fa-clipboard" id="clip-button">
-                    <span id="button-tooltip" class="tooltiptext"
-                      >Copy to Clipboard</span
-                    ></i
-                  >
-                </div>
+            <button class="carousel-button carousel-button-right">
+              <img src="../../assets/images/right-arrow.png" alt="" />
+            </button>
 
-                <div class="token tag">
-                  <pre
-                    class="code"
-                  ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>button <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn btn-primary<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">primary button</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>button<span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>button <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn btn-secondary<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">secondary button</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>button<span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>button <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn btn-success<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">success button</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>button<span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>button <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn btn-danger<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">danger button</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>button<span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>button <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn btn-warning<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">warning button</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>button<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
-                </div>
-              </div>
+            <div class="carousel-nav">
+              <button class="carousel-indicator current-slide"></button>
+              <button class="carousel-indicator"></button>
+              <button class="carousel-indicator"></button>
             </div>
           </div>
         </div>
@@ -240,5 +252,5 @@
     </div>
   </body>
 
-  <script src="/kaali.js"></script>
+  <script src="../../kaali.js"></script>
 </html>

@@ -26,7 +26,6 @@ tooltipId = "mytooltip";
 copyText(id, text, tooltipId);
 // ---------------------------------------------------------------------------------------------
 function removeActiveClass() {
-  console.log("active class removing");
   let activeclass = document.querySelector(".active");
 
   if (activeclass != null) {
@@ -52,7 +51,7 @@ if (hamburgericon != null) {
       link.classList.add("fade");
       link.addEventListener("click", () => {
         removeActiveClass();
-        console.log("adding active class");
+      
         link.classList.add("active");
         navLinks.classList.remove("open");
         hamburgericon.classList.remove("toggle");
@@ -356,7 +355,7 @@ if (document.querySelector(".btn-primary.btn-toast") != null) {
 
 function removeEventListeners(target, event) {
   target.removeEventListener(event, () => {
-    console.log(`${target} removed from ${event}`);
+   
   });
 }
 
@@ -909,16 +908,16 @@ const removeLikeClass = (heartIcon) => {
 
 const wishList = getWishList();
 
-cardImage.addEventListener("dblclick", () => {
+cardImage?.addEventListener("dblclick", () => {
   const heartIcon = getHeartIcon();
   concatLikeClassToHeartIcon(heartIcon);
-  wishList.classList.toggle("red");
+  wishList?.classList.toggle("red");
   setTimeout(() => {
     removeLikeClass(heartIcon);
   }, 1200);
 });
 
-wishList.addEventListener("click", () => {
+wishList?.addEventListener("click", () => {
   if (!wishList.classList.contains("red")) {
     const heartIcon = document.querySelector(".icon");
     heartIcon.classList.add("like");
@@ -932,11 +931,10 @@ wishList.addEventListener("click", () => {
 // floating Button
 
 const floatingButton = document.querySelector(".floating-btn");
-console.log("floating button", floatingButton);
 
 const mainBody = document.querySelector(".main-body-kaali");
 
-if (mainBody !== null) {
+if (mainBody !== null && floatingButton) {
   const scrollFunction = () => {
     if (mainBody.scrollTop > 300) {
       floatingButton.style.display = "flex";
@@ -955,7 +953,7 @@ if (mainBody !== null) {
     }, 1000);
   };
 
-  floatingButton.addEventListener("click", () => scrollToTop());
+  floatingButton?.addEventListener("click", () => scrollToTop());
 }
 
 // --------------------------------------------------------
@@ -963,28 +961,24 @@ if (mainBody !== null) {
 
 const track = document.querySelector(".carousel-track");
 
-const slides = Array.from(track.children);
+const slides = Array.from(track?.children || []);
 
 const nextButton = document.querySelector(".carousel-button-right");
-
 const prevButton = document.querySelector(".carousel-button-left");
 
 const dotsNav = document.querySelector(".carousel-nav");
 
-const dots = Array.from(dotsNav.children);
+const dots = Array.from(dotsNav?.children || []);
 
-const slideSize = slides[0].getBoundingClientRect();
+const slideSize = slides[0]?.getBoundingClientRect();
 
-const slideWidth = slideSize.width;
+const slideWidth = slideSize?.width;
 
-// slides[0].style.left = slideWidth + "px";
-// slides[1].style.left = slideWidth * 2 + "px";
 
 const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + "px";
 };
 slides.forEach(setSlidePosition);
-console.log(slides[0].style.left, "here");
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
   const amountToMove = targetSlide.style.left;
@@ -1011,7 +1005,7 @@ const toggleArrows = (targetIndex, prevButton, nextButton, slides) => {
   }
 };
 
-nextButton.addEventListener("click", () => {
+nextButton?.addEventListener("click", () => {
   const currentSlide = track.querySelector(".current-slide");
   const nextSlide = currentSlide.nextElementSibling;
   if (nextSlide !== null) {
@@ -1024,7 +1018,7 @@ nextButton.addEventListener("click", () => {
   }
 });
 
-prevButton.addEventListener("click", () => {
+prevButton?.addEventListener("click", () => {
   const currentSlide = track.querySelector(".current-slide");
   const prevSlide = currentSlide.previousElementSibling;
 
@@ -1039,7 +1033,7 @@ prevButton.addEventListener("click", () => {
   }
 });
 
-dotsNav.addEventListener("click", (event) => {
+dotsNav?.addEventListener("click", (event) => {
   const currentSlide = track.querySelector(".current-slide");
   const currentDot = dotsNav.querySelector(".current-slide");
   const targetDot = event.target.closest("button");
@@ -1054,5 +1048,4 @@ dotsNav.addEventListener("click", (event) => {
   updateDots(currentDot, targetDot);
 
   toggleArrows(targetIndex, prevButton, nextButton, slides);
-  console.log("slides", slides);
 });

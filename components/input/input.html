@@ -4,14 +4,268 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="black" />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="../../assets/images/kali-icon.ico"
+    />
+    <link rel="stylesheet" href="../typography/typography.css" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <link href="../../kaali.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="/components/toast/toast.css" />
-
-    <link rel="stylesheet" href="/components/typography/typography.css" />
-    <link rel="stylesheet" href="/components/button/button.css" />
-    <link rel="stylesheet" href="/components/input/input.css" />
-    <title>Typography</title>
+    <title>kaali UI | Input</title>
   </head>
-  <body></body>
+  <body class="body-style-development-purpose">
+    <div class="container-style-development-purpose">
+      <nav class="navbar-kaali">
+        <div class="brand-kaali">
+          <img
+            src="../../assets/images/kali-icon.ico"
+            alt="kali"
+            class="brand-logo-kaali"
+          />
+          <h2 class="brand-name-kaali"><a href="./index.html">kaali</a></h2>
+        </div>
+        <div class="hamburger-kaali">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <ul class="navbar-ul-kaali">
+          <li class="component-link-item-desktop">
+            <a href="./kaali.html">get started</a>
+          </li>
+          <li class="component-link-item-desktop">
+            <a href="#" id="componentslink">components</a>
+          </li>
+          <li class="component-link-item-desktop">
+            <a href="./index.html#foot">about</a>
+            <!-- This is cool.It not only goes to index.html but also traverses to footer!COOOOOOOOOOOL!!!!!!! -->
+          </li>
+          <li class="component-link-item-mobile">
+            <a href="./kaali.html">get started</a>
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#alertlink"
+              id="component-alert"
+              class="component-link-mobile"
+              >alert</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#avatarlink"
+              class="component-link-mobile"
+              id="component-avatar"
+              >avatar</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#badgelink"
+              class="component-link-mobile"
+              id="component-toast"
+              >badge</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#buttonlink"
+              class="component-link-mobile"
+              id="component-tooltip"
+              >button</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#cardlink"
+              class="component-link-mobile"
+              id="component-card"
+              >card</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#inputlink"
+              class="component-link-mobile active"
+              id="component-badge"
+              >input</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#modallink"
+              class="component-link-mobile"
+              id="component-button"
+              >modal</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#toastlink"
+              class="component-link-mobile"
+              id="component-input"
+              >toast</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#tooltiplink"
+              class="component-link-mobile"
+              id="component-modal"
+              >tooltip</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#typolink"
+              class="component-link-mobile"
+              id="component-typo"
+              >typography</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#checkboxlink"
+              class="component-link-mobile"
+              id="component-checkbox"
+              >checkbox</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#carousellink"
+              class="component-link-mobile"
+              id="component-carousel"
+              >carousel</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-container-kaali">
+        <ul class="sidebar-list-kaali">
+          <li class="sidebar-list-items">
+            <a href="../alert/alert.html">alert</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../avatar/avatar.html">avatar</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../card/card.html">card</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../tooltip/tooltip.html">tooltip</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../button/button.html">button</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../toast/toast.html">toast</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../badge/badge.html">badge</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../modal/modal.html">modal</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../typography/typography.html">typography</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../input/input.html">input</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../checkbox/checkbox.html">checkbox</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../carousel/carousel.html">carousel</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-body-kaali">
+        <div class="main-container" id="inputlink">
+          <div class="header header-secondary">input</div>
+          <hr class="alert-hr" />
+          <div class="outer-input-container">
+            <form action="" class="form">
+              <div class="form-container">
+                <div class="form-title header header-secondary text-center">
+                  sign up
+                </div>
+                <div class="form-row">
+                  <input
+                    type="text"
+                    class="input input-email"
+                    id="username"
+                    required
+                  />
+                  <label for="username" class="label-name"
+                    ><span class="content-name">username</span></label
+                  >
+                </div>
+                <div class="form-row">
+                  <input
+                    type="password"
+                    class="input input-password"
+                    id="password"
+                    required
+                  />
+                  <label for="password" class="label-name"
+                    ><span class="content-name">password</span></label
+                  >
+                </div>
+                <button class="btn btn-primary btn-input">submit</button>
+              </div>
+            </form>
+            <div class="toast toast-center toast-primary">
+              <p class="toast-content">
+                <i class="fas fa-info-circle"></i>Information
+              </p>
+            </div>
+            <!-- Code Box for all badges -->
+            <div class="code-box">
+              <div class="code-container">
+                <div class="copy-tooltip">
+                  <i class="fas fa-clipboard" id="clip-input">
+                    <span id="input-tooltip" class="tooltiptext"
+                      >Copy to Clipboard</span
+                    ></i
+                  >
+                </div>
+
+                <div class="token tag">
+                  <pre
+                    class="code"
+                  ><span class="lt symbol">&lt;</span>form<span class="attr">action</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>form<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-title header header-secondary text-center<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="normal-code-text">sign up</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-row<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>input <span class="attr">type</span><span class="symbol">=</span><span class="single-quote">"</span>text<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>input input-email<span class="single-quote">"</span><span class="attr"> id</span><span class="symbol">=</span><span class="single-quote">"</span>username<span class="single-quote">"</span><span class="attr"> required </span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>label <span class="attr">for</span><span class="symbol">=</span><span class="single-quote">"</span>username<span class="single-quote">"</span><span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>label-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>span <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>content-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">username</span> <span class="lt symbol">&lt;</span><span class="slash">&#47;</span>span<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>label<span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span>  <br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>form-row<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>input <span class="attr">type</span><span class="symbol">=</span><span class="single-quote">"</span>password<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>input input-password<span class="single-quote">"</span><span class="attr"> id</span><span class="symbol">=</span><span class="single-quote">"</span>password<span class="single-quote">"</span><span class="attr"> required </span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>label <span class="attr">for</span><span class="symbol">=</span><span class="single-quote">"</span>password<span class="single-quote">"</span><span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>label-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>span <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>content-name<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">password</span> <span class="lt symbol">&lt;</span><span class="slash">/</span>span<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>label<span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>form<span class="gt symbol">&gt;</span></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
   <script src="/kaali.js"></script>
 </html>

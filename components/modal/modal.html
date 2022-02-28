@@ -4,14 +4,305 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/prism.css" />
-    <link rel="stylesheet" href="/components/toast/toast.css" />
-    <link rel="stylesheet" href="/components/button/button.css" />
-    <link rel="stylesheet" href="/components/modal/modal.css" />
+    <meta name="theme-color" content="black" />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="../../assets/images/kali-icon.ico"
+    />
+    
+    <link href="../../styles.css" rel="stylesheet" />
+    <link href="../../kaali.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-    <title>Modal</title>
+    <title>kaali UI | Modal</title>
   </head>
-  <body></body>
-  <script src="/kaali.js"></script>
-  <script src="/prism.js"></script>
+  <body class="body-style-development-purpose">
+    <div class="container-style-development-purpose">
+      <nav class="navbar-kaali">
+        <div class="brand-kaali">
+          <img
+            src="../../assets/images/kali-icon.ico"
+            alt="kali"
+            class="brand-logo-kaali"
+          />
+          <h2 class="brand-name-kaali"><a href="./index.html">kaali</a></h2>
+        </div>
+        <div class="hamburger-kaali">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <ul class="navbar-ul-kaali">
+          <li class="component-link-item-desktop">
+            <a href="./kaali.html">get started</a>
+          </li>
+          <li class="component-link-item-desktop">
+            <a href="#" id="componentslink">components</a>
+          </li>
+          <li class="component-link-item-desktop">
+            <a href="./index.html#foot">about</a>
+            <!-- This is cool.It not only goes to index.html but also traverses to footer!COOOOOOOOOOOL!!!!!!! -->
+          </li>
+          <li class="component-link-item-mobile">
+            <a href="./kaali.html">get started</a>
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#alertlink"
+              id="component-alert"
+              class="component-link-mobile"
+              >alert</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#avatarlink"
+              class="component-link-mobile"
+              id="component-avatar"
+              >avatar</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#badgelink"
+              class="component-link-mobile"
+              id="component-toast"
+              >badge</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#buttonlink"
+              class="component-link-mobile"
+              id="component-tooltip"
+              >button</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#cardlink"
+              class="component-link-mobile"
+              id="component-card"
+              >card</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#inputlink"
+              class="component-link-mobile"
+              id="component-badge"
+              >input</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#modallink"
+              class="component-link-mobile"
+              id="component-button"
+              >modal</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#toastlink"
+              class="component-link-mobile"
+              id="component-input"
+              >toast</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#tooltiplink"
+              class="component-link-mobile"
+              id="component-modal"
+              >tooltip</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#typolink"
+              class="component-link-mobile"
+              id="component-typo"
+              >typography</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#checkboxlink"
+              class="component-link-mobile"
+              id="component-checkbox"
+              >checkbox</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#carousellink"
+              class="component-link-mobile"
+              id="component-carousel"
+              >carousel</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-container-kaali">
+        <ul class="sidebar-list-kaali">
+          <li class="sidebar-list-items">
+            <a href="../alert/alert.html">alert</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../avatar/avatar.html">avatar</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../card/card.html">card</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../tooltip/tooltip.html">tooltip</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../button/button.html">button</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../toast/toast.html">toast</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../badge/badge.html">badge</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../modal/modal.html" id="#modallink">modal</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../typography/typography.html">typography</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../input/input.html">input</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../checkbox/checkbox.html">checkbox</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../carousel/carousel.html">carousel</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-body-kaali">
+        <div class="main-container" id="modallink">
+          <div class="header header-secondary">modal</div>
+          <hr class="alert-hr" />
+          <div class="outer-modal-container">
+            <button class="btn btn-like">
+              <img
+                src="/assets/images/heart.png"
+                alt="add to cart"
+                class="image image-heart"
+              />
+            </button>
+            <div class="some-text">Click on the button to view modal</div>
+            <div class="modal-bg">
+              <div class="modal">
+                <div class="modal-container">
+                  <div class="modal-header">
+                    <div
+                      class="header header-tertiary"
+                      style="margin-bottom: 0"
+                    >
+                      Save item to
+                    </div>
+                    <span id="btn-modal-close">×</span>
+                  </div>
+                  <hr class="modal-hr" />
+                  <div class="modal-body">
+                    <div class="row">
+                      <a href="#" class="collection create-new-collection">
+                        <div class="modal-save-item-to-icon create-symbol">
+                          +
+                        </div>
+                        <div class="create-text heading">
+                          create a new collection
+                        </div>
+                      </a>
+                    </div>
+                    <div class="row row-saved-collection">
+                      <a href="#" class="collection saved-collection">
+                        <div class="modal-save-item-to-icon save-symbol">
+                          <img
+                            src="/assets/images/heart.png"
+                            alt="add to cart"
+                            class="image image-heart"
+                          />
+                        </div>
+                        <div class="create-text">
+                          <span class="heading">my wishlist </span>
+                          <span class="secondary-text">Private: 9 items </span>
+                        </div>
+                      </a>
+                      <label class="checkbox-label">
+                        <input type="checkbox" checked="checked" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-primary btn-modal"
+                      id="collection-btn-done"
+                    >
+                      Done
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Code Box for modal -->
+            <div class="code-box">
+              <div class="code-container">
+                <div class="copy-tooltip">
+                  <i class="fas fa-clipboard" id="clip-modal">
+                    <span id="modal-tooltip" class="tooltiptext"
+                      >Copy to Clipboard</span
+                    ></i
+                  >
+                </div>
+
+                <div class="token tag">
+                  <pre
+                    class="code"
+                  ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>modal-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>modal-header<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>header header-tertiary<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Save item to </span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp; <span class="lt symbol">&lt;</span>span <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn-modal-close<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">&times; </span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>span<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span>hr <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>modal-hr<span class="single-quote">"</span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>modal-body<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>row<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>collection saved-collection<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>modal-save-item-to-icon create-symbol<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">+</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>create-text heading<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">create a new collection</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>row row-saved-collection<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>collection saved-collection<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>modal-save-item-to-icon save-symbol<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>/assets/images/heart.png<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>add to cart<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>image image-heart<span class="single-quote">"</span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>create-text<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>span <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>heading<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">my wishlist</span> <span class="lt symbol">&lt;</span><span class="slash">&#47;</span>span<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>span <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>secondary-text<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Private: 9 items</span> <span class="lt symbol">&lt;</span><span class="slash">&#47;</span>span<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>input <span class="attr">type</span><span class="symbol">=</span><span class="single-quote">"</span>checkbox<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>checkbox checkbox-mywishlist<span class="single-quote">"</span><span class="attr"> id</span><span class="symbol">=</span><span class="single-quote">"</span>username<span class="single-quote">"</span><span class="attr"> checked </span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp; <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>modal-footer<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp; <span class="lt symbol">&lt;</span>button <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>btn btn-primary<span class="single-quote">"</span><span class="attr">id</span><span class="symbol">=</span><span class="single-quote">"</span>collection-btn-done<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Done</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>button<span class="gt symbol">&gt;</span><br>&emsp; <span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br> <span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span>
+                             </pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="toast toast-center toast-primary">
+              <p class="toast-content">
+                <i class="fas fa-info-circle"></i>Information
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="../../kaali.js"></script>
 </html>

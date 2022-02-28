@@ -4,11 +4,722 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/components/badge/badge.css" />
-    <link rel="stylesheet" href="/components/card/card.css" />
-    <title>Avatar</title>
+    <meta name="theme-color" content="black" />
+    <link
+    rel="icon"
+    type="image/ico"
+    href="../../assets/images/kali-icon.ico"
+  />
+    <link rel="stylesheet" href="./components/typography/typography.css" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <link href="../../kaali.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>kaali UI</title>
   </head>
-  <body></body>
+  <body class="body-style-development-purpose">
+    <div class="container-style-development-purpose">
+      <nav class="navbar-kaali">
+        <div class="brand-kaali">
+          <img
+            src="../../assets/images/kali-icon.ico"
+            alt="kali"
+            class="brand-logo-kaali"
+          />
+          <h2 class="brand-name-kaali"><a href="./index.html">kaali</a></h2>
+        </div>
+        <div class="hamburger-kaali">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <ul class="navbar-ul-kaali">
+          <li class="component-link-item-desktop">
+            <a href="./kaali.html">get started</a>
+          </li>
+          <li class="component-link-item-desktop">
+            <a href="#" id="componentslink">components</a>
+          </li>
+          <li class="component-link-item-desktop">
+            <a href="./index.html#foot">about</a>
+            <!-- This is cool.It not only goes to index.html but also traverses to footer!COOOOOOOOOOOL!!!!!!! -->
+          </li>
+          <li class="component-link-item-mobile">
+            <a href="./kaali.html">get started</a>
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#alertlink"
+              id="component-alert"
+              class="component-link-mobile"
+              >alert</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#avatarlink"
+              class="component-link-mobile"
+              id="component-avatar"
+              >avatar</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#badgelink"
+              class="component-link-mobile"
+              id="component-toast"
+              >badge</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#buttonlink"
+              class="component-link-mobile"
+              id="component-tooltip"
+              >button</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#cardlink"
+              class="component-link-mobile"
+              id="component-card"
+              >card</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#inputlink"
+              class="component-link-mobile"
+              id="component-badge"
+              >input</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#modallink"
+              class="component-link-mobile"
+              id="component-button"
+              >modal</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#toastlink"
+              class="component-link-mobile"
+              id="component-input"
+              >toast</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#tooltiplink"
+              class="component-link-mobile"
+              id="component-modal"
+              >tooltip</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#typolink"
+              class="component-link-mobile"
+              id="component-typo"
+              >typography</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#checkboxlink"
+              class="component-link-mobile"
+              id="component-checkbox"
+              >checkbox</a
+            >
+          </li>
+          <li class="component-link-item-mobile">
+            <a
+              href="#carousellink"
+              class="component-link-mobile"
+              id="component-carousel"
+              >carousel</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-container-kaali">
+        <ul class="sidebar-list-kaali">
+          <li class="sidebar-list-items">
+            <a href="../alert/alert.html">alert</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../avatar/avatar.html">avatar</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items active">
+            <a href="../card/card.html">card</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../tooltip/tooltip.html">tooltip</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../button/button.html">button</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../toast/toast.html">toast</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../badge/badge.html">badge</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../modal/modal.html">modal</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../typography/typography.html">typography</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../input/input.html">input</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../checkbox/checkbox.html">checkbox</a>
+          </li>
+          <hr class="hr-sidebar" />
+          <li class="sidebar-list-items">
+            <a href="../carousel/carousel.html">carousel</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-body-kaali">
+        <div class="main-container" id="buttonlink">
+          <div class="main-container" id="cardlink">
+            <div class="header header-secondary">card</div>
+            <hr class="alert-hr" />
+            <div class="outer-card-container">
+              <div class="header header-tertiary">blended cards</div>
+
+              <div class="card">
+                <div class="card-container">
+                  <div class="card-body">
+                    <div class="card-item">
+                      <a href="#">
+                        <div class="card-image-container">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d00001e02fd2df008046f04c32d9c0c2e"
+                            alt=""
+                            class="card-image"
+                          />
+                        </div>
+                        <div class="card-content">
+                          <div class="card-title">Believer</div>
+                          <div class="card-subtitle">Imagine Dragons</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="card-item">
+                      <a href="#">
+                        <div class="card-image-container">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d00001e02d9366c007bfea889d08c61ec"
+                            alt=""
+                            class="card-image"
+                          />
+                        </div>
+                        <div class="card-content">
+                          <div class="card-title">Believer</div>
+                          <div class="card-subtitle">Imagine Dragons</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="card-item">
+                      <a href="#">
+                        <div class="card-image-container">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d00001e02090bb1b653340c5db45469b3"
+                            alt=""
+                            class="card-image"
+                          />
+                        </div>
+                        <div class="card-content">
+                          <div class="card-title">Believer</div>
+                          <div class="card-subtitle">Imagine Dragons</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="card-item">
+                      <a href="#">
+                        <div class="card-image-container">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d00001e022fef6b1ba156aaf20d5cfd6a"
+                            alt=""
+                            class="card-image"
+                          />
+                        </div>
+                        <div class="card-content">
+                          <div class="card-title">Believer</div>
+                          <div class="card-subtitle">Imagine Dragons</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="card-item">
+                      <a href="#">
+                        <div class="card-image-container">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d00001e029976116b4f19a967dfbe5e3b"
+                            alt=""
+                            class="card-image"
+                          />
+                        </div>
+                        <div class="card-content">
+                          <div class="card-title">Believer</div>
+                          <div class="card-subtitle">Imagine Dragons</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="card-item">
+                      <a href="#">
+                        <div class="card-image-container">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d00001e02376ab4e92e92e23191cb4d32"
+                            alt=""
+                            class="card-image"
+                          />
+                        </div>
+                        <div class="card-content">
+                          <div class="card-title">Believer</div>
+                          <div class="card-subtitle">Imagine Dragons</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Code Box for first set of card -->
+              <div class="code-box">
+                <div class="code-container">
+                  <div class="copy-tooltip">
+                    <i class="fas fa-clipboard" id="clip-card">
+                      <span id="card-tooltip" class="tooltiptext"
+                        >Copy to Clipboard</span
+                      ></i
+                    >
+                  </div>
+
+                  <div class="token tag">
+                    <pre
+                      class="code"
+                    ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-body<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-item<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://i.scdn.co/image/ab67616d00001e02fd2df008046f04c32d9c0c2e<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">/\//g</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-content<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Believer</span><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-subtitle<span class="single-quote">"</span><span class="normal-code-text"><span class="gt symbol">&gt;</span>Imagine Dragons</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="comments">//Repeat the card body as many times as you want.</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  </div>
+                </div>
+              </div>
+              <hr class="alert-hr" />
+
+              <div class="card">
+                <div class="plain-card-container">
+                  <a href="" class="plain-card-fallback-body chakde">
+                    <img
+                      src="https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg"
+                      alt=""
+                      class="plain-card-fallback-image"
+                    />
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+                  <a href="" class="plain-card-fallback-body sleep">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f00000002b70e0223f544b1faa2e95ed0"
+                      alt=""
+                      class="plain-card-fallback-image"
+                    />
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+                  <a href="" class="plain-card-fallback-body barbie">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f000000029a70cf678112e05257aa9e7b"
+                      alt=""
+                      class="plain-card-fallback-image barbie"
+                    />
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+                </div>
+                <!-- Code Box for plain colorful cards -->
+                <div class="code-box">
+                  <div class="code-container">
+                    <div class="copy-tooltip">
+                      <i class="fas fa-clipboard" id="clip-card-plain">
+                        <span id="card-tooltip-plain" class="tooltiptext"
+                          >Copy to Clipboard</span
+                        ></i
+                      >
+                    </div>
+
+                    <div class="token tag">
+                      <pre
+                        class="code"
+                      ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-body chakde<span class="single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="single-quote">"</span><span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-image<span class="single-quote">"</span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>h3 <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Podcasts</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>h3<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="comments">//Repeat the fallback card body as many times as you want.</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                    </div>
+                  </div>
+                </div>
+                <hr class="alert-hr" />
+
+                <div class="plain-card-container">
+                  <a href="" class="plain-card-fallback-body">
+                    <div class="plain-card-fallback-image"></div>
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+
+                  <a href="" class="plain-card-fallback-body">
+                    <div class="plain-card-fallback-image"></div>
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+
+                  <a href="" class="plain-card-fallback-body">
+                    <div class="plain-card-fallback-image"></div>
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+
+                  <a href="" class="plain-card-fallback-body">
+                    <div class="plain-card-fallback-image"></div>
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+
+                  <a href="" class="plain-card-fallback-body">
+                    <div class="plain-card-fallback-image"></div>
+                    <h3 class="plain-card-title">Podcasts</h3>
+                  </a>
+                </div>
+              </div>
+              <!-- Code Box for plain fallback cards -->
+              <div class="code-box">
+                <div class="code-container">
+                  <div class="copy-tooltip">
+                    <i class="fas fa-clipboard" id="clip-card-fallback">
+                      <span id="card-tooltip-fallback" class="tooltiptext"
+                        >Copy to Clipboard</span
+                      ></i
+                    >
+                  </div>
+
+                  <div class="token tag">
+                    <pre
+                      class="code"
+                    ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-body<span class="single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="single-quote">"</span><span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>h3 <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Podcasts</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>h3<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="comments">//Repeat the fallback card body as many times as you want.</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="alert-hr" />
+              <div class="header header-tertiary">horizontal cards</div>
+              <div class="card card-horizontal">
+                <div class="card-horizontal-container">
+                  <a class="card-horizontal-body">
+                    <div class="card-horizontal-image-container">
+                      <img
+                        src="https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg"
+                        alt=""
+                        class="card-horizontal-image"
+                      />
+                    </div>
+
+                    <div class="card-horizontal-content">
+                      <div class="card-horizontal-title">Lagaan</div>
+                      <div class="card-horizontal-subtitle">Motion Picture</div>
+                    </div>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                  </a>
+
+                  <a class="card-horizontal-body">
+                    <div class="card-horizontal-image-container">
+                      <img
+                        src="https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg"
+                        alt=""
+                        class="card-horizontal-image"
+                      />
+                    </div>
+
+                    <div class="card-horizontal-content">
+                      <div class="card-horizontal-title">Lagaan</div>
+                      <div class="card-horizontal-subtitle">Motion Picture</div>
+                    </div>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                  </a>
+
+                  <a class="card-horizontal-body">
+                    <div class="card-horizontal-image-container">
+                      <img
+                        src="https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg"
+                        alt=""
+                        class="card-horizontal-image"
+                      />
+                    </div>
+
+                    <div class="card-horizontal-content">
+                      <div class="card-horizontal-title">Lagaan</div>
+                      <div class="card-horizontal-subtitle">Motion Picture</div>
+                    </div>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                  </a>
+
+                  <a class="card-horizontal-body">
+                    <div class="card-horizontal-image-container">
+                      <img
+                        src="https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg"
+                        alt=""
+                        class="card-horizontal-image"
+                      />
+                    </div>
+
+                    <div class="card-horizontal-content">
+                      <div class="card-horizontal-title">Lagaan</div>
+                      <div class="card-horizontal-subtitle">Motion Picture</div>
+                    </div>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                  </a>
+
+                  <a class="card-horizontal-body">
+                    <div class="card-horizontal-image-container">
+                      <img
+                        src="https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg"
+                        alt=""
+                        class="card-horizontal-image"
+                      />
+                    </div>
+
+                    <div class="card-horizontal-content">
+                      <div class="card-horizontal-title">Lagaan</div>
+                      <div class="card-horizontal-subtitle">Motion Picture</div>
+                    </div>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Code Box for horizontal cards -->
+              <div class="code-box">
+                <div class="code-container">
+                  <div class="copy-tooltip">
+                    <i class="fas fa-clipboard" id="clip-card-horizontal">
+                      <span id="card-tooltip-horizontal" class="tooltiptext"
+                        >Copy to Clipboard</span
+                      ></i
+                    >
+                  </div>
+
+                  <div class="token tag">
+                    <pre
+                      class="code"
+                    ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card card-horizontal<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-body<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-content<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Lagaan</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-subtitle<span class="single-quote">"</span><span class="normal-code-text"><span class="gt symbol">&gt;</span>Motion Picture</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>play-button<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span>i <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>fas fa-play<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>i<span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="comments">//Repeat the card body as many times as you want.</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="alert-hr" />
+
+              <div class="header header-tertiary">ecommerce cards</div>
+
+              <svg
+                aria-hidden="true"
+                style="
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  overflow: hidden;
+                "
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <symbol id="icon-heart" viewBox="0 0 32 32">
+                    <path
+                      d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"
+                    ></path>
+                  </symbol>
+                </defs>
+              </svg>
+
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+                integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+              />
+
+              <div class="container-ecommerce">
+                <div class="card card-ecommerce">
+                  <div class="tag tag-bestSeller">
+                    <span class="glow">&nbsp;</span>
+                    New
+                  </div>
+                  <i class="fas fa-heart"></i>
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <div class="card-image-wrapper">
+                    <img
+                      src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/10/4/819e87da-c794-4f6d-aa0d-24e389387a491601768974425-1.jpg"
+                      class="card-image-ecommerce"
+                      alt="tshirt"
+                    />
+                  </div>
+                  <div class="card-content-ecommerce">
+                    <div class="card-title">
+                      <strong>Rigo</strong>
+                    </div>
+                    <div class="card-subtitle">
+                      Men Black Solid High Neck Slim Fit T-shirt
+                    </div>
+                    <hr />
+                    <div class="product-price-details">
+                      <div class="product-price">
+                        <strong>₹499</strong>
+                      </div>
+                      <div class="product-mrp">₹699</div>
+                      <div class="product-discount">(FLAT 20% OFF)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-ecommerce">
+                  <div class="tag tag-bestSeller">
+                    <span class="glow">&nbsp;</span>
+                    New
+                  </div>
+                  <i class="fas fa-heart"></i>
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <div class="card-image-wrapper">
+                    <img
+                      src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/10/4/819e87da-c794-4f6d-aa0d-24e389387a491601768974425-1.jpg"
+                      class="card-image-ecommerce"
+                      alt="tshirt"
+                    />
+                  </div>
+                  <div class="card-content-ecommerce">
+                    <div class="card-title">
+                      <strong>Rigo</strong>
+                    </div>
+                    <div class="card-subtitle">
+                      Men Black Solid High Neck Slim Fit T-shirt
+                    </div>
+                    <hr />
+                    <div class="product-price-details">
+                      <div class="product-price">
+                        <strong>₹499</strong>
+                      </div>
+                      <div class="product-mrp">₹699</div>
+                      <div class="product-discount">(FLAT 20% OFF)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-ecommerce">
+                  <div class="tag tag-bestSeller">
+                    <span class="glow">&nbsp;</span>
+                    New
+                  </div>
+                  <i class="fas fa-heart"></i>
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <div class="card-image-wrapper">
+                    <img
+                      src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1824369/2017/5/5/11493980166188-Roadster-Men-White-Printed-Round-Neck-T-shirt-4411493980165893-1.jpg"
+                      class="card-image-ecommerce"
+                      alt="tshirt"
+                    />
+                  </div>
+                  <div class="card-content-ecommerce">
+                    <div class="card-title">
+                      <strong>Rigo</strong>
+                    </div>
+                    <div class="card-subtitle">
+                      Men Black Solid High Neck Slim Fit T-shirt
+                    </div>
+                    <hr />
+                    <div class="product-price-details">
+                      <div class="product-price">
+                        <strong>₹499</strong>
+                      </div>
+                      <div class="product-mrp">₹699</div>
+                      <div class="product-discount">(FLAT 20% OFF)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-ecommerce">
+                  <div class="tag tag-bestSeller">
+                    <span class="glow">&nbsp;</span>
+                    New
+                  </div>
+                  <i class="fas fa-heart"></i>
+                  <svg class="icon icon-heart">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                  <div class="card-image-wrapper">
+                    <img
+                      src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14591376/2021/7/8/b6cc089f-f2f5-4c81-a9ec-f678e84ffca31625746128277-Calvin-Klein-Jeans-Men-Tshirts-8081625746127658-1.jpg"
+                      class="card-image-ecommerce"
+                      alt="tshirt"
+                    />
+                  </div>
+                  <div class="card-content-ecommerce">
+                    <div class="card-title">
+                      <strong>Rigo</strong>
+                    </div>
+                    <div class="card-subtitle">
+                      Men Black Solid High Neck Slim Fit T-shirt
+                    </div>
+                    <hr />
+                    <div class="product-price-details">
+                      <div class="product-price">
+                        <strong>₹499</strong>
+                      </div>
+                      <div class="product-mrp">₹699</div>
+                      <div class="product-discount">(FLAT 20% OFF)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Code Box for ecommerce cards -->
+              <h2>Code will be available soon...!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 
   <script src="/kaali.js"></script>
 </html>
