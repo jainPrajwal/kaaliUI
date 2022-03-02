@@ -51,7 +51,7 @@ if (hamburgericon != null) {
       link.classList.add("fade");
       link.addEventListener("click", () => {
         removeActiveClass();
-      
+
         link.classList.add("active");
         navLinks.classList.remove("open");
         hamburgericon.classList.remove("toggle");
@@ -354,9 +354,7 @@ if (document.querySelector(".btn-primary.btn-toast") != null) {
 }
 
 function removeEventListeners(target, event) {
-  target.removeEventListener(event, () => {
-   
-  });
+  target.removeEventListener(event, () => {});
 }
 
 if (document.querySelector(".btn-success.btn-toast") != null) {
@@ -419,16 +417,24 @@ if (document.querySelector(".btn.btn-like") != null) {
     document.querySelector(".modal-bg").classList.add("modal-bg-active");
     modalIsOpen = true;
 
-    if (modalIsOpen == true) {
-      window.onclick = function (e) {
-        let alertbox = document.querySelector(".modal");
+    if (modalIsOpen === true) {
+      console.log("modal is open");
 
-        if (e.target == document.querySelector(".outer-modal-container")) {
-          alertbox.style.display = "none";
-          // document.querySelector(".container").style.backgroundColor =
-          //   "#2F3136";
+      document.addEventListener("click", (event) => {
+        /* If you click on modal-close || anything except modal itself and the open modal button
+         close the modal.*/
+        if (
+          event.target.matches("#btn-modal-close") ||
+          !event.target.closest(".modal, .btn.btn-like")
+        ) {
+          document.querySelector(".modal").style.display = "none";
+          removeFadeInFromModal();
+          document
+            .querySelector(".modal-bg")
+            .classList.remove("modal-bg-active");
+          modalIsOpen = false;
         }
-      };
+      });
     }
   });
 }
@@ -449,7 +455,7 @@ if (document.querySelector("#btn-modal-close") != null) {
 
     let alertbox = document.querySelector(".modal");
     if (alertbox != null) {
-      document.querySelector(".modal").classList.add("fade-out-top");
+      alertbox.classList.add("fade-out-top");
       setTimeout(() => {
         if (alertbox.classList.contains("fade-out-top")) {
           document.querySelector(".modal").style.display = "none";
@@ -477,6 +483,8 @@ if (document.querySelector("#btn-modal-close") != null) {
       document.querySelector(".container").style.backgroundColor = "#2F3136";
     });
 }
+
+// Close Modal When Clicked Outside
 
 id = "clip-modal";
 text =
@@ -973,7 +981,6 @@ const dots = Array.from(dotsNav?.children || []);
 const slideSize = slides[0]?.getBoundingClientRect();
 
 const slideWidth = slideSize?.width;
-
 
 const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + "px";
