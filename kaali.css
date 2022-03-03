@@ -12,6 +12,7 @@
 @import url("./components/typography/typography.css");
 @import url("./components/checkbox/checkbox.css");
 @import url("./components/carousel/carousel.css");
+@import url("./components/radio/radio.css");
 @import url("./utilities/utilities.css");
 @import url("./styles.css");
 * {
@@ -130,6 +131,7 @@ hr {
 }
 .code {
   font-family: "Inconsolata", monospace;
+  letter-spacing: 1px;
 }
 .comments {
   color: #9fca56;
@@ -144,16 +146,21 @@ hr {
 
 .attr {
   color: #9fca56;
+  margin: 0 4px;
 }
 
-.symbol {
+.symbol, .slash {
   color: #55b5db;
+  margin: 0px 1px;;
 }
 .lt.symbol,
 .gt.symbol,
 .slash {
   color: gray;
+  font-weight: bold;
+ 
 }
+
 .copy-tooltip {
   position: absolute;
 
