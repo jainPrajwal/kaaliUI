@@ -8,7 +8,9 @@
 
 .ai-center {
   align-items: center;
+  
 }
+
 
 .f-direction-row {
   flex-direction: row;
@@ -38,4 +40,8 @@
 
 .jc-end {
   justify-content: flex-end;
+}
+
+.gap-10 {
+  gap: 10px;
 }

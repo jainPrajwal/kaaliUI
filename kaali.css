@@ -42,17 +42,16 @@
   overflow: auto;
   height: calc(100vh - 70px);
   padding: 1rem;
-  padding-left: 0;
+ 
 }
 
 .sidebar-list-kaali {
   display: flex;
   justify-self: center;
   list-style: none;
-  width: 80%;
   overflow-y: auto;
   flex-direction: column;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
   margin-top: 60px;
   background-color: var(--sidebar-background);
   padding: 1rem 0rem;

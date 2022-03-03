@@ -1,0 +1,25 @@
+.color-box {
+    width:8rem;
+    height: 8rem;
+    
+}
+
+.color-red {
+    background-color: var(--red);
+}
+
+.color-blue {
+    background-color: var(--blue);
+}
+
+.color-green {
+background-color: var(--green);
+}
+
+.color-yellow {
+    background-color: var(--yellow);
+}
+
+.color-white {
+    background-color: var(--font-color);
+}

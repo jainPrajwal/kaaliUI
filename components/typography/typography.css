@@ -56,7 +56,7 @@
   color: black;
 }
 
-.text-uppercase {
+.text-upper{
   text-transform: uppercase;
 }
 /* text colors */
@@ -67,7 +67,9 @@
 .text-black {
   color: black;
 }
-
+.text-bold {
+  font-weight: bold;
+}
 /* font sizes */
 .fs-sm {
   font-size: 0.8rem;
