@@ -1,0 +1,128 @@
+/* Margin */
+
+/* Along X-Axis */
+.mx-1 {
+  margin: 0rem 1rem;
+}
+
+.mx-2 {
+  margin: 0rem 2rem;
+}
+
+/* Along Y-Axis */
+.my-1 {
+  margin: 1rem 0rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+/* Along X-Axis in px*/
+
+.mx-sm {
+  margin: 0px 4px;
+}
+
+.mx-md {
+  margin: 0px 8px;
+}
+
+.mx-lg {
+  margin: 0px 8px;
+}
+
+/* Along Y-Axis in px*/
+
+.my-sm {
+  margin: 4px 0;
+}
+.my-md {
+  margin: 8px 0px;
+}
+
+.my-lg {
+  margin: 8px 0px;
+}
+
+/* Overall margin in px */
+.m-sm {
+  margin: 4px;
+}
+
+.m-md {
+  margin: 8px;
+}
+
+.m-lg {
+  margin: 12px;
+}
+
+/* Only top margins in px */
+.mt-sm {
+  margin-top: 4px;
+}
+
+.mt-md {
+  margin-top: 8px;
+}
+
+.mt-lg {
+  margin-top: 12px;
+}
+
+/* Only left margins in px */
+.ml-sm {
+  margin-left: 4px;
+}
+
+.ml-md {
+  margin-left: 8px;
+}
+
+.ml-lg {
+  margin-left: 12px;
+}
+
+/* Only bottom margins in px */
+.mb-sm {
+  margin-bottom: 4px;
+}
+
+.mb-md {
+  margin-bottom: 4px;
+}
+
+.mb-lg {
+  margin-bottom: 12px;
+}
+
+/* Only right margins in px */
+.mr-sm {
+  margin-right: 4px;
+}
+
+.mr-md {
+  margin-right: 8px;
+}
+
+.mr-lg {
+  margin-right: 12px;
+}
+
+
+/* margin auto */
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}

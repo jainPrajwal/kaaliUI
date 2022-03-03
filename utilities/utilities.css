@@ -1,0 +1,41 @@
+@import "./flex.css";
+@import "./margin.css";
+@import "./padding.css";
+/* display related */
+
+.d-none,
+.hide {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+/* Grid */
+.d-grid.repeat.auto-fill.min-280.max-auto.gap-10 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+  gap: 10px;
+}
+
+
+/* colors */
+.green {
+    color: var(--green);
+  }
+  .red {
+    color: var(--red);
+  }
+
+
+.w-100 {
+    width: 100%;
+  }
+
+  .h-auto {
+    height: auto;
+  }

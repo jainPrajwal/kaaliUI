@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Varela+Round&display=swap");
+@import "./utilities/utilities.css";
 :root {
   --red: #ff0044;
   --blue: #1654ff;
@@ -50,11 +51,6 @@
   font-family: "Varela Round", sans-serif;
 }
 
-/* body {
-  min-height: 100vh;
-
-  overflow-x: hidden;
-} */
 .body-style-development-purpose {
   background-color: var(--main-background);
   color: rgb(248, 248, 248);
@@ -74,7 +70,7 @@ a {
   width: 100%;
   background-color: var(--navbar-background);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-  display: flex;
+ display: flex;
   position: fixed;
   z-index: 10;
 }
@@ -108,10 +104,7 @@ a {
 .navbar-ul-kaali li:hover {
   color: var(--status-available-background);
 }
-/* .navbar-ul-kaali .component-link-item-mobile .component-link-mobile {
-  text-decoration: none;
-  color: var(--font-color);
-} */
+
 .hamburger-kaali div {
   width: 30px;
   height: 3px;
@@ -187,8 +180,7 @@ a {
 }
 
 .get-started {
-  display: flex;
-  justify-content: center;
+
   margin-top: 39px;
   background-color: rgb(248, 248, 248);
   color: #0f0f0f;
@@ -215,13 +207,8 @@ a {
 
 .footer {
   background-color: var(--navbar-background);
-  color: var(--font-color);
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  align-items: center;
-  width: 100%;
+  color: var(--font-color);  
+ 
 }
 .developer {
   display: flex;
@@ -494,9 +481,6 @@ a {
   .header-section {
     padding: 1rem;
   }
-  /* .primary-header {
-      font-size: var(--font-primary-header-mobile);
-    } */
 }
 @media only screen and (max-height: 500px) {
   .navbar-ul {
