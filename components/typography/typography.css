@@ -56,9 +56,24 @@
   color: black;
 }
 
-@media only screen and (max-width: 480px) {
-  /* .header-primary {
-    font-size: var(--font-primary-header-mobile);
-  } Prajwal 
-  */
+
+/* text colors */
+.text-white {
+  color: var(--font-color);
+}
+
+.text-black {
+  color: black;
+}
+
+/* font sizes */
+.fs-sm {
+  font-size: 0.8rem;
+}
+
+.fs-md {
+  font-size: 1.2rem;
+}
+.fs-lg {
+  font-size: 1.6rem;
 }
