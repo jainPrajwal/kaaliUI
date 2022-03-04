@@ -290,7 +290,6 @@ a {
     -webkit-clip-path: circle(50px at 110% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
-    /* margin-top: 60px; */
     padding-top: 1rem;
     overflow-y: scroll;
     align-items: flex-start;
