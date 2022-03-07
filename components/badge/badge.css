@@ -18,8 +18,8 @@
   height: 17px;
   width: 38px;
   position: absolute;
-  background-color: var(--blue);
-  color: var(--font-color);
+  background-color: var(--kaali-primary);
+  color: var(--kaali-font-color);
   border-radius: 30%;
   font-size: small;
   text-align: center;
@@ -37,8 +37,8 @@
   height: 16px;
   width: 28px;
   position: absolute;
-  background-color: var(--red);
-  color: var(--font-color);
+  background-color: var(--kaali-danger);
+  color: var(--kaali-font-color);
   border-radius: 30%;
   font-size: small;
   text-align: center;
@@ -48,12 +48,12 @@
 }
 .rating {
   margin-right: 0.5rem;
-  color: var(--font-color);
+  color: var(--kaali-font-color);
 }
 .badge-rating {
-  background-color: var(--green);
+  background-color: var(--kaali-success);
   display: flex;
-  color: var(--font-color);
+  color: var(--kaali-font-color);
   justify-content: center;
   align-items: center;
   border-radius: 10%;

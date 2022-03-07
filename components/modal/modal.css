@@ -17,8 +17,8 @@
   transform: scale(1.1);
 }
 .modal {
-  background-color: var(--navbar-background);
-  color: var(--font-color);
+  background-color: var(--kaali-navbar-background);
+  color: var(--kaali-font-color);
   padding: 1rem;
   max-width: 440px;
   display: none;
@@ -69,7 +69,7 @@
 }
 .create-symbol {
   background-color: rgb(160, 201, 255);
-  color: var(--blue);
+  color: var(--kaali-primary);
 }
 
 .save-symbol {
@@ -91,7 +91,7 @@
 
 .secondary-text {
   color: gray;
-  font-size: var(--font-sm);
+  font-size: var(--kaali-font-sm);
 }
 
 .modal-header {
@@ -109,7 +109,7 @@
 }
 
 #btn-modal-close:hover {
-  color: var(--blue);
+  color: var(--kaali-primary);
 }
 .btn.btn-primary.btn-modal {
   width: 100%;

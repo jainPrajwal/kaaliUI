@@ -3,7 +3,7 @@
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
-  font-size: var(--font-tertiary-header);
+  font-size: var(--kaali-font-tertiary-header);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -40,7 +40,7 @@
 }
 
 .checkbox-label input:checked ~ .checkmark {
-  background-color: var(--blue);
+  background-color: var(--kaali-primary);
 }
 
 .checkmark::after {

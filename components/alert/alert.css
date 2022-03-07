@@ -11,7 +11,7 @@
 .alert-content {
   width: 100%;
   height: 55px;
-  color: var(--font-color);
+  color: var(--kaali-font-color);
   padding: 1rem;
   border-radius: 0.2rem;
   display: flex;
@@ -111,7 +111,7 @@
 
 @media only screen and (max-width: 480px) {
   .alert-content {
-    font-size: var(--font-sm);
+    font-size: var(--kaali-font-sm);
     line-height: 20px;
   }
 }

@@ -39,13 +39,13 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: var(--status-available-background);
-  border: 1px solid var(--green);
+  background-color: var(--kaali-status-available-background);
+  border: 1px solid var(--kaali-success);
   position: absolute;
 }
 
 .status.status-do-not-disturb {
-  background-color: var(--red);
+  background-color: var(--kaali-danger);
 }
 
 .avatar-letter {
@@ -58,17 +58,17 @@
   justify-content: center;
   font-size: larger;
   letter-spacing: 1.5px;
-  color: var(--font-color);
+  color: var(--kaali-font-color);
 }
 
 #shade-pink {
-  background-color: #db2777;
+  background-color: var(--kaali-shade-pink);
 }
 
 #shade-blue {
-  background-color: var(--blue);
+  background-color: var(--kaali-primary);
 }
 
 #shade-green {
-  background-color: var(--green);
+  background-color: var(--kaali-success);
 }

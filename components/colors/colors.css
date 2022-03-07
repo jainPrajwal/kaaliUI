@@ -5,21 +5,21 @@
 }
 
 .color-red {
-    background-color: var(--red);
+    background-color: var(--kaali-danger);
 }
 
 .color-blue {
-    background-color: var(--blue);
+    background-color: var(--kaali-primary);
 }
 
 .color-green {
-background-color: var(--green);
+background-color: var(--kaali-success);
 }
 
 .color-yellow {
-    background-color: var(--yellow);
+    background-color: var(--kaali-warning);
 }
 
 .color-white {
-    background-color: var(--font-color);
+    background-color: var(--kaali-font-color);
 }

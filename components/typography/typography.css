@@ -12,22 +12,22 @@
   color: black;
 }
 .header-main {
-  font-size: var(--font-main-header);
+  font-size: var(--kaali-font-main-header);
   letter-spacing: -3px;
 }
 .header-primary {
-  font-size: var(--font-primary-header);
+  font-size: var(--kaali-font-primary-header);
 }
 .header-secondary {
-  font-size: var(--font-secondary-header);
+  font-size: var(--kaali-font-secondary-header);
 }
 
 .header-tertiary {
-  font-size: var(--font-tertiary-header);
+  font-size: var(--kaali-font-tertiary-header);
 }
 
 .text {
-  font-size: var(--font-regular);
+  font-size: var(--kaali-font-regular);
   text-align: left;
   letter-spacing: 0.5px;
   line-height: 30px;
@@ -42,7 +42,7 @@
 }
 
 .text-small {
-  font-size: var(--font-sm);
+  font-size: var(--kaali-font-sm);
 }
 
 .text-center {
@@ -61,7 +61,7 @@
 }
 /* text colors */
 .text-white {
-  color: var(--font-color);
+  color: var(--kaali-font-color);
 }
 
 .text-black {

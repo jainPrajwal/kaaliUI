@@ -38,14 +38,14 @@
 }
 
 .toast-success {
-  background-color: var(--green);
+  background-color: var(--kaali-success);
 }
 
 .toast-failure {
-  background-color: var(--red);
+  background-color: var(--kaali-danger);
 }
 .toast-primary {
-  background-color: var(--blue);
+  background-color: var(--kaali-primary);
 }
 .toast-content {
   padding: 0rem 0.5rem;

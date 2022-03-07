@@ -20,10 +20,10 @@
   padding: 0.5rem;
   cursor: pointer;
   border-radius: 0.2rem;
-  outline: none;
-  border: none;
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
   font-size: 1.1rem;
-  width: 170px;
+  /* width: 170px; */
 }
 
 .btn-primary {
