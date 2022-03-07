@@ -41,7 +41,7 @@ const sidebarlinks = document.querySelectorAll(".sidebar-list-items");
 sidebarlinks.forEach((link) => {
   link.addEventListener("click", () => {
     removeActiveClass();
-    link.classList.add("active");
+    // link.classList.add("active");
   });
 });
 if (hamburgericon != null) {
@@ -49,13 +49,6 @@ if (hamburgericon != null) {
     navLinks.classList.toggle("open");
     links.forEach((link) => {
       link.classList.add("fade");
-      link.addEventListener("click", () => {
-        removeActiveClass();
-
-        link.classList.add("active");
-        navLinks.classList.remove("open");
-        hamburgericon.classList.remove("toggle");
-      });
     });
 
     //Hamburger Animation
@@ -418,7 +411,7 @@ if (document.querySelector(".btn.btn-like") != null) {
     modalIsOpen = true;
 
     if (modalIsOpen === true) {
-      console.log("modal is open");
+     
 
       document.addEventListener("click", (event) => {
         /* If you click on modal-close || anything except modal itself and the open modal button
@@ -480,7 +473,8 @@ if (document.querySelector("#btn-modal-close") != null) {
           }
         }, 1500);
       }
-      document.querySelector(".container").style.backgroundColor = "#2F3136";
+      let container = document.querySelector(".container");
+      if (container) container.style.backgroundColor = "#2F3136";
     });
 }
 

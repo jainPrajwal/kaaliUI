@@ -15,7 +15,9 @@
 @import url("./components/radio/radio.css");
 @import url("./utilities/utilities.css");
 @import url("./styles.css");
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -40,9 +42,9 @@
 .main-body-kaali {
   margin-top: 60px;
   overflow: auto;
+  overflow-x: hidden;
   height: calc(100vh - 70px);
   padding: 1rem;
- 
 }
 
 .sidebar-list-kaali {
@@ -53,7 +55,7 @@
   flex-direction: column;
   height: calc(100vh - 60px);
   margin-top: 60px;
-  background-color: var(--sidebar-background);
+  background-color: var(--kaali-sidebar-background);
   padding: 1rem 0rem;
   text-transform: capitalize;
 }
@@ -79,11 +81,11 @@
 }
 
 .sidebar-list-kaali .sidebar-list-items:hover {
-  color: var(--status-available-background);
+  color: var(--kaali-status-available-background);
 }
 
 .secondary-header {
-  font-size: var(--font-secondary-header);
+  font-size: var(--kaali-font-secondary-header);
   font-weight: 600;
 }
 
@@ -103,19 +105,24 @@ hr {
 
 .code-box {
   padding: 1rem;
-  position: relative;
 }
 
 .code-container {
   font-family: "Inconsolata", monospace;
-  background-color: #151718;
+  background-color: var(--kaali-code-container-background);
+  border: 1px solid var(--kaali-border-color);
   height: auto;
   max-width: 740px;
-  overflow-x: auto;
+
   padding: 1rem;
-  overflow-y: hidden;
+
   border-radius: 0.2rem;
   line-height: 30px;
+  position: relative;
+}
+
+.code-wrapper {
+  overflow: auto;
 }
 .normal-code-text {
   color: rgb(248, 248, 248);
@@ -148,22 +155,21 @@ hr {
   margin: 0 4px;
 }
 
-.symbol, .slash {
+.symbol,
+.slash {
   color: #55b5db;
-  margin: 0px 1px;;
+  margin: 0px 1px;
 }
 .lt.symbol,
 .gt.symbol,
 .slash {
   color: gray;
   font-weight: bold;
- 
 }
 
 .copy-tooltip {
   position: absolute;
-
-  right: 510px;
+  right: 16px;
   z-index: 2;
 }
 /* copy-tooltip for Copy Text */
@@ -196,6 +202,35 @@ hr {
   opacity: 1;
 }
 
+.floating-btn {
+  font-size: 1.3rem;
+  height: 32px;
+  width: 32px;
+  position: fixed;
+  background-color: var(--kaali-status-available-background);
+  color: var(--kaali-code-container-background);
+  padding: 1.2rem;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+.floating-btn::before {
+  content: "^";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
 @media only screen and (max-width: 480px) {
   .container-style-development-purpose {
     display: block;
@@ -216,6 +251,7 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
   .copy-tooltip {
     margin-bottom: 10px;
     position: unset;
@@ -260,12 +296,12 @@ hr {
   }
 }
 @media screen and (min-width: 985px) and (max-width: 1200px) {
-  .copy-tooltip {
+  /* .copy-tooltip {
     margin-bottom: 10px;
     position: absolute;
     float: right;
     left: 720px;
-  }
+  } */
   .copy-tooltip .tooltiptext {
     top: -110%;
     left: -75px;
@@ -277,12 +313,12 @@ hr {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
-  .copy-tooltip {
+  /* .copy-tooltip {
     margin-bottom: 10px;
     position: absolute;
     float: right;
     left: 720px;
-  }
+  } */
   .copy-tooltip .tooltiptext {
     top: -110%;
     left: -82px;
