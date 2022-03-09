@@ -62,19 +62,19 @@ if (hamburgericon != null) {
 // Close danger alert
 if (document.querySelector("#btn-danger-close") != null) {
   document.querySelector("#btn-danger-close").addEventListener("click", () => {
-    let alertbox = document.querySelector(".alert-content.alert-danger-dark");
+    let alertbox = document.querySelector(".alert-content.alert-danger");
 
     alertbox.classList.add("fade-out-top");
     setTimeout(() => {
       if (alertbox.classList.contains("fade-out-top")) {
         document.querySelector(
-          ".alert-content.alert-danger-dark"
+          ".alert-content.alert-danger"
         ).style.display = "none";
       }
     }, 1000);
     setTimeout(() => {
       resetDangerAlert();
-      document.querySelector(".alert-content.alert-danger-dark").style.display =
+      document.querySelector(".alert-content.alert-danger").style.display =
         "flex";
     }, 5000);
 
@@ -87,17 +87,17 @@ if (document.querySelector("#btn-success-close") != null) {
   document.querySelector("#btn-success-close").addEventListener("click", () => {
     resetSuccessAlert();
     document
-      .querySelector(".alert-content.alert-success-dark")
+      .querySelector(".alert-content.alert-success")
       .classList.add("fade-out-top");
     setTimeout(() => {
       // resetSuccessAlert();
       if (
         document
-          .querySelector(".alert-content.alert-success-dark")
+          .querySelector(".alert-content.alert-success")
           .classList.contains("fade-out-top")
       ) {
         document.querySelector(
-          ".alert-content.alert-success-dark"
+          ".alert-content.alert-success"
         ).style.display = "none";
       }
     }, 1000);
@@ -105,7 +105,7 @@ if (document.querySelector("#btn-success-close") != null) {
     setTimeout(() => {
       resetSuccessAlert();
       document.querySelector(
-        ".alert-content.alert-success-dark"
+        ".alert-content.alert-success"
       ).style.display = "flex";
     }, 5000);
   });
@@ -114,22 +114,22 @@ if (document.querySelector("#btn-success-close") != null) {
 if (document.querySelector("#btn-info-close") != null) {
   document.querySelector("#btn-info-close").addEventListener("click", () => {
     document
-      .querySelector(".alert-content.alert-info-dark")
+      .querySelector(".alert-content.alert-info")
       .classList.add("fade-out-top");
     setTimeout(() => {
       if (
         document
-          .querySelector(".alert-content.alert-info-dark")
+          .querySelector(".alert-content.alert-info")
           .classList.contains("fade-out-top")
       ) {
-        document.querySelector(".alert-content.alert-info-dark").style.display =
+        document.querySelector(".alert-content.alert-info").style.display =
           "none";
       }
     }, 1000);
 
     setTimeout(() => {
       resetInfoALert();
-      document.querySelector(".alert-content.alert-info-dark").style.display =
+      document.querySelector(".alert-content.alert-info").style.display =
         "flex";
     }, 5000);
   });
@@ -139,16 +139,16 @@ if (document.querySelector("#btn-info-close") != null) {
 if (document.querySelector("#btn-warning-close") != null) {
   document.querySelector("#btn-warning-close").addEventListener("click", () => {
     document
-      .querySelector(".alert-content.alert-warning-dark")
+      .querySelector(".alert-content.alert-warning")
       .classList.add("fade-out-top");
     setTimeout(() => {
       if (
         document
-          .querySelector(".alert-content.alert-warning-dark")
+          .querySelector(".alert-content.alert-warning")
           .classList.contains("fade-out-top")
       ) {
         document.querySelector(
-          ".alert-content.alert-warning-dark"
+          ".alert-content.alert-warning"
         ).style.display = "none";
       }
     }, 1000);
@@ -156,7 +156,7 @@ if (document.querySelector("#btn-warning-close") != null) {
     setTimeout(() => {
       resetWarningAlert();
       document.querySelector(
-        ".alert-content.alert-warning-dark"
+        ".alert-content.alert-warning"
       ).style.display = "flex";
     }, 5000);
   });
@@ -167,19 +167,19 @@ function resetAlert(className) {
 }
 
 function resetDangerAlert() {
-  resetAlert("alert-danger-dark");
+  resetAlert("alert-danger");
 }
 
 function resetSuccessAlert() {
-  resetAlert("alert-success-dark");
+  resetAlert("alert-success");
 }
 
 function resetInfoALert() {
-  resetAlert("alert-info-dark");
+  resetAlert("alert-info");
 }
 
 function resetWarningAlert() {
-  resetAlert("alert-warning-dark");
+  resetAlert("alert-warning");
 }
 // Copy content for Danger Alert
 id = "clip-alert-danger";
@@ -411,8 +411,6 @@ if (document.querySelector(".btn.btn-like") != null) {
     modalIsOpen = true;
 
     if (modalIsOpen === true) {
-     
-
       document.addEventListener("click", (event) => {
         /* If you click on modal-close || anything except modal itself and the open modal button
          close the modal.*/
@@ -1049,4 +1047,13 @@ dotsNav?.addEventListener("click", (event) => {
   updateDots(currentDot, targetDot);
 
   toggleArrows(targetIndex, prevButton, nextButton, slides);
+});
+
+// Dark theme
+const toggleMode = document.querySelector(".btn.btn-primary.toggle-mode");
+const mainBodyKaali = document.querySelector(".body-style-development-purpose");
+toggleMode?.addEventListener("click", () => {
+  if (mainBodyKaali?.getAttribute("data-theme") === "dark") {
+    mainBodyKaali?.setAttribute("data-theme", "light");
+  } else mainBodyKaali?.setAttribute("data-theme", "dark");
 });

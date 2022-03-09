@@ -55,7 +55,7 @@
   flex-direction: column;
   height: calc(100vh - 60px);
   margin-top: 60px;
-  background-color: var(--kaali-sidebar-background);
+  /* background-color: var(--kaali-sidebar-background); */
   padding: 1rem 0rem;
   text-transform: capitalize;
 }
@@ -71,7 +71,7 @@
 
 .sidebar-list-kaali::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #ffc72c;
+  background:  var(--kaali-status-available-background);
 }
 
 .sidebar-list-kaali .sidebar-list-items {
@@ -231,6 +231,7 @@ hr {
   transform: translate(-50%, -30%);
 }
 
+
 @media only screen and (max-width: 480px) {
   .container-style-development-purpose {
     display: block;
@@ -296,12 +297,7 @@ hr {
   }
 }
 @media screen and (min-width: 985px) and (max-width: 1200px) {
-  /* .copy-tooltip {
-    margin-bottom: 10px;
-    position: absolute;
-    float: right;
-    left: 720px;
-  } */
+
   .copy-tooltip .tooltiptext {
     top: -110%;
     left: -75px;

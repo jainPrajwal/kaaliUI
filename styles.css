@@ -2,14 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Varela+Round&display=swap");
 @import "./utilities/utilities.css";
 :root {
-  
   --kaali-primary: #1654ff;
-  --kaali-secondary: #F8F9FA;
+  --kaali-secondary: #f8f9fa;
   --kaali-danger: #ff0044;
   --kaali-success: #228b22;
   --kaali-warning: #ffae00a4;
-  --kaali-shade-pink:#db2777;
-  --kaali-shade-yellow:#ffc72c;;
+  --kaali-shade-pink: #db2777;
+  --kaali-shade-yellow: #ffc72c;
   /* regular font color */
   --kaali-font-color: #f8f8f8;
 
@@ -26,7 +25,7 @@
 
   /* Backgrounds */
   --kaali-sidebar-background: #0f172a;
-  --kaali-code-container-background:#1c1917;
+  --kaali-code-container-background: #1c1917;
   --kaali-navbar-background: #0f172a;
   --kaali-main-background: #0f172a;
   --kaali-card-background: #191919;
@@ -59,7 +58,14 @@
 .body-style-development-purpose {
   background-color: var(--kaali-main-background);
   color: var(--kaali-font-color);
+  transition: background-color, color 500ms ease-out;
 }
+[data-theme="light"].body-style-development-purpose {
+  color: var(--kaali-main-background);
+  background-color: var(--kaali-font-color);
+  transition: background-color, color 500ms ease-in-out;
+}
+
 li {
   list-style: none;
 }
@@ -76,12 +82,17 @@ a {
 .navbar-kaali {
   height: 4rem;
   width: 100%;
-  background-color: var(--kaali-navbar-background);
+  /* background-color: var(--kaali-navbar-background); */
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 10;
+}
+[data-theme="light"].navbar-kaali {
+  color: var(--kaali-main-background);
+  background-color: var(--kaali-font-color);
+  transition: background-color, color 500ms ease-in;
 }
 .brand-kaali {
   margin-right: auto;
@@ -178,7 +189,6 @@ a {
   margin-top: 100px;
 }
 .header {
-  color: var(--kaali-font-color);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -261,7 +271,47 @@ a {
   color: var(--kaali-font-color);
   cursor: pointer;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --kaali-primary: #1654ff;
+  --kaali-secondary: #f8f9fa;
+  --kaali-danger: #ff0044;
+  --kaali-success: #228b22;
+  --kaali-warning: #ffae00a4;
+  --kaali-shade-pink: #db2777;
+  --kaali-shade-yellow: #ffc72c;
+  
+  /* regular font color */
+  --kaali-font-color: #f8f8f8;
+
+
+  /* Backgrounds */
+  --kaali-sidebar-background: #0f172a;
+  --kaali-code-container-background: #1c1917;
+  --kaali-navbar-background: #0f172a;
+  --kaali-main-background: #0f172a;
+  --kaali-card-background: #191919;
+  --kaali-plain-card-body-background: #2b2a2a;
+  --kaali-plain-card-fallback-image: #7f7f7f;
+  --kaali-card-ecommerce-body-background: whitesmoke;
+  --kaali-status-available-background: #0ad103;
+  /* Border */
+  --kaali-border-color: gray;
+
+  /* status */
+  --kaali-status-do-not-disturb: var(--kaali-danger);
+
+  /* codebox colors */
+  --kaali-note-color: #ffbd2e;
+  --kaali-token-tag-color: #55b5db;
+  --kaali-token-attribute-color: #9fca56;
+
+
+  }
+}
 /* Media Queries */
+
 @media only screen and (max-width: 480px) {
   body {
     /* overflow: scroll; */
@@ -296,11 +346,16 @@ a {
     display: block;
     background: var(--kaali-navbar-background);
   }
+
+  .clip-path {
+    clip-path: circle(50px at 110% -20%);
+    -webkit-clip-path: circle(50px at 120% -10%);
+    transition: clip-path 0.5s ease-out;
+  }
   .navbar-ul-kaali {
     /* position: fixed;
     top: 50px; */
-   
-    
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -366,7 +421,7 @@ a {
   }
   .navbar-ul-kaali::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: var(--kaali-shade-yellow);
+    background: var(--kaali-status-available-background);
   }
 
   .navbar-ul-kaali .component-link-item-desktop {
@@ -431,8 +486,7 @@ a {
   .navbar-ul-kaali {
     /* position: fixed;
     top: 50px; */
-   
-    
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -498,7 +552,7 @@ a {
   }
   .navbar-ul-kaali::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: #ffc72c;
+    background:  var(--kaali-status-available-background);
   }
   .navbar-ul-kaali .component-link-item-mobile {
     display: block;
