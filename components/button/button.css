@@ -25,7 +25,9 @@
   font-size: 1.1rem;
   /* width: 170px; */
 }
-
+.btn:active {
+  transform: translateY(1.2px);
+}
 .btn-primary {
   background-color: var(--kaali-primary);
   color: var(--kaali-font-color);

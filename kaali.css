@@ -71,7 +71,7 @@
 
 .sidebar-list-kaali::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background:  var(--kaali-status-available-background);
+  background: var(--kaali-status-available-background);
 }
 
 .sidebar-list-kaali .sidebar-list-items {
@@ -80,8 +80,12 @@
   cursor: pointer;
 }
 
-.sidebar-list-kaali .sidebar-list-items:hover {
+.body-style-development-purpose .sidebar-list-items:hover {
   color: var(--kaali-status-available-background);
+}
+.body-style-development-purpose.light .sidebar-list-items:hover {
+  color: var(--kaali-light-mode-success);
+  font-weight: bold;
 }
 
 .secondary-header {
@@ -231,7 +235,6 @@ hr {
   transform: translate(-50%, -30%);
 }
 
-
 @media only screen and (max-width: 480px) {
   .container-style-development-purpose {
     display: block;
@@ -297,7 +300,6 @@ hr {
   }
 }
 @media screen and (min-width: 985px) and (max-width: 1200px) {
-
   .copy-tooltip .tooltiptext {
     top: -110%;
     left: -75px;

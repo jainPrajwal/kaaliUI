@@ -19,7 +19,11 @@
   align-items: center;
   margin-bottom: 0.5rem;
 }
-
+/* For Dark Mode */
+/* .alert-wrapper {
+  background-color:#334155;
+  padding: 1rem;
+} */
 .alert-danger {
   background-color: #7f1d1d;
   color: #fecaca;

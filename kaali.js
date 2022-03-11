@@ -67,9 +67,8 @@ if (document.querySelector("#btn-danger-close") != null) {
     alertbox.classList.add("fade-out-top");
     setTimeout(() => {
       if (alertbox.classList.contains("fade-out-top")) {
-        document.querySelector(
-          ".alert-content.alert-danger"
-        ).style.display = "none";
+        document.querySelector(".alert-content.alert-danger").style.display =
+          "none";
       }
     }, 1000);
     setTimeout(() => {
@@ -96,17 +95,15 @@ if (document.querySelector("#btn-success-close") != null) {
           .querySelector(".alert-content.alert-success")
           .classList.contains("fade-out-top")
       ) {
-        document.querySelector(
-          ".alert-content.alert-success"
-        ).style.display = "none";
+        document.querySelector(".alert-content.alert-success").style.display =
+          "none";
       }
     }, 1000);
 
     setTimeout(() => {
       resetSuccessAlert();
-      document.querySelector(
-        ".alert-content.alert-success"
-      ).style.display = "flex";
+      document.querySelector(".alert-content.alert-success").style.display =
+        "flex";
     }, 5000);
   });
 }
@@ -147,17 +144,15 @@ if (document.querySelector("#btn-warning-close") != null) {
           .querySelector(".alert-content.alert-warning")
           .classList.contains("fade-out-top")
       ) {
-        document.querySelector(
-          ".alert-content.alert-warning"
-        ).style.display = "none";
+        document.querySelector(".alert-content.alert-warning").style.display =
+          "none";
       }
     }, 1000);
 
     setTimeout(() => {
       resetWarningAlert();
-      document.querySelector(
-        ".alert-content.alert-warning"
-      ).style.display = "flex";
+      document.querySelector(".alert-content.alert-warning").style.display =
+        "flex";
     }, 5000);
   });
 }
@@ -1053,7 +1048,5 @@ dotsNav?.addEventListener("click", (event) => {
 const toggleMode = document.querySelector(".btn.btn-primary.toggle-mode");
 const mainBodyKaali = document.querySelector(".body-style-development-purpose");
 toggleMode?.addEventListener("click", () => {
-  if (mainBodyKaali?.getAttribute("data-theme") === "dark") {
-    mainBodyKaali?.setAttribute("data-theme", "light");
-  } else mainBodyKaali?.setAttribute("data-theme", "dark");
+  mainBodyKaali?.classList.toggle("light");
 });
