@@ -78,7 +78,9 @@
   color: var(--kaali-status-available-background);
  background-color: rgb(16, 5, 163);
 }
-
+.component-link-item-mobile.btn.btn-toggle {
+  display: none;
+}
 li {
   list-style: none;
 }
@@ -291,17 +293,21 @@ a {
     z-index: 3;
     display: block;
   }
+  
   .hamburger-kaali {
-    display: block;
-    position: absolute;
+    display: inline-block;
+    /* position: absolute; */
     cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
+    /* height: 100%; */
+    /* right: 5%;
+    top: 50%; */
+    /* transform: translate(-5%, -50%); */
     z-index: 2;
     transition: transform 0.7s ease;
   }
-
+  .component-link-item-mobile.btn.btn-toggle {
+    all: unset;
+  }
   .wrapper-navbar {
     position: fixed;
     width: 100%;
