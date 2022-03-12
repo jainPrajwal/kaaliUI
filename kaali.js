@@ -957,6 +957,7 @@ if (mainBody !== null && floatingButton) {
 const track = document.querySelector(".carousel-track");
 
 const slides = Array.from(track?.children || []);
+console.log({slides})
 
 const nextButton = document.querySelector(".carousel-button-right");
 const prevButton = document.querySelector(".carousel-button-left");
@@ -966,6 +967,7 @@ const dotsNav = document.querySelector(".carousel-nav");
 const dots = Array.from(dotsNav?.children || []);
 
 const slideSize = slides[0]?.getBoundingClientRect();
+
 
 const slideWidth = slideSize?.width;
 
@@ -1045,8 +1047,46 @@ dotsNav?.addEventListener("click", (event) => {
 });
 
 // Dark theme
-const toggleMode = document.querySelector(".btn.btn-primary.toggle-mode");
+function removeClassNameFromElement(element, className) {
+  element?.classList.remove(className);
+}
+
+function addClassNameToElement(element, className) {
+  element?.classList.add(className);
+}
+
+function checkIfClassExistsOnElement(element, className) {
+  return element?.classList.contains(className);
+}
+
+function setItemtoLocalStorage(item, value) {
+  localStorage.setItem(item, value);
+}
+
+const toggleMode = document.querySelector(".btn.btn-toggle");
 const mainBodyKaali = document.querySelector(".body-style-development-purpose");
+const darkIcon = document.querySelector("#dark-icon");
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme === "light") {
+  addClassNameToElement(mainBodyKaali, "light");
+  removeClassNameFromElement(darkIcon, "fa-sun");
+  addClassNameToElement(darkIcon, "fa-moon");
+  setItemtoLocalStorage("theme", "light");
+} else {
+  mainBodyKaali?.classList.remove("light");
+}
+
+
+
 toggleMode?.addEventListener("click", () => {
+  if (checkIfClassExistsOnElement(darkIcon, "fa-sun")) {
+    removeClassNameFromElement(darkIcon, "fa-sun");
+    addClassNameToElement(darkIcon, "fa-moon");
+    setItemtoLocalStorage("theme", "light");
+  } else {
+    addClassNameToElement(darkIcon,"fa-sun");
+    removeClassNameFromElement(darkIcon,"fa-moon");
+    setItemtoLocalStorage("theme", "dark");
+  }
   mainBodyKaali?.classList.toggle("light");
 });

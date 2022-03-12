@@ -2,7 +2,6 @@
 
 
 .btn-demo {
-  width: 70px;
   margin: 1rem;
   position: relative;
   display: flex;
@@ -28,14 +27,14 @@
   top: -70%;
   right: -2%;
 }
-.tooltip-dark {
-  background-color: black;
-  color: var(--kaali-font-color);
+.tooltip {
+  color: black;
+  background-color: var(--kaali-font-color);
 }
 
-.tooltip-light {
-  background-color: var(--kaali-font-color);
-  color: black;
+.body-style-development-purpose.light .tooltip {
+  color: var(--kaali-font-color);
+  background-color: var(--kaali-main-background);
 }
 .tooltip-top::after {
   content: "";
@@ -46,34 +45,34 @@
   border-width: 5px;
   border-style: solid;
 }
-.tooltip-light.tooltip-top::after {
+.body-style-development-purpose.light .tooltip-top::after {
+  border-color: var(--kaali-main-background) transparent transparent transparent;
+}
+.body-style-development-purpose.light .tooltip-left::after {
+  border-color: transparent var(--kaali-main-background) transparent transparent;
+}
+
+.body-style-development-purpose.light .tooltip-right::after {
+  border-color: transparent transparent transparent var(--kaali-main-background);
+}
+
+.body-style-development-purpose.light .tooltip-bottom::after {
+  border-color: transparent transparent var(--kaali-main-background) transparent;
+}
+
+.tooltip.tooltip-top::after {
   border-color: var(--kaali-font-color) transparent transparent transparent;
 }
-.tooltip-light.tooltip-left::after {
+.tooltip.tooltip-left::after {
   border-color: transparent var(--kaali-font-color) transparent transparent;
 }
 
-.tooltip-light.tooltip-right::after {
+.tooltip.tooltip-right::after {
   border-color: transparent transparent transparent var(--kaali-font-color);
 }
 
-.tooltip-light.tooltip-bottom::after {
+.tooltip.tooltip-bottom::after {
   border-color: transparent transparent var(--kaali-font-color) transparent;
-}
-
-.tooltip-dark.tooltip-top::after {
-  border-color: black transparent transparent transparent;
-}
-.tooltip-dark.tooltip-left::after {
-  border-color: transparent black transparent transparent;
-}
-
-.tooltip-dark.tooltip-right::after {
-  border-color: transparent transparent transparent black;
-}
-
-.tooltip-dark.tooltip-bottom::after {
-  border-color: transparent transparent black transparent;
 }
 
 .btn-demo:hover .tooltip {
@@ -139,7 +138,7 @@
 .tooltip-bottom::after {
   content: "";
   position: absolute;
-  top: -52.2%;
+  top: -42%;
   left: 51.6%;
   margin-left: -5px;
   border-width: 5px;

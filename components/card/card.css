@@ -45,7 +45,7 @@
 .card-title {
   margin-bottom: 1rem;
   font-weight: 700;
-  color: var(--font-color);
+  color: var(--kaali-font-color);
 }
 
 .card-subtitle {

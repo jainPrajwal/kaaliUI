@@ -12,18 +12,13 @@
     />
 
     <link href="../../kaali.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>kaali UI | Alert</title>
   </head>
   <body class="body-style-development-purpose">
     <div class="container-style-development-purpose">
-      <nav class="navbar-kaali">
+      <header class="navbar-kaali">
         <div class="d-flex ai-center h-100">
           <div class="brand-kaali">
             <img
@@ -43,7 +38,7 @@
           <div class="line3"></div>
         </div>
 
-        <div class="navbar-ul-kaali">
+        <nav class="navbar-ul-kaali">
           <ul class="wrapper-navbar">
             <li class="component-link-item-desktop">
               <a href="../../kaali.html">get started</a>
@@ -55,7 +50,11 @@
               <a href="../../index.html#foot">about</a>
             </li>
             <li class="component-link-item-desktop">
-              <button class="btn btn-primary toggle-mode">Toggle Mode</button>
+           
+              <button class="btn btn-toggle">
+                <i class="fa-solid fa-sun" id="dark-icon"></i>
+              </button>
+             
             </li>
             <li class="component-link-item-mobile">
               <a href="../../kaali.html">get started</a>
@@ -173,8 +172,8 @@
               >
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
       <aside class="sidebar-container-kaali">
         <ul class="sidebar-list-kaali">

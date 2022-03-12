@@ -23,8 +23,19 @@
   padding-top: 1rem;
   background-color: transparent;
   color: var(--kaali-font-color);
-  border: none;
-  outline: none;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  border-radius: 2px;
+  height: 100%;
+  width: 100%;
+}
+.body-style-development-purpose.light .form .input {
+  font-size: var(--kaali-font-regular);
+  padding-top: 1rem;
+  background-color: transparent;
+  color: var(--kaali-main-background);
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
   border-radius: 2px;
   height: 100%;
   width: 100%;
@@ -39,6 +50,17 @@
   pointer-events: none;
   border-bottom: 1px solid var(--kaali-font-color);
   color: var(--kaali-font-color);
+}
+
+.body-style-development-purpose.light .form label {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  border-bottom: 1px solid var(--kaali-main-background);
+  color: var(--kaali-main-background);
 }
 
 .form label::after {
@@ -87,7 +109,7 @@
   }
   .form-container {
     padding: 1rem;
-    border: none;
+    border: 1px solid transparent;
   }
 }
 

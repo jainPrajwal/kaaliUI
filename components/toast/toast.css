@@ -30,9 +30,11 @@
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  width: 220px;
+  width: 320px;
   bottom: 5%;
   left: 50%;
+  color: var(--kaali-font-color);
+  padding: 1rem;
   visibility: hidden;
   z-index: 32;
 }

@@ -14,9 +14,10 @@
     <link href="../../kaali.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>kaali UI | Card</title>
@@ -53,6 +54,11 @@
             </li>
             <li class="component-link-item-desktop">
               <a href="../../index.html#foot">about</a>
+            </li>
+            <li class="component-link-item-desktop">
+              <button class="btn btn-toggle">
+                <i class="fa-solid fa-sun" id="dark-icon"></i>
+              </button>
             </li>
             <li class="component-link-item-mobile">
               <a href="../../kaali.html">get started</a>
@@ -203,7 +209,7 @@
             <li class="sidebar-list-items">checkbox</li></a
           >
           <hr class="hr-sidebar" />
-        
+
           <a href="../colors/colors.html">
             <li class="sidebar-list-items">colors</li>
           </a>
@@ -356,20 +362,20 @@
             <div class="code-box">
               <div class="code-container">
                 <div class="code-wrapper">
-                <div class="copy-tooltip">
-                  <i class="fas fa-clipboard" id="clip-card">
-                    <span id="card-tooltip" class="tooltiptext"
-                      >Copy to Clipboard</span
-                    ></i
-                  >
-                </div>
+                  <div class="copy-tooltip">
+                    <i class="fas fa-clipboard" id="clip-card">
+                      <span id="card-tooltip" class="tooltiptext"
+                        >Copy to Clipboard</span
+                      ></i
+                    >
+                  </div>
 
-                <div class="token tag">
-                  <pre
-                    class="code"
-                  ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-body<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-item<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://i.scdn.co/image/ab67616d00001e02fd2df008046f04c32d9c0c2e<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash"></span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-content<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Believer</span><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-subtitle<span class="single-quote">"</span><span class="normal-code-text"><span class="gt symbol">&gt;</span>Imagine Dragons</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="comments">//Repeat the card body as many times as you want.</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  <div class="token tag">
+                    <pre
+                      class="code"
+                    ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-body<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-item<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://i.scdn.co/image/ab67616d00001e02fd2df008046f04c32d9c0c2e<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash"></span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-content<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Believer</span><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-subtitle<span class="single-quote">"</span><span class="normal-code-text"><span class="gt symbol">&gt;</span>Imagine Dragons</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="comments">//Repeat the card body as many times as you want.</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <hr class="alert-hr" />
@@ -405,20 +411,20 @@
               <div class="code-box">
                 <div class="code-container">
                   <div class="code-wrapper">
-                  <div class="copy-tooltip">
-                    <i class="fas fa-clipboard" id="clip-card-plain">
-                      <span id="card-tooltip-plain" class="tooltiptext"
-                        >Copy to Clipboard</span
-                      ></i
-                    >
-                  </div>
+                    <div class="copy-tooltip">
+                      <i class="fas fa-clipboard" id="clip-card-plain">
+                        <span id="card-tooltip-plain" class="tooltiptext"
+                          >Copy to Clipboard</span
+                        ></i
+                      >
+                    </div>
 
-                  <div class="token tag">
-                    <pre
-                      class="code"
-                    ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-body chakde<span class="single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="single-quote">"</span><span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-image<span class="single-quote">"</span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>h3 <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Podcasts</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>h3<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="comments">//Repeat the fallback card body as many times as you want.</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                    <div class="token tag">
+                      <pre
+                        class="code"
+                      ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-body chakde<span class="single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="single-quote">"</span><span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-image<span class="single-quote">"</span><span class="slash">&#47;</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>h3 <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Podcasts</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>h3<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="comments">//Repeat the fallback card body as many times as you want.</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
               <hr class="alert-hr" />
@@ -454,20 +460,20 @@
             <div class="code-box">
               <div class="code-container">
                 <div class="code-wrapper">
-                <div class="copy-tooltip">
-                  <i class="fas fa-clipboard" id="clip-card-fallback">
-                    <span id="card-tooltip-fallback" class="tooltiptext"
-                      >Copy to Clipboard</span
-                    ></i
-                  >
-                </div>
+                  <div class="copy-tooltip">
+                    <i class="fas fa-clipboard" id="clip-card-fallback">
+                      <span id="card-tooltip-fallback" class="tooltiptext"
+                        >Copy to Clipboard</span
+                      ></i
+                    >
+                  </div>
 
-                <div class="token tag">
-                  <pre
-                    class="code"
-                  ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-body<span class="single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="single-quote">"</span><span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>h3 <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Podcasts</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>h3<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="comments">//Repeat the fallback card body as many times as you want.</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  <div class="token tag">
+                    <pre
+                      class="code"
+                    ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-body<span class="single-quote">"</span><span class="attr"> href</span><span class="symbol">=</span><span class="single-quote">"</span><span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-fallback-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">/</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>h3 <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>plain-card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Podcasts</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>h3<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="comments">//Repeat the fallback card body as many times as you want.</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
 
@@ -561,20 +567,20 @@
             <div class="code-box">
               <div class="code-container">
                 <div class="code-wrapper">
-                <div class="copy-tooltip">
-                  <i class="fas fa-clipboard" id="clip-card-horizontal">
-                    <span id="card-tooltip-horizontal" class="tooltiptext"
-                      >Copy to Clipboard</span
-                    ></i
-                  >
-                </div>
+                  <div class="copy-tooltip">
+                    <i class="fas fa-clipboard" id="clip-card-horizontal">
+                      <span id="card-tooltip-horizontal" class="tooltiptext"
+                        >Copy to Clipboard</span
+                      ></i
+                    >
+                  </div>
 
-                <div class="token tag">
-                  <pre
-                    class="code"
-                  ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card card-horizontal<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-body<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-content<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Lagaan</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-subtitle<span class="single-quote">"</span><span class="normal-code-text"><span class="gt symbol">&gt;</span>Motion Picture</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>play-button<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span>i <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>fas fa-play<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>i<span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="comments">//Repeat the card body as many times as you want.</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  <div class="token tag">
+                    <pre
+                      class="code"
+                    ><span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card card-horizontal<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-body<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>a <span class="attr">href</span><span class="symbol">=</span><span class="single-quote">"</span>#<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp; <span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-image-container<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>img <span class="attr">src</span><span class="symbol">=</span><span class="single-quote">"</span>https://t.scdn.co/images/7ef1d6445a684e30bdd78f09507d688c.jpeg<span class="single-quote">"</span><span class="attr"> alt</span><span class="symbol">=</span><span class="single-quote">"</span>card-horizontal-image<span class="single-quote">"</span><span class="attr"> class</span><span class="symbol">=</span><span class="single-quote">"</span>card-image<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-content<span class="single-quote">"</span><span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-title<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="normal-code-text">Lagaan</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>card-subtitle<span class="single-quote">"</span><span class="normal-code-text"><span class="gt symbol">&gt;</span>Motion Picture</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span>div <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>play-button<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span>i <span class="attr">class</span><span class="symbol">=</span><span class="single-quote">"</span>fas fa-play<span class="single-quote">"</span><span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>i<span class="gt symbol">&gt;</span><span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>a<span class="gt symbol">&gt;</span><br>&emsp;&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br/>&emsp;&emsp;&emsp;<span class="comments">//Repeat the card body as many times as you want.</span><br/>&emsp;&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span><br>&emsp;<span class="lt symbol">&lt;</span><span class="slash">&#47;</span>div<span class="gt symbol">&gt;</span></pre>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
 

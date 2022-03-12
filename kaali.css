@@ -40,7 +40,7 @@
 }
 
 .main-body-kaali {
-  margin-top: 60px;
+  margin-top: 64px;
   overflow: auto;
   overflow-x: hidden;
   height: calc(100vh - 70px);
@@ -53,8 +53,8 @@
   list-style: none;
   overflow-y: auto;
   flex-direction: column;
-  height: calc(100vh - 60px);
-  margin-top: 60px;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
   /* background-color: var(--kaali-sidebar-background); */
   padding: 1rem 0rem;
   text-transform: capitalize;
@@ -177,6 +177,9 @@ hr {
   z-index: 2;
 }
 /* copy-tooltip for Copy Text */
+.body-style-development-purpose.light .copy-tooltip {
+  color: var(--kaali-font-color);
+}
 .copy-tooltip .tooltiptext {
   visibility: hidden;
   width: 150px;

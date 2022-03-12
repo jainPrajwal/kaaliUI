@@ -3,7 +3,7 @@
 @import "./utilities/utilities.css";
 :root {
   --kaali-primary: #1654ff;
-  --kaali-secondary: #f8f9fa;
+  --kaali-secondary: #e2e8f0;
   --kaali-danger: #ff0044;
   --kaali-success: #228b22;
   --kaali-warning: #ffae00a4;
@@ -59,12 +59,12 @@
 .body-style-development-purpose {
   background-color: var(--kaali-main-background);
   color: var(--kaali-font-color);
-  transition: background-color, color 500ms linear;
+ 
 }
 .body-style-development-purpose.light {
   color: var(--kaali-main-background);
   background-color: var(--kaali-font-color);
-  transition: background-color, color 500ms linear;
+ 
 }
 .body-style-development-purpose a {
   color: var(--kaali-font-color);
@@ -72,6 +72,13 @@
 .body-style-development-purpose.light a {
   color: var(--kaali-main-background);
 }
+
+
+.btn.btn-toggle {
+  color: var(--kaali-status-available-background);
+ background-color: rgb(16, 5, 163);
+}
+
 li {
   list-style: none;
 }
@@ -87,7 +94,6 @@ a {
 .navbar-kaali {
   height: 4rem;
   width: 100%;
-
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -114,6 +120,7 @@ a {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  height: 100%;
 }
 .navbar-ul-kaali {
   list-style: none;
