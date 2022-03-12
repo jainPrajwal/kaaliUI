@@ -69,10 +69,13 @@
 .body-style-development-purpose a {
   color: var(--kaali-font-color);
 }
-.body-style-development-purpose.light a {
+.body-style-development-purpose.light .sidebar-list-kaali a {
+  color: var(--kaali-main-background);
+ 
+}
+.body-style-development-purpose.light .component-link-item-desktop a, .brand-kaali a{
   color: var(--kaali-main-background);
 }
-
 
 .btn.btn-toggle {
   color: var(--kaali-status-available-background);
@@ -130,6 +133,9 @@ a {
   width: 100%;
   align-items: center;
   text-transform: capitalize;
+}
+.body-style-development-purpose.light .navbar-ul-kaali {
+  color: var(--kaali-main-background);
 }
 .component-link-item-desktop {
   padding: 0 1rem;
