@@ -13,19 +13,14 @@
   
     
     <link href="../../kaali.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>kaali UI | Button</title>
   </head>
   <body class="body-style-development-purpose">
     <div class="container-style-development-purpose">
-      <nav class="navbar-kaali">
-        <div class="d-flex ai-center h-100">
+      <header class="navbar-kaali">
+        <div class="d-flex ai-center h-100 jc-space-between pr-sm">
           <div class="brand-kaali">
             <img
               src="../../assets/images/kali-icon.ico"
@@ -36,15 +31,22 @@
               <a href="../../index.html">kaali</a>
             </h2>
           </div>
+          <div class="component-link-item-mobile btn btn-toggle">
+             
+            <button class="btn btn-toggle"  id="theme-toggler">
+              <i class="fa-solid fa-sun" id="dark-icon"></i>
+            </button>
+           
+          </div>
+          <div class="hamburger-kaali">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+         
         </div>
 
-        <div class="hamburger-kaali">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-
-        <div class="navbar-ul-kaali">
+        <nav class="navbar-ul-kaali">
           <ul class="wrapper-navbar">
             <li class="component-link-item-desktop">
               <a href="../../kaali.html">get started</a>
@@ -54,6 +56,13 @@
             </li>
             <li class="component-link-item-desktop">
               <a href="../../index.html#foot">about</a>
+            </li>
+            <li class="component-link-item-desktop">
+           
+              <button class="btn btn-toggle"  id="theme-toggler">
+                <i class="fa-solid fa-sun" id="dark-icon"></i>
+              </button>
+             
             </li>
             <li class="component-link-item-mobile">
               <a href="../../kaali.html">get started</a>
@@ -171,8 +180,8 @@
               >
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
 
       <div class="sidebar-container-kaali">
