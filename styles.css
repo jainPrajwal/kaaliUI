@@ -33,7 +33,7 @@
   --kaali-plain-card-fallback-image: #7f7f7f;
   --kaali-card-ecommerce-body-background: whitesmoke;
   --kaali-status-available-background: #09ff00;
-  --kaali-light-mode-success: #2c974b;
+  --kaali-light-mode-success: #2e7d32;
   /* Border */
   --kaali-border-color: gray;
 
@@ -59,27 +59,36 @@
 .body-style-development-purpose {
   background-color: var(--kaali-main-background);
   color: var(--kaali-font-color);
- 
 }
 .body-style-development-purpose.light {
   color: var(--kaali-main-background);
   background-color: var(--kaali-font-color);
- 
 }
 .body-style-development-purpose a {
   color: var(--kaali-font-color);
 }
+.body-style-development-purpose.light a {
+  color: var(--kaali-main-background);
+}
 .body-style-development-purpose.light .sidebar-list-kaali a {
   color: var(--kaali-main-background);
- 
 }
-.body-style-development-purpose.light .component-link-item-desktop a, .brand-kaali a{
+.body-style-development-purpose.light .component-link-item-desktop a,
+.body-style-development-purpose.light .brand-kaali a {
   color: var(--kaali-main-background);
 }
-
+.body-style-development-purpose.light .component-link-item-desktop a:hover {
+  color: var(--kaali-light-mode-success);
+  font-weight: bold;
+  filter: saturate(2.5);
+}
+.body-style-development-purpose .component-link-item-desktop a:hover {
+  color: var(--kaali-status-available-background);
+}
 .btn.btn-toggle {
   color: var(--kaali-status-available-background);
- background-color: rgb(16, 5, 163);
+  background-color: rgb(16, 5, 163);
+  /* this color is used only at this place */
 }
 .component-link-item-mobile.btn.btn-toggle {
   display: none;
@@ -146,8 +155,13 @@ a {
   height: 3px;
   background: var(--kaali-status-available-background);
   margin: 5px;
-  /* transition: all 0.3s ease; */
 }
+
+.body-style-development-purpose.light .hamburger-kaali div {
+  background: var(--kaali-light-mode-success);
+  filter: saturate(300%);
+}
+
 .hamburger-kaali {
   display: none;
 }
@@ -179,6 +193,7 @@ a {
 .body-style-development-purpose.light .active {
   color: var(--kaali-light-mode-success);
   font-weight: bold;
+  filter: saturate(2.5);
 }
 /* Header */
 
@@ -299,15 +314,12 @@ a {
     z-index: 3;
     display: block;
   }
-  
+
   .hamburger-kaali {
     display: inline-block;
-    /* position: absolute; */
+
     cursor: pointer;
-    /* height: 100%; */
-    /* right: 5%;
-    top: 50%; */
-    /* transform: translate(-5%, -50%); */
+
     z-index: 2;
     transition: transform 0.7s ease;
   }
@@ -324,15 +336,18 @@ a {
     background: var(--kaali-navbar-background);
   }
 
+  .body-style-development-purpose.light .wrapper-navbar {
+    color: var(--kaali-navbar-background);
+    background-color: var(--kaali-font-color);
+  }
+
+
   .clip-path {
     clip-path: circle(50px at 110% -20%);
     -webkit-clip-path: circle(50px at 120% -10%);
     transition: clip-path 0.5s ease-out;
   }
   .navbar-ul-kaali {
-    /* position: fixed;
-    top: 50px; */
-
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -341,7 +356,7 @@ a {
     transition: clip-path 0.5s ease-out;
     pointer-events: none;
     padding-top: 1rem;
-    /* overflow-y: scroll; */
+
     align-items: flex-start;
   }
   .navbar-ul-kaali.open {

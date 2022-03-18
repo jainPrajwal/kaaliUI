@@ -1065,12 +1065,17 @@ function setItemtoLocalStorage(item, value) {
 const toggleMode = document.querySelectorAll(".btn.btn-toggle#theme-toggler");
 console.log({toggleMode})
 const mainBodyKaali = document.querySelector(".body-style-development-purpose");
-const darkIcon = document.querySelector("#dark-icon");
+const darkIcons = document.querySelectorAll("#dark-icon");
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme === "light") {
   addClassNameToElement(mainBodyKaali, "light");
-  removeClassNameFromElement(darkIcon, "fa-sun");
-  addClassNameToElement(darkIcon, "fa-moon");
+  darkIcons?.forEach(darkIcon => {
+    removeClassNameFromElement(darkIcon, "fa-sun");
+  });
+  darkIcons?.forEach(darkIcon => {
+    addClassNameToElement(darkIcon, "fa-moon");
+  })
+  
   setItemtoLocalStorage("theme", "light");
 } else {
   mainBodyKaali?.classList.remove("light");
@@ -1078,15 +1083,18 @@ if (currentTheme === "light") {
 
 toggleMode?.forEach((element) => {
   element?.addEventListener("click", () => {
-    if (checkIfClassExistsOnElement(darkIcon, "fa-sun")) {
-      removeClassNameFromElement(darkIcon, "fa-sun");
-      addClassNameToElement(darkIcon, "fa-moon");
-      setItemtoLocalStorage("theme", "light");
-    } else {
-      addClassNameToElement(darkIcon, "fa-sun");
-      removeClassNameFromElement(darkIcon, "fa-moon");
-      setItemtoLocalStorage("theme", "dark");
-    }
+    darkIcons?.forEach(darkIcon => {
+      if (checkIfClassExistsOnElement(darkIcon, "fa-sun")) {
+        removeClassNameFromElement(darkIcon, "fa-sun");
+        addClassNameToElement(darkIcon, "fa-moon");
+        setItemtoLocalStorage("theme", "light");
+      } else {
+        addClassNameToElement(darkIcon, "fa-sun");
+        removeClassNameFromElement(darkIcon, "fa-moon");
+        setItemtoLocalStorage("theme", "dark");
+      }
+    })
+   
     mainBodyKaali?.classList.toggle("light");
   });
 });

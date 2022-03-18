@@ -86,6 +86,7 @@
 .body-style-development-purpose.light .sidebar-list-items:hover {
   color: var(--kaali-light-mode-success);
   font-weight: bold;
+  filter: saturate(2.5);
 }
 
 .secondary-header {
