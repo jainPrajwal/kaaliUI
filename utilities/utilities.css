@@ -22,24 +22,22 @@
   gap: 10px;
 }
 
-
 /* colors */
 .green {
-    color: var(--green);
-  }
-  .red {
-    color: var(--red);
-  }
-
+  color: var(--kaali-status-available-background);
+}
+.red {
+  color: var(--kaali-danger)
+}
 
 .w-100 {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  .h-auto {
-    height: auto;
-  }
+.h-auto {
+  height: auto;
+}
 
-  .h-100 {
-    height: 100%;
-  }
+.h-100 {
+  height: 100%;
+}

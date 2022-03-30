@@ -80,7 +80,7 @@
   cursor: pointer;
 }
 
-.body-style-development-purpose .sidebar-list-items:hover {
+.body-style-development-purpose  .sidebar-list-items:hover {
   color: var(--kaali-status-available-background);
 }
 .body-style-development-purpose.light .sidebar-list-items:hover {

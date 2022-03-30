@@ -55,6 +55,9 @@
   box-sizing: border-box;
   font-family: "Varela Round", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 
 .body-style-development-purpose {
   background-color: var(--kaali-main-background);
@@ -179,9 +182,12 @@ a {
 .navbar-ul-kaali .component-link-item-mobile {
   display: none;
 }
-
+.navbar-item-link {
+  color: var(--kaali-font-color);
+}
 .navbar-item-link:hover {
   color: var(--kaali-status-available-background);
+  font-weight: bold;
 }
 
 .body-style-development-purpose .navbar-active {
@@ -202,8 +208,9 @@ a {
   padding: 60px 200px 200px;
   min-height: 100vh;
   width: 100vw;
-  background-image: url("https://web-assets.cred.club/_next/assets/images/home-page/video-bg.png");
+  background-image: url("https://wallpaperaccess.com/full/5985690.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 .header-container {
   color: var(--kaali-font-color);
@@ -293,9 +300,11 @@ a {
   transform: scale(1.1);
 }
 
-.kaali-repo-link:hover {
+.social-list-item-link {
   color: var(--kaali-font-color);
-  cursor: pointer;
+}
+#foot a:hover {
+  color: var(--kaali-status-available-background);
 }
 
 /* Media Queries */
@@ -340,7 +349,6 @@ a {
     color: var(--kaali-navbar-background);
     background-color: var(--kaali-font-color);
   }
-
 
   .clip-path {
     clip-path: circle(50px at 110% -20%);
