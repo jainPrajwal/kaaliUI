@@ -311,7 +311,7 @@ a {
 
 @media only screen and (max-width: 480px) {
   body {
-    /* overflow: scroll; */
+   
     overflow-x: hidden;
   }
   .navbar-ul-kaali .component-link-item-mobile {
@@ -430,6 +430,7 @@ a {
 
   .header-section {
     padding: 1rem;
+    background-position: center;
   }
   .header-container {
     align-items: flex-start;
@@ -453,7 +454,7 @@ a {
 }
 @media screen and (min-width: 480px) and (max-width: 985px) {
   body {
-    /* overflow: scroll; */
+   
     overflow-x: hidden;
   }
   .navbar-ul-kaali .component-link-item-mobile {
@@ -484,8 +485,7 @@ a {
     background: var(--kaali-navbar-background);
   }
   .navbar-ul-kaali {
-    /* position: fixed;
-    top: 50px; */
+
 
     width: 100%;
     display: flex;
@@ -495,7 +495,7 @@ a {
     transition: clip-path 0.5s ease-out;
     pointer-events: none;
     padding-top: 1rem;
-    /* overflow-y: scroll; */
+ 
     align-items: flex-start;
   }
   .navbar-ul-kaali.open {
