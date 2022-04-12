@@ -391,12 +391,7 @@ a {
   .component-link-item-mobile.fade {
     opacity: 1;
   }
-  /* .fas.fa-bars {
-    display: inline-block;
-    padding-right: 1rem;
-    font-size: small;
-    color: var(--kaali-status-available-background);
-  } */
+ 
 
   .close-menu {
     display: block;
@@ -523,11 +518,7 @@ a {
     opacity: 1;
   }
 
-  /* .fas.fa-bars {
-    display: block;
-    padding-right: 1rem;
-    color: var(--kaali-status-available-background);
-  } */
+
 
   .close-menu {
     display: block;
