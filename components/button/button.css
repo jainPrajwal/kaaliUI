@@ -25,8 +25,11 @@
   font-size: 1.1rem;
   /* width: 170px; */
 }
-.btn:active {
+.btn:active:not([disabled]) {
   transform: scale(0.95);
+}
+.btn:disabled {
+  cursor: not-allowed;
 }
 .btn-primary {
   background-color: var(--kaali-primary);
