@@ -16,7 +16,7 @@
   --kaali-font-primary-header-mobile: 2.8rem;
 
   /* font sizes */
-  --kaali-font-main-header: 6.625rem;
+  --kaali-font-main-header: 6.5rem;
   --kaali-font-primary-header: 3.6rem;
   --kaali-font-secondary-header: 2rem;
   --kaali-font-tertiary-header: 1.56rem;
@@ -47,6 +47,11 @@
 
   /* card grid width */
   --kaali-minimumColumnWidth: 160px;
+
+  /* size */
+  --kaali-sm: 4px;
+  --kaali-md: 8px;
+  --kaali-lg: 12px;
 }
 
 * {
@@ -105,7 +110,7 @@ a {
 }
 
 ::selection {
-  background-color: var(--kaali-primary);
+  background-color:#a5f3fc;
 }
 /* Navigation bar */
 .navbar-kaali {

@@ -47,93 +47,93 @@
 /* Along X-Axis in px*/
 
 .mx-sm {
-  margin: 0px 4px;
+  margin: 0px var(--kaali-sm);
 }
 
 .mx-md {
-  margin: 0px 8px;
+  margin: 0px var(--kaali-md);
 }
 
 .mx-lg {
-  margin: 0px 8px;
+  margin: 0px var(--kaali-md);
 }
 
 /* Along Y-Axis in px*/
 
 .my-sm {
-  margin: 4px 0;
+  margin: var(--kaali-sm) 0;
 }
 .my-md {
-  margin: 8px 0px;
+  margin: var(--kaali-md) 0px;
 }
 
 .my-lg {
-  margin: 8px 0px;
+  margin: var(--kaali-md) 0px;
 }
 
 /* Overall margin in px */
 .m-sm {
-  margin: 4px;
+  margin: var(--kaali-sm);
 }
 
 .m-md {
-  margin: 8px;
+  margin: var(--kaali-md);
 }
 
 .m-lg {
-  margin: 12px;
+  margin: var(--kaali-lg);
 }
 
 /* Only top margins in px */
 .mt-sm {
-  margin-top: 4px;
+  margin-top: var(--kaali-sm);
 }
 
 .mt-md {
-  margin-top: 8px;
+  margin-top: var(--kaali-md);
 }
 
 .mt-lg {
-  margin-top: 12px;
+  margin-top: var(--kaali-lg);
 }
 
 /* Only left margins in px */
 .ml-sm {
-  margin-left: 4px;
+  margin-left: var(--kaali-sm);
 }
 
 .ml-md {
-  margin-left: 8px;
+  margin-left: var(--kaali-md);
 }
 
 .ml-lg {
-  margin-left: 12px;
+  margin-left: var(--kaali-lg);
 }
 
 /* Only bottom margins in px */
 .mb-sm {
-  margin-bottom: 4px;
+  margin-bottom: var(--kaali-sm);
 }
 
 .mb-md {
-  margin-bottom: 4px;
+  margin-bottom: var(--kaali-sm);
 }
 
 .mb-lg {
-  margin-bottom: 12px;
+  margin-bottom: var(--kaali-lg);
 }
 
 /* Only right margins in px */
 .mr-sm {
-  margin-right: 4px;
+  margin-right: var(--kaali-sm);
 }
 
 .mr-md {
-  margin-right: 8px;
+  margin-right: var(--kaali-md);
 }
 
 .mr-lg {
-  margin-right: 12px;
+  margin-right: var(--kaali-lg);
 }
 
 

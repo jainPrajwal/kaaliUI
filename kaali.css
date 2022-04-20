@@ -61,8 +61,8 @@
 }
 
 .sidebar-list-kaali::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: var(--kaali-sm);
+  height: var(--kaali-sm);
 }
 
 .sidebar-list-kaali:-webkit-scrollbar-track {
@@ -157,7 +157,7 @@ hr {
 
 .attr {
   color: #9fca56;
-  margin: 0 4px;
+  margin: 0 var(--kaali-sm);
 }
 
 .symbol,
