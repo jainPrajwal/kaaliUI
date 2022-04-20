@@ -98,3 +98,17 @@
 .pr-lg {
   padding-right: var(--kaali-lg);
 }
+
+
+/* padding-top */
+.pt-sm {
+  padding-top: var(--kaali-sm);
+}
+
+.pt-md {
+  padding-top: var(--kaali-md);
+}
+
+.pt-lg {
+  padding-top: var(--kaali-lg);
+}
