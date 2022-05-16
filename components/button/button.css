@@ -16,14 +16,12 @@
 }
 
 .btn {
-  margin: 1rem;
   padding: 0.5rem;
   cursor: pointer;
   border-radius: 0.2rem;
   outline: 1px solid transparent;
   border: 1px solid transparent;
   font-size: 1.1rem;
-  /* width: 170px; */
 }
 .btn:active:not([disabled]) {
   transform: scale(0.95);
@@ -79,7 +77,6 @@
   border: 1px solid black;
 }
 
-
 .btn-secondary {
   background-color: #e2e8f0;
   border: 1px solid var(--kaali-border-color);
@@ -88,7 +85,6 @@
 .btn-secondary:focus {
   border: 1px solid var(--kaali-font-color);
 }
-
 
 .btn:hover {
   filter: brightness(90%);
@@ -101,8 +97,7 @@
     margin: 0 auto;
   }
 
-  .btn {
-    max-width: 180px;
+  .btn-container .btn {
     white-space: nowrap;
   }
 }

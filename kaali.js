@@ -1021,7 +1021,7 @@ prevButton?.addEventListener("click", () => {
     moveToSlide(track, currentSlide, prevSlide);
     const currentDot = dotsNav.querySelector(".current-slide");
     const prevDot = currentDot.previousElementSibling;
-    updateDots(currentDot, prevDot);
+     (currentDot, prevDot);
 
     const targetIndex = dots.findIndex((dot) => prevDot === dot);
     toggleArrows(targetIndex, prevButton, nextButton, slides);
