@@ -36,11 +36,11 @@
   right: 0.5px;
 }
 .status.status-available {
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
   background-color: var(--kaali-status-available-background);
-  border: 1px solid var(--kaali-success);
+  border: 2px solid white;
   position: absolute;
 }
 
