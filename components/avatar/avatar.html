@@ -11,9 +11,28 @@
       href="../../assets/images/kali-icon.ico"
     />
 
-    <link href="../../kaali.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  <link rel="stylesheet" href="../../shared/shared.css" />
+    <link rel="stylesheet" href="../../components/typography/typography.css" />
 
+    <link rel="stylesheet" href="../../utilities/utilities.css" />
+
+    <link rel="stylesheet" href="./avatar.css" />
+    <link rel="stylesheet" href="../../components/button/button.css" /> -->
+    <link rel="stylesheet" href="../../shared/shared.css" />
+    <link rel="stylesheet" href="../../components/typography/typography.css" />
+
+    <link rel="stylesheet" href="../../utilities/utilities.css" />
+
+    <link rel="stylesheet" href="./avatar.css" />
+    <link rel="stylesheet" href="../../components/button/button.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
     <title>kaali UI | Avatar</title>
   </head>
   <body class="body-style-development-purpose">
@@ -42,7 +61,6 @@
           </div>
         </div>
 
-
         <nav class="navbar-ul-kaali">
           <ul class="wrapper-navbar">
             <li class="component-link-item-desktop">
@@ -55,9 +73,9 @@
               <a href="../../index.html#foot">about</a>
             </li>
             <li class="component-link-item-desktop">
-                <button class="btn btn-toggle"  id="theme-toggler">
-              <i class="fa-solid fa-sun" id="dark-icon"></i>
-            </button>
+              <button class="btn btn-toggle" id="theme-toggler">
+                <i class="fa-solid fa-sun" id="dark-icon"></i>
+              </button>
             </li>
             <li class="component-link-item-mobile">
               <a href="../../kaali.html">get started</a>
@@ -183,56 +201,55 @@
           <a href="../alert/alert.html">
             <li class="sidebar-list-items">alert</li>
           </a>
-         
+
           <a href="#">
             <li class="sidebar-list-items active">avatar</li>
           </a>
-         
+
           <a href="../badge/badge.html">
             <li class="sidebar-list-items">badge</li>
           </a>
-         
+
           <a href="../button/button.html">
             <li class="sidebar-list-items">button</li>
           </a>
-         
+
           <a href="../card/card.html">
             <li class="sidebar-list-items">card</li>
           </a>
-         
+
           <a href="../carousel/carousel.html">
             <li class="sidebar-list-items">carousel</li>
           </a>
-         
+
           <a href="../checkbox/checkbox.html">
             <li class="sidebar-list-items">checkbox</li></a
           >
-         
 
           <a href="../colors/colors.html">
             <li class="sidebar-list-items">colors</li>
           </a>
-         
+
           <a href="../input/input.html">
             <li class="sidebar-list-items">input</li></a
           >
-         
+
           <a href="../modal/modal.html">
             <li class="sidebar-list-items">modal</li>
           </a>
-         
+
           <a href="../radio/radio.html">
             <li class="sidebar-list-items">radio</li>
           </a>
-         
+
           <a href="../toast/toast.html">
             <li class="sidebar-list-items">toast</li>
           </a>
-         
+
           <a href="../tooltip/tooltip.html">
             <li class="sidebar-list-items">tooltip</li>
           </a>
-         
+
           <a href="../typography/typography.html">
             <li class="sidebar-list-items">typography</li>
           </a>
@@ -242,7 +259,7 @@
       <div class="main-body-kaali">
         <div class="main-container" id="avatarlink">
           <div class="header header-secondary">avatar</div>
-          <hr class="alert-hr" />
+        
           <div class="outer-avatar-container">
             <div class="header header-tertiary">regular avatar</div>
             <!-- Regular avatars -->
@@ -286,7 +303,7 @@
                 </div>
               </div>
             </div>
-            <hr class="alert-hr" />
+          
             <div class="header header-tertiary">avatar with status</div>
 
             <!-- avatars with image and status-->
@@ -298,7 +315,9 @@
                   class="avatar avatar-sm"
                 />
                 <span class="status status-bg-verified status-verified-sm">
-                  <span class="status-verified-checkmark status-verified-checkmark-sm"></span>
+                  <span
+                    class="status-verified-checkmark status-verified-checkmark-sm"
+                  ></span>
                 </span>
               </div>
               <div class="image-container">
@@ -333,7 +352,7 @@
               </div>
             </div>
 
-            <hr class="alert-hr" />
+          
 
             <div class="header header-tertiary">avatar with letters</div>
 
@@ -345,15 +364,14 @@
               <div class="image-container">
                 <div class="avatar-letter avatar-md" id="shade-pink">PJ</div>
                 <span class="status status-bg-verified status-verified-md">
-                  <span class="status-verified-checkmark status-verified-checkmark-md"></span>
+                  <span
+                    class="status-verified-checkmark status-verified-checkmark-md"
+                  ></span>
                 </span>
               </div>
               <div class="image-container">
                 <div class="avatar-letter avatar-md" id="shade-blue">DR</div>
-                <span class="status status-bg-available status-md">
-                 
-                </span>
-                
+                <span class="status status-bg-available status-md"> </span>
               </div>
             </div>
 
@@ -391,5 +409,7 @@
       </div>
     </div>
   </body>
-  <script src="/kaali.js">defer </script>
+  <script src="/kaali.js">
+  defer
+  </script>
 </html>

@@ -23,10 +23,10 @@
 }
 
 /* colors */
-.green {
+.body-style-development-purpose .green {
   color: var(--kaali-status-available-background);
 }
-.red {
+.body-style-development-purpose .red {
   color: var(--kaali-danger)
 }
 

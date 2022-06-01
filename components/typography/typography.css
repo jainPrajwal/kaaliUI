@@ -11,13 +11,16 @@
 .header-dark {
   color: black;
 }
+
 .header-main {
   font-size: var(--kaali-font-main-header);
   letter-spacing: -3px;
 }
+
 .header-primary {
   font-size: var(--kaali-font-primary-header);
 }
+
 .header-secondary {
   font-size: var(--kaali-font-secondary-header);
 }
@@ -48,6 +51,7 @@
 .text-center {
   text-align: center;
 }
+
 .text-light {
   color: rgb(248, 248, 248);
 }
@@ -56,9 +60,10 @@
   color: black;
 }
 
-.text-upper{
+.text-upper {
   text-transform: uppercase;
 }
+
 /* text colors */
 .text-white {
   color: var(--kaali-font-color);
@@ -67,9 +72,11 @@
 .text-black {
   color: black;
 }
+
 .text-bold {
   font-weight: bold;
 }
+
 /* font sizes */
 .fs-sm {
   font-size: 0.8rem;
@@ -78,6 +85,7 @@
 .fs-md {
   font-size: 1.2rem;
 }
+
 .fs-lg {
   font-size: 1.6rem;
 }
