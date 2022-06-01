@@ -9,48 +9,11 @@
   border-radius: 50%;
 }
 
-.avatar.avatar-sm {
-  height: 60px;
-  width: 60px;
-}
-
-.avatar.avatar-md {
-  height: 80px;
-  width: 80px;
-}
-
-.avatar.avatar-lg {
-  height: 100px;
-  width: 100px;
-}
 .image-container {
   position: relative;
 }
 
-.status {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  position: absolute;
-  top: 70%;
-  right: 0.5px;
-}
-.status.status-available {
-  height: 14px;
-  width: 14px;
-  border-radius: 50%;
-  background-color: var(--kaali-status-available-background);
-  border: 2px solid white;
-  position: absolute;
-}
-
-.status.status-do-not-disturb {
-  background-color: var(--kaali-danger);
-}
-
 .avatar-letter {
-  height: 60px;
-  width: 60px;
   border-radius: 50%;
   text-align: center;
   display: flex;
@@ -60,6 +23,111 @@
   letter-spacing: 1.5px;
   color: var(--kaali-font-color);
 }
+
+
+/* Avatar Size */
+
+.avatar-sm {
+  height: 32px;
+  width: 32px;
+}
+
+.avatar-md {
+  height: 64px;
+  width: 64px;
+}
+
+.avatar-lg {
+  height: 90px;
+  width: 90px;
+}
+
+/* ------------------------------------- */
+/* Status */
+
+.status {
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+}
+
+
+.status-verified-checkmark {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Status Size */
+
+.status-sm {
+  width: 10px;
+  height: 10px;
+  top: 65%;
+  right: 0px;
+}
+
+.status-md {
+  width: 14px;
+  height: 14px;
+  top: 70%;
+  right: 0px;
+}
+
+.status-lg {
+  width: 20px;
+  height: 20px;
+
+}
+
+/* Status Types */
+
+.status-bg-available {
+  background-color: var(--kaali-status-available-background);
+}
+
+.status-bg-do-not-disturb {
+  background-color: var(--kaali-danger);
+}
+
+.status-bg-verified {
+  background-color: var(--kaali-primary);
+}
+
+
+/* Status Verified */
+
+.status-verified-md {
+  width: 20px;
+  height: 20px;
+  top: 65%;
+  right: -5px;
+}
+
+.status-verified-checkmark-md {
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  width: 6px;
+  height: 10px;
+  top: 45%;
+  left: 50%;
+}
+
+.status-verified-sm {
+  width: 14px;
+  height: 14px;
+  top: 65%;
+  right: -5px;
+}
+
+.status-verified-checkmark-sm {
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  width: 4px;
+  height: 8px;
+  top: 45%;
+  left: 50%;
+}
+
 
 #shade-pink {
   background-color: var(--kaali-shade-pink);
