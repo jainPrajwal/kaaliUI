@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap");
 
 
 .btn-demo {
@@ -8,7 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.8rem 1rem;
-  font-family: "Merriweather Sans", sans-serif;
+
   background-color: #2b2a2a;
   color: var(--kaali-font-color);
   outline: none;
