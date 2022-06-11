@@ -12,5 +12,6 @@
 @import url("./components/carousel/carousel.css");
 @import url("./components/radio/radio.css");
 @import url("./utilities/utilities.css");
+@import url("./components/loader/loader.css");
 @import url("./styles.css");
 @import url("./shared/shared.css");
