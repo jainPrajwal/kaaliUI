@@ -799,7 +799,7 @@ a {
 
     .copy-tooltip .tooltiptext::after {
         left: 51%;
-        top: 100%;
+        top: 100%;   
     }
 }
 

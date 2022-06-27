@@ -33,11 +33,15 @@
 }
 
 .avatar-md {
-  height: 64px;
-  width: 64px;
+  height: 48px;
+  width: 48px;
+}
+.avatar-lg {
+  height: 60px;
+  width: 60px;
 }
 
-.avatar-lg {
+.avatar-x-lg {
   height: 90px;
   width: 90px;
 }
