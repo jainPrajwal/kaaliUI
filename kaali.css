@@ -1,17 +1,19 @@
-@import url("./components/alert/alert.css");
-@import url("./components/avatar/avatar.css");
-@import url("./components/badge/badge.css");
-@import url("./components/button/button.css");
-@import url("./components/card/card.css");
-@import url("./components/input/input.css");
-@import url("./components/modal/modal.css");
-@import url("./components/toast/toast.css");
-@import url("./components/tooltip/tooltip.css");
-@import url("./components/typography/typography.css");
-@import url("./components/checkbox/checkbox.css");
-@import url("./components/carousel/carousel.css");
-@import url("./components/radio/radio.css");
-@import url("./utilities/utilities.css");
-@import url("./components/loader/loader.css");
-@import url("./styles.css");
-@import url("./shared/shared.css");
+@layer kaali {
+    @import url("./components/alert/alert.css");
+    @import url("./components/avatar/avatar.css");
+    @import url("./components/badge/badge.css");
+    @import url("./components/button/button.css");
+    @import url("./components/card/card.css");
+    @import url("./components/input/input.css");
+    @import url("./components/modal/modal.css");
+    @import url("./components/toast/toast.css");
+    @import url("./components/tooltip/tooltip.css");
+    @import url("./components/typography/typography.css");
+    @import url("./components/checkbox/checkbox.css");
+    @import url("./components/carousel/carousel.css");
+    @import url("./components/radio/radio.css");
+    @import url("./utilities/utilities.css");
+    @import url("./components/loader/loader.css");
+    @import url("./styles.css");
+    @import url("./shared/shared.css");
+}
