@@ -36,6 +36,7 @@
   height: 48px;
   width: 48px;
 }
+
 .avatar-lg {
   height: 60px;
   width: 60px;
@@ -143,4 +144,21 @@
 
 #shade-green {
   background-color: var(--kaali-success);
+}
+
+@media screen and (max-width:550px) {
+  .avatar-md {
+    height: 16px;
+    width: 16px;
+  }
+
+  .avatar-md {
+    height: 32px;
+    width: 32px;
+  }
+
+  .avatar-lg {
+    height: 48px;
+    width: 48px;
+  }
 }
