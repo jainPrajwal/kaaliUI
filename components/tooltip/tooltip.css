@@ -29,7 +29,7 @@
 
 .tooltip {
   color: black;
-  background-color: var(--kaali-font-color);
+  background-color: #f3f4f6;
 }
 
 .body-style-development-purpose.light .tooltip {
@@ -64,19 +64,19 @@
 }
 
 .tooltip.tooltip-top::after {
-  border-color: var(--kaali-font-color) transparent transparent transparent;
+  border-color: #f3f4f6 transparent transparent transparent;
 }
 
 .tooltip.tooltip-right::after {
-  border-color: transparent var(--kaali-font-color) transparent transparent;
+  border-color: transparent #f3f4f6 transparent transparent;
 }
 
 .tooltip.tooltip-left::after {
-  border-color: transparent transparent transparent var(--kaali-font-color);
+  border-color: transparent transparent transparent #f3f4f6;
 }
 
 .tooltip.tooltip-bottom::after {
-  border-color: transparent transparent var(--kaali-font-color) transparent;
+  border-color: transparent transparent #f3f4f6 transparent;
 }
 
 .btn-demo:hover .tooltip {
